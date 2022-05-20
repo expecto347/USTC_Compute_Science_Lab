@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Apr  6 09:08:25 2022
+# Process ID: 16580
+# Current directory: C:/Users/expecto/Desktop/COD-experiment/Lab2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15792 C:\Users\expecto\Desktop\COD-experiment\Lab2\Lab2.xpr
+# Log file: C:/Users/expecto/Desktop/COD-experiment/Lab2/vivado.log
+# Journal file: C:/Users/expecto/Desktop/COD-experiment/Lab2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/expecto/Desktop/COD-experiment/Lab2/Lab2.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source register_file_tp.tcl
+current_wave_config {Untitled 1}
+add_wave {{/register_file_tp/rf/regfile}} 
+close_sim
+launch_simulation
+source register_file_tp.tcl
+close_sim
+launch_simulation
+source register_file_tp.tcl
+close_sim
+launch_simulation
+source register_file_tp.tcl
+current_wave_config {Untitled 4}
+add_wave {{/register_file_tp/rf/regfile}} 
+close_sim
+launch_simulation
+source register_file_tp.tcl
+close_sim
+launch_simulation
+source register_file_tp.tcl
+run 100 us
+run all
+run 10 us
+run 10 us
+run 10 us
+run 1 us
+run 1 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 1 us
+close_sim

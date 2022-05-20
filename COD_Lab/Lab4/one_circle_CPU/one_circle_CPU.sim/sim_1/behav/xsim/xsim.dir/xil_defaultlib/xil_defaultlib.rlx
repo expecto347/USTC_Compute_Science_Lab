@@ -1,0 +1,21 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sim_1/new/ALU.v,1650265470,verilog,,,,ALU_sim,,,,,,,,
+C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sim_1/new/CPU_sim.v,1650369261,verilog,,,,CPU_sim,,,,,,,,
+C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sim_1/new/TOP_sim.v,1651764829,verilog,,,,TOP_sim,,,,,,,,
+C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sim_1/new/TOP_sim2.v,1650540720,verilog,,,,TOP_sim2,,,,,,,,
+C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/sim/ROM_Instruction.v,1651764806,verilog,,C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/ALU.v,,ROM_Instruction,,,,,,,,
+C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/ALU.v,1650545471,verilog,,C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/Control_Unit.v,,ALU,,,,,,,,
+C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/Control_Unit.v,1650460739,verilog,,C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/DataMEM.v,,ControlUnit,,,,,,,,
+C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/DataMEM.v,1650547893,verilog,,C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/ImmGen.v,,DataMEM,,,,,,,,
+C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/ImmGen.v,1650354681,verilog,,C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/InsMem.v,,Extend,,,,,,,,
+C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/InsMem.v,1650345812,verilog,,C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/MUX_register_input.v,,InsMEM,,,,,,,,
+C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/MUX_register_input.v,1650372960,verilog,,C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/PC.v,,MUX_reg_input,,,,,,,,
+C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/PC.v,1650620104,verilog,,C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/PDU.v,,PC,,,,,,,,
+C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/PDU.v,1650443418,verilog,,C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/Regfile.v,,pdu_1cycle,,,,,,,,
+C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/Regfile.v,1650547895,verilog,,C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/one_circle_cpu.v,,register_file,,,,,,,,
+C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/one_circle_cpu.v,1650464486,verilog,,C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/top.v,,cpu,,,,,,,,
+C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/top.v,1650440746,verilog,,C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sim_1/new/TOP_sim.v,,top,,,,,,,,

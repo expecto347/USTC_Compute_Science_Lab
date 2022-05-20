@@ -1,0 +1,122 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Thu May 28 22:59:16 2020
+| Host         : DESKTOP-CK1FK5P running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file dbu_control_sets_placed.rpt
+| Design       : dbu
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    44 |
+|    Minimum number of control sets                        |    44 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    19 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    44 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    40 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               6 |            3 |
+| No           | No                    | Yes                    |             160 |           66 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            1103 |          620 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-----------------------------------------------------------------------------------------------------+------------------+------------------+----------------+
+|  Clock Signal  |                                            Enable Signal                                            | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------+-----------------------------------------------------------------------------------------------------+------------------+------------------+----------------+
+|  n_0_60_BUFG   | cpu_multicycle/cn/E[0]                                                                              | rst_IBUF         |                3 |              4 |
+|  clk_IBUF_BUFG |                                                                                                     |                  |                3 |              6 |
+|  clk_IBUF_BUFG | nixietube/cnt_1000HZ1_carry__2_n_1                                                                  | rst_IBUF         |                5 |              7 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state[12]_i_1_n_1                                                  | rst_IBUF         |                2 |             13 |
+|  clk_IBUF_BUFG | dec_edge_taker/in1_reg[0]_0                                                                         | rst_IBUF         |                4 |             19 |
+|  n_0_60_BUFG   | cpu_multicycle/ALU/E[0]                                                                             | rst_IBUF         |               17 |             28 |
+|  clk_IBUF_BUFG |                                                                                                     | rst_IBUF         |                8 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state_reg[5]_1[0]                                                  | rst_IBUF         |               25 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state_reg[5]_23[0]                                                 | rst_IBUF         |               15 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state_reg[5]_9[0]                                                  | rst_IBUF         |               25 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state_reg[5]_12[0]                                                 | rst_IBUF         |               12 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state_reg[5]_27[0]                                                 | rst_IBUF         |               22 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state_reg[5]_3[0]                                                  | rst_IBUF         |               11 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state_reg[5]_15[0]                                                 | rst_IBUF         |               17 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state_reg[5]_25[0]                                                 | rst_IBUF         |               20 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state_reg[5]_21[0]                                                 | rst_IBUF         |               14 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state_reg[5]_28[0]                                                 | rst_IBUF         |               21 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state_reg[5]_4[0]                                                  | rst_IBUF         |               12 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state_reg[5]_5[0]                                                  | rst_IBUF         |               17 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state_reg[5]_10[0]                                                 | rst_IBUF         |               18 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state_reg[5]_0[0]                                                  | rst_IBUF         |               22 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state_reg[5]_14[0]                                                 | rst_IBUF         |               17 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state_reg[5]_20[0]                                                 | rst_IBUF         |               20 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state_reg[5]_19[0]                                                 | rst_IBUF         |               21 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state_reg[5]_2[0]                                                  | rst_IBUF         |               17 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state_reg[5]_24[0]                                                 | rst_IBUF         |               17 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state_reg[5]_26[0]                                                 | rst_IBUF         |               19 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state_reg[5]_29[0]                                                 | rst_IBUF         |               18 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state_reg[5]_18[0]                                                 | rst_IBUF         |               20 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state_reg[5]_22[0]                                                 | rst_IBUF         |               25 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state_reg[5]_30[0]                                                 | rst_IBUF         |               15 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state_reg[5]_17[0]                                                 | rst_IBUF         |               23 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state_reg[5]_7[0]                                                  | rst_IBUF         |               26 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state_reg[5]_16[0]                                                 | rst_IBUF         |               17 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state_reg[5]_6[0]                                                  | rst_IBUF         |               20 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state_reg[5]_11[0]                                                 | rst_IBUF         |               12 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state_reg[5]_13[0]                                                 | rst_IBUF         |               20 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/FSM_onehot_cur_state_reg[5]_8[0]                                                  | rst_IBUF         |               15 |             32 |
+|  n_0_60_BUFG   | cpu_multicycle/cn/Q[0]                                                                              | rst_IBUF         |               16 |             40 |
+|  n_0_60_BUFG   |                                                                                                     | rst_IBUF         |               58 |            128 |
+|  n_0_60_BUFG   | cpu_multicycle/mem/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_128_255_0_0_i_1_n_0 |                  |               32 |            128 |
+|  n_0_60_BUFG   | cpu_multicycle/mem/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_256_383_0_0_i_1_n_0 |                  |               32 |            128 |
+|  n_0_60_BUFG   | cpu_multicycle/mem/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_384_511_0_0_i_1_n_0 |                  |               32 |            128 |
+|  n_0_60_BUFG   | cpu_multicycle/mem/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_0_127_0_0_i_1_n_0   |                  |               32 |            128 |
++----------------+-----------------------------------------------------------------------------------------------------+------------------+------------------+----------------+
+
+

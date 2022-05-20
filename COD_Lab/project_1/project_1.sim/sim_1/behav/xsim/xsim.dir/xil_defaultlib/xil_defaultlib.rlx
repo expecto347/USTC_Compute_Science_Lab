@@ -1,0 +1,10 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/expecto/Desktop/Lab/COD_Lab/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/expecto/Desktop/Lab/COD_Lab/project_1/project_1.srcs/sim_1/new/fifo_tb.v,1649334519,verilog,,,,fifo_tb,,,,,,,,
+C:/Users/expecto/Desktop/Lab/COD_Lab/project_1/project_1.srcs/sources_1/new/edge_taker.v,1649334406,verilog,,C:/Users/expecto/Desktop/Lab/COD_Lab/project_1/project_1.srcs/sources_1/new/fifo.v,,edge_taker,,,,,,,,
+C:/Users/expecto/Desktop/Lab/COD_Lab/project_1/project_1.srcs/sources_1/new/fifo.v,1649337498,verilog,,C:/Users/expecto/Desktop/Lab/COD_Lab/project_1/project_1.srcs/sources_1/new/ram_8.v,,fifo,,,,,,,,
+C:/Users/expecto/Desktop/Lab/COD_Lab/project_1/project_1.srcs/sources_1/new/ram_8.v,1649334406,verilog,,C:/Users/expecto/Desktop/Lab/COD_Lab/project_1/project_1.srcs/sources_1/new/sdu.v,,ram_8,,,,,,,,
+C:/Users/expecto/Desktop/Lab/COD_Lab/project_1/project_1.srcs/sources_1/new/sdu.v,1649334406,verilog,,C:/Users/expecto/Desktop/Lab/COD_Lab/project_1/project_1.srcs/sim_1/new/fifo_tb.v,,sdu,,,,,,,,

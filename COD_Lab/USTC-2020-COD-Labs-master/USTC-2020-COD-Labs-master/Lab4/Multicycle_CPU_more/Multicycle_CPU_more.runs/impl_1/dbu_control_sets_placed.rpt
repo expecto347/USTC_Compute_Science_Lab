@@ -1,0 +1,217 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri May 22 14:25:26 2020
+| Host         : DESKTOP-CK1FK5P running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file dbu_control_sets_placed.rpt
+| Design       : dbu
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   139 |
+|    Minimum number of control sets                        |   139 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   687 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   139 |
+| >= 0 to < 4        |    96 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    39 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               6 |            4 |
+| No           | No                    | Yes                    |             192 |          103 |
+| No           | Yes                   | No                     |              32 |           32 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            1099 |          426 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------------------------------+------------------+----------------+
+|                Clock Signal               |                                            Enable Signal                                            |             Set/Reset Signal             | Slice Load Count | Bel Load Count |
++-------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------------------------------+------------------+----------------+
+|  nixietube/cnt_1000HZ_reg[13]_LDC_i_1_n_1 |                                                                                                     | nixietube/cnt_1000HZ_reg[13]_LDC_i_2_n_1 |                1 |              1 |
+|  nixietube/cnt_1000HZ_reg[14]_LDC_i_1_n_1 |                                                                                                     | nixietube/cnt_1000HZ_reg[14]_LDC_i_2_n_1 |                1 |              1 |
+|  nixietube/cnt_1000HZ_reg[0]_LDC_i_1_n_1  |                                                                                                     | nixietube/cnt_1000HZ_reg[0]_LDC_i_2_n_1  |                1 |              1 |
+|  nixietube/cnt_1000HZ_reg[10]_LDC_i_1_n_1 |                                                                                                     | nixietube/cnt_1000HZ_reg[10]_LDC_i_2_n_1 |                1 |              1 |
+|  nixietube/cnt_1000HZ_reg[11]_LDC_i_1_n_1 |                                                                                                     | nixietube/cnt_1000HZ_reg[11]_LDC_i_2_n_1 |                1 |              1 |
+|  nixietube/cnt_1000HZ_reg[12]_LDC_i_1_n_1 |                                                                                                     | nixietube/cnt_1000HZ_reg[12]_LDC_i_2_n_1 |                1 |              1 |
+|  nixietube/cnt_1000HZ_reg[1]_LDC_i_1_n_1  |                                                                                                     | nixietube/cnt_1000HZ_reg[1]_LDC_i_2_n_1  |                1 |              1 |
+|  nixietube/cnt_1000HZ_reg[17]_LDC_i_1_n_1 |                                                                                                     | nixietube/cnt_1000HZ_reg[17]_LDC_i_2_n_1 |                1 |              1 |
+|  nixietube/cnt_1000HZ_reg[19]_LDC_i_1_n_1 |                                                                                                     | nixietube/cnt_1000HZ_reg[19]_LDC_i_2_n_1 |                1 |              1 |
+|  nixietube/cnt_1000HZ_reg[20]_LDC_i_1_n_1 |                                                                                                     | nixietube/cnt_1000HZ_reg[20]_LDC_i_2_n_1 |                1 |              1 |
+|  nixietube/cnt_1000HZ_reg[18]_LDC_i_1_n_1 |                                                                                                     | nixietube/cnt_1000HZ_reg[18]_LDC_i_2_n_1 |                1 |              1 |
+|  nixietube/cnt_1000HZ_reg[23]_LDC_i_1_n_1 |                                                                                                     | nixietube/cnt_1000HZ_reg[23]_LDC_i_2_n_1 |                1 |              1 |
+|  nixietube/cnt_1000HZ_reg[15]_LDC_i_1_n_1 |                                                                                                     | nixietube/cnt_1000HZ_reg[15]_LDC_i_2_n_1 |                1 |              1 |
+|  nixietube/cnt_1000HZ_reg[24]_LDC_i_1_n_1 |                                                                                                     | nixietube/cnt_1000HZ_reg[24]_LDC_i_2_n_1 |                1 |              1 |
+|  nixietube/cnt_1000HZ_reg[16]_LDC_i_1_n_1 |                                                                                                     | nixietube/cnt_1000HZ_reg[16]_LDC_i_2_n_1 |                1 |              1 |
+|  nixietube/cnt_1000HZ_reg[22]_LDC_i_1_n_1 |                                                                                                     | nixietube/cnt_1000HZ_reg[22]_LDC_i_2_n_1 |                1 |              1 |
+|  nixietube/cnt_1000HZ_reg[21]_LDC_i_1_n_1 |                                                                                                     | nixietube/cnt_1000HZ_reg[21]_LDC_i_2_n_1 |                1 |              1 |
+|  nixietube/cnt_1000HZ_reg[3]_LDC_i_1_n_1  |                                                                                                     | nixietube/cnt_1000HZ_reg[3]_LDC_i_2_n_1  |                1 |              1 |
+|  nixietube/cnt_1000HZ_reg[28]_LDC_i_1_n_1 |                                                                                                     | nixietube/cnt_1000HZ_reg[28]_LDC_i_2_n_1 |                1 |              1 |
+|  nixietube/cnt_1000HZ_reg[31]_LDC_i_1_n_1 |                                                                                                     | nixietube/cnt_1000HZ_reg[31]_LDC_i_2_n_1 |                1 |              1 |
+|  nixietube/cnt_1000HZ_reg[4]_LDC_i_1_n_1  |                                                                                                     | nixietube/cnt_1000HZ_reg[4]_LDC_i_2_n_1  |                1 |              1 |
+|  nixietube/cnt_1000HZ_reg[27]_LDC_i_1_n_1 |                                                                                                     | nixietube/cnt_1000HZ_reg[27]_LDC_i_2_n_1 |                1 |              1 |
+|  nixietube/cnt_1000HZ_reg[29]_LDC_i_1_n_1 |                                                                                                     | nixietube/cnt_1000HZ_reg[29]_LDC_i_2_n_1 |                1 |              1 |
+|  nixietube/cnt_1000HZ_reg[30]_LDC_i_1_n_1 |                                                                                                     | nixietube/cnt_1000HZ_reg[30]_LDC_i_2_n_1 |                1 |              1 |
+|  nixietube/cnt_1000HZ_reg[25]_LDC_i_1_n_1 |                                                                                                     | nixietube/cnt_1000HZ_reg[25]_LDC_i_2_n_1 |                1 |              1 |
+|  nixietube/cnt_1000HZ_reg[26]_LDC_i_1_n_1 |                                                                                                     | nixietube/cnt_1000HZ_reg[26]_LDC_i_2_n_1 |                1 |              1 |
+|  nixietube/cnt_1000HZ_reg[2]_LDC_i_1_n_1  |                                                                                                     | nixietube/cnt_1000HZ_reg[2]_LDC_i_2_n_1  |                1 |              1 |
+|  nixietube/cnt_1000HZ_reg[8]_LDC_i_1_n_1  |                                                                                                     | nixietube/cnt_1000HZ_reg[8]_LDC_i_2_n_1  |                1 |              1 |
+|  nixietube/cnt_1000HZ_reg[9]_LDC_i_1_n_1  |                                                                                                     | nixietube/cnt_1000HZ_reg[9]_LDC_i_2_n_1  |                1 |              1 |
+|  nixietube/cnt_1000HZ_reg[5]_LDC_i_1_n_1  |                                                                                                     | nixietube/cnt_1000HZ_reg[5]_LDC_i_2_n_1  |                1 |              1 |
+|  nixietube/cnt_1000HZ_reg[6]_LDC_i_1_n_1  |                                                                                                     | nixietube/cnt_1000HZ_reg[6]_LDC_i_2_n_1  |                1 |              1 |
+|  nixietube/cnt_1000HZ_reg[7]_LDC_i_1_n_1  |                                                                                                     | nixietube/cnt_1000HZ_reg[7]_LDC_i_2_n_1  |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[9]_LDC_i_2_n_1  |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[13]_LDC_i_1_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[12]_LDC_i_2_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[10]_LDC_i_2_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[13]_LDC_i_2_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[14]_LDC_i_1_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[0]_LDC_i_1_n_1  |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[0]_LDC_i_2_n_1  |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[10]_LDC_i_1_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[11]_LDC_i_1_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[12]_LDC_i_1_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[11]_LDC_i_2_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[1]_LDC_i_1_n_1  |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[17]_LDC_i_1_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[19]_LDC_i_1_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[20]_LDC_i_2_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[21]_LDC_i_2_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[20]_LDC_i_1_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[17]_LDC_i_2_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[15]_LDC_i_2_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[22]_LDC_i_2_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[16]_LDC_i_2_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[18]_LDC_i_1_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[23]_LDC_i_1_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[23]_LDC_i_2_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[19]_LDC_i_2_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[15]_LDC_i_1_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[24]_LDC_i_2_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[24]_LDC_i_1_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[18]_LDC_i_2_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[16]_LDC_i_1_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[14]_LDC_i_2_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[1]_LDC_i_2_n_1  |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[22]_LDC_i_1_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[21]_LDC_i_1_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[4]_LDC_i_2_n_1  |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[3]_LDC_i_1_n_1  |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[3]_LDC_i_2_n_1  |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[28]_LDC_i_1_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[28]_LDC_i_2_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[31]_LDC_i_1_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[2]_LDC_i_2_n_1  |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[4]_LDC_i_1_n_1  |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[27]_LDC_i_2_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[27]_LDC_i_1_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[30]_LDC_i_2_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[29]_LDC_i_1_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[25]_LDC_i_2_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[30]_LDC_i_1_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[26]_LDC_i_2_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[25]_LDC_i_1_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[26]_LDC_i_1_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[29]_LDC_i_2_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[2]_LDC_i_1_n_1  |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[31]_LDC_i_2_n_1 |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[8]_LDC_i_1_n_1  |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[6]_LDC_i_2_n_1  |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[9]_LDC_i_1_n_1  |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[5]_LDC_i_1_n_1  |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[5]_LDC_i_2_n_1  |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[6]_LDC_i_1_n_1  |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[8]_LDC_i_2_n_1  |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[7]_LDC_i_2_n_1  |                1 |              1 |
+|  clk_IBUF_BUFG                            |                                                                                                     | nixietube/cnt_1000HZ_reg[7]_LDC_i_1_n_1  |                1 |              1 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/E[1]                                                                              | rst_IBUF                                 |                2 |              4 |
+|  clk_IBUF_BUFG                            |                                                                                                     |                                          |                4 |              6 |
+|  clk_IBUF_BUFG                            | nixietube/FSM_onehot_an[1]_i_1_n_1                                                                  | rst_IBUF                                 |                5 |              8 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/FSM_onehot_cur_state[12]_i_1_n_1                                                  | rst_IBUF                                 |                5 |             13 |
+|  clk_IBUF_BUFG                            | inc_edge_taker/in1_reg[0]_0                                                                         | rst_IBUF                                 |                4 |             16 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/E[0]                                                                              | rst_IBUF                                 |               21 |             28 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/ir_reg[14][0]                                                                     | rst_IBUF                                 |               11 |             32 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/ir_reg[18]_5[0]                                                                   | rst_IBUF                                 |               17 |             32 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/ir_reg[16][0]                                                                     | rst_IBUF                                 |               10 |             32 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/ir_reg[18]_3[0]                                                                   | rst_IBUF                                 |               15 |             32 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/ir_reg[18]_1[0]                                                                   | rst_IBUF                                 |               13 |             32 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/FSM_onehot_cur_state_reg[8]_5[0]                                                  | rst_IBUF                                 |                8 |             32 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/FSM_onehot_cur_state_reg[8]_2[0]                                                  | rst_IBUF                                 |               12 |             32 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/FSM_onehot_cur_state_reg[8]_1[0]                                                  | rst_IBUF                                 |               12 |             32 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/FSM_onehot_cur_state_reg[8]_3[0]                                                  | rst_IBUF                                 |               14 |             32 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/FSM_onehot_cur_state_reg[8]_9[0]                                                  | rst_IBUF                                 |               11 |             32 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/FSM_onehot_cur_state_reg[8]_6[0]                                                  | rst_IBUF                                 |               10 |             32 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/FSM_onehot_cur_state_reg[8]_8[0]                                                  | rst_IBUF                                 |                7 |             32 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/FSM_onehot_cur_state_reg[8]_0[0]                                                  | rst_IBUF                                 |               12 |             32 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/FSM_onehot_cur_state_reg[8]_7[0]                                                  | rst_IBUF                                 |                9 |             32 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/ir_reg[18][0]                                                                     | rst_IBUF                                 |               12 |             32 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/FSM_onehot_cur_state_reg[8]_4[0]                                                  | rst_IBUF                                 |               17 |             32 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/ir_reg[11][0]                                                                     | rst_IBUF                                 |               10 |             32 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/ir_reg[11]_0[0]                                                                   | rst_IBUF                                 |               11 |             32 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/ir_reg[11]_1[0]                                                                   | rst_IBUF                                 |               11 |             32 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/ir_reg[11]_2[0]                                                                   | rst_IBUF                                 |               11 |             32 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/ir_reg[11]_4[0]                                                                   | rst_IBUF                                 |               11 |             32 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/ir_reg[13][0]                                                                     | rst_IBUF                                 |               10 |             32 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/ir_reg[11]_3[0]                                                                   | rst_IBUF                                 |                9 |             32 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/ir_reg[15]_2[0]                                                                   | rst_IBUF                                 |               11 |             32 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/ir_reg[15]_3[0]                                                                   | rst_IBUF                                 |               15 |             32 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/ir_reg[15]_1[0]                                                                   | rst_IBUF                                 |               11 |             32 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/ir_reg[18]_0[0]                                                                   | rst_IBUF                                 |               16 |             32 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/ir_reg[18]_2[0]                                                                   | rst_IBUF                                 |               19 |             32 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/ir_reg[15]_0[0]                                                                   | rst_IBUF                                 |               11 |             32 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/ir_reg[18]_6[0]                                                                   | rst_IBUF                                 |               12 |             32 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/ir_reg[18]_4[0]                                                                   | rst_IBUF                                 |               18 |             32 |
+|  n_0_285_BUFG                             | cpu_multicycle/cn/Q[0]                                                                              | rst_IBUF                                 |               13 |             38 |
+|  n_0_285_BUFG                             |                                                                                                     | rst_IBUF                                 |               39 |            128 |
+|  n_0_285_BUFG                             | cpu_multicycle/mem/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_0_127_0_0_i_1_n_0   |                                          |               32 |            128 |
+|  n_0_285_BUFG                             | cpu_multicycle/mem/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_256_383_0_0_i_1_n_0 |                                          |               32 |            128 |
+|  n_0_285_BUFG                             | cpu_multicycle/mem/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_384_511_0_0_i_1_n_0 |                                          |               32 |            128 |
+|  n_0_285_BUFG                             | cpu_multicycle/mem/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_128_255_0_0_i_1_n_0 |                                          |               32 |            128 |
++-------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------------------------------+------------------+----------------+
+
+

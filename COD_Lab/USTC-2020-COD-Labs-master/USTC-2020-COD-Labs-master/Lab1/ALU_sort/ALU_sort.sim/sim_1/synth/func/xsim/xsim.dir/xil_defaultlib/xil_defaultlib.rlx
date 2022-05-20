@@ -1,0 +1,7 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+D:/VivadoProject/COD/Lab1/ALU_sort/ALU_sort.sim/sim_1/synth/func/xsim/sort_tb_func_synth.v,1590637572,verilog,,D:/VivadoProject/COD/Lab1/ALU_sort/ALU_sort.srcs/sim_1/imports/new/lab1_sort_tb.v,,glbl;mux2;mux2_0;mux3;mux3_1;register;register_2;register_3;register_4;sort,,,,,,,,
+D:/VivadoProject/COD/Lab1/ALU_sort/ALU_sort.srcs/sim_1/imports/new/lab1_sort_tb.v,1587726646,verilog,,,,sort_tb,,,,,,,,
+D:/VivadoProject/COD/Lab1/ALU_sort/ALU_sort.srcs/sim_1/new/sort_sim.v,1587726973,verilog,,,,sort_sim,,,,,,,,

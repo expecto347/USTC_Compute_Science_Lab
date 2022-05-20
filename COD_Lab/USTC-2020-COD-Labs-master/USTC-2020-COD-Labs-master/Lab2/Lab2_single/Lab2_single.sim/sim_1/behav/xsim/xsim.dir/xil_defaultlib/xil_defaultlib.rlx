@@ -1,0 +1,9 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+D:/VivadoProject/COD/Lab2/Lab2_single/Lab2_single.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+D:/VivadoProject/COD/Lab2/Lab2_single/Lab2_single.srcs/sim_1/new/fifo_tb.v,1588241688,verilog,,,,fifo_tb,,,,,,,,
+D:/VivadoProject/COD/Lab2/Lab2_single/Lab2_single.srcs/sources_1/ip/blk_mem_gen_16x8/sim/blk_mem_gen_16x8.v,1588241380,verilog,,D:/VivadoProject/COD/Lab2/Lab2_single/Lab2_single.srcs/sources_1/new/edge_taker.v,,blk_mem_gen_16x8,,,,,,,,
+D:/VivadoProject/COD/Lab2/Lab2_single/Lab2_single.srcs/sources_1/new/edge_taker.v,1588241894,verilog,,D:/VivadoProject/COD/Lab2/Lab2_single/Lab2_single.srcs/sources_1/new/fifo.v,,edge_taker,,,,,,,,
+D:/VivadoProject/COD/Lab2/Lab2_single/Lab2_single.srcs/sources_1/new/fifo.v,1588241829,verilog,,D:/VivadoProject/COD/Lab2/Lab2_single/Lab2_single.srcs/sim_1/new/fifo_tb.v,,fifo,,,,,,,,

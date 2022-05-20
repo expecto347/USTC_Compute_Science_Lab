@@ -1,0 +1,118 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sun Jun 21 13:46:00 2020
+| Host         : DESKTOP-CK1FK5P running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file dbu_control_sets_placed.rpt
+| Design       : dbu
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    40 |
+|    Minimum number of control sets                        |    40 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    26 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    40 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    37 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               4 |            2 |
+| No           | No                    | Yes                    |             160 |           47 |
+| No           | Yes                   | No                     |             240 |          103 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            1039 |          676 |
+| Yes          | Yes                   | No                     |              67 |           19 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+--------------------------------------------------------------------------------------------------------+--------------------------+------------------+----------------+
+|  Clock Signal  |                                              Enable Signal                                             |     Set/Reset Signal     | Slice Load Count | Bel Load Count |
++----------------+--------------------------------------------------------------------------------------------------------+--------------------------+------------------+----------------+
+|  clk_IBUF_BUFG |                                                                                                        |                          |                2 |              4 |
+|  clk_IBUF_BUFG | nixietube/cnt_1000HZ1_carry__2_n_0                                                                     | rst_IBUF                 |                4 |              7 |
+|  clk_IBUF_BUFG | dec_edge_taker/in1_reg[0]_0                                                                            | rst_IBUF                 |                2 |              9 |
+|  clk_IBUF_BUFG | cpu_pipeline/ID_EX/d_reg[164]_0[0]                                                                     | rst_IBUF                 |               19 |             31 |
+|  clk_IBUF_BUFG | cpu_pipeline/MEM_WB/d_reg[69]_20[0]                                                                    | rst_IBUF                 |               29 |             32 |
+|  clk_IBUF_BUFG | cpu_pipeline/MEM_WB/d_reg[69]_8[0]                                                                     | rst_IBUF                 |               22 |             32 |
+|  clk_IBUF_BUFG | cpu_pipeline/MEM_WB/d_reg[69]_23[0]                                                                    | rst_IBUF                 |               18 |             32 |
+|  clk_IBUF_BUFG | cpu_pipeline/MEM_WB/d_reg[69]_28[0]                                                                    | rst_IBUF                 |               14 |             32 |
+|  clk_IBUF_BUFG | cpu_pipeline/MEM_WB/E[0]                                                                               | rst_IBUF                 |               16 |             32 |
+|  clk_IBUF_BUFG | cpu_pipeline/MEM_WB/d_reg[69]_19[0]                                                                    | rst_IBUF                 |               24 |             32 |
+|  clk_IBUF_BUFG | cpu_pipeline/MEM_WB/d_reg[69]_14[0]                                                                    | rst_IBUF                 |               15 |             32 |
+|  clk_IBUF_BUFG | cpu_pipeline/MEM_WB/d_reg[69]_11[0]                                                                    | rst_IBUF                 |               26 |             32 |
+|  clk_IBUF_BUFG | cpu_pipeline/MEM_WB/d_reg[69]_0[0]                                                                     | rst_IBUF                 |               16 |             32 |
+|  clk_IBUF_BUFG | cpu_pipeline/MEM_WB/d_reg[69]_1[0]                                                                     | rst_IBUF                 |               17 |             32 |
+|  clk_IBUF_BUFG | cpu_pipeline/MEM_WB/d_reg[69]_10[0]                                                                    | rst_IBUF                 |               30 |             32 |
+|  clk_IBUF_BUFG | cpu_pipeline/MEM_WB/d_reg[69]_12[0]                                                                    | rst_IBUF                 |               14 |             32 |
+|  clk_IBUF_BUFG | cpu_pipeline/MEM_WB/d_reg[69]_13[0]                                                                    | rst_IBUF                 |               20 |             32 |
+|  clk_IBUF_BUFG | cpu_pipeline/MEM_WB/d_reg[69]_15[0]                                                                    | rst_IBUF                 |               20 |             32 |
+|  clk_IBUF_BUFG | cpu_pipeline/MEM_WB/d_reg[69]_16[0]                                                                    | rst_IBUF                 |               21 |             32 |
+|  clk_IBUF_BUFG | cpu_pipeline/MEM_WB/d_reg[69]_17[0]                                                                    | rst_IBUF                 |               16 |             32 |
+|  clk_IBUF_BUFG | cpu_pipeline/MEM_WB/d_reg[69]_18[0]                                                                    | rst_IBUF                 |               18 |             32 |
+|  clk_IBUF_BUFG | cpu_pipeline/MEM_WB/d_reg[69]_22[0]                                                                    | rst_IBUF                 |               22 |             32 |
+|  clk_IBUF_BUFG | cpu_pipeline/MEM_WB/d_reg[69]_9[0]                                                                     | rst_IBUF                 |               24 |             32 |
+|  clk_IBUF_BUFG | cpu_pipeline/MEM_WB/d_reg[69]_27[0]                                                                    | rst_IBUF                 |               18 |             32 |
+|  clk_IBUF_BUFG | cpu_pipeline/MEM_WB/d_reg[69]_6[0]                                                                     | rst_IBUF                 |               27 |             32 |
+|  clk_IBUF_BUFG | cpu_pipeline/MEM_WB/d_reg[69]_26[0]                                                                    | rst_IBUF                 |               23 |             32 |
+|  clk_IBUF_BUFG | cpu_pipeline/MEM_WB/d_reg[69]_2[0]                                                                     | rst_IBUF                 |               15 |             32 |
+|  clk_IBUF_BUFG | cpu_pipeline/MEM_WB/d_reg[69]_21[0]                                                                    | rst_IBUF                 |               27 |             32 |
+|  clk_IBUF_BUFG | cpu_pipeline/MEM_WB/d_reg[69]_25[0]                                                                    | rst_IBUF                 |               17 |             32 |
+|  clk_IBUF_BUFG | cpu_pipeline/MEM_WB/d_reg[69]_3[0]                                                                     | rst_IBUF                 |               18 |             32 |
+|  clk_IBUF_BUFG | cpu_pipeline/MEM_WB/d_reg[69]_24[0]                                                                    | rst_IBUF                 |               20 |             32 |
+|  clk_IBUF_BUFG | cpu_pipeline/MEM_WB/d_reg[69]_7[0]                                                                     | rst_IBUF                 |               29 |             32 |
+|  clk_IBUF_BUFG | cpu_pipeline/MEM_WB/d_reg[69]_29[0]                                                                    | rst_IBUF                 |               27 |             32 |
+|  clk_IBUF_BUFG | cpu_pipeline/MEM_WB/d_reg[69]_4[0]                                                                     | rst_IBUF                 |               25 |             32 |
+|  clk_IBUF_BUFG | cpu_pipeline/MEM_WB/d_reg[69]_5[0]                                                                     | rst_IBUF                 |               23 |             32 |
+|  clk_IBUF_BUFG | cpu_pipeline/ID_EX/E[0]                                                                                | cpu_pipeline/ID_EX/SR[0] |               19 |             67 |
+|  clk_IBUF_BUFG |                                                                                                        | cpu_pipeline/ID_EX/rst0  |               45 |             97 |
+|  clk_IBUF_BUFG | cpu_pipeline/data_mem/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_0_127_0_0_i_1_n_0   |                          |               32 |            128 |
+|  clk_IBUF_BUFG | cpu_pipeline/data_mem/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_128_255_0_0_i_1_n_0 |                          |               32 |            128 |
+|  clk_IBUF_BUFG |                                                                                                        | rst_IBUF                 |              105 |            303 |
++----------------+--------------------------------------------------------------------------------------------------------+--------------------------+------------------+----------------+
+
+

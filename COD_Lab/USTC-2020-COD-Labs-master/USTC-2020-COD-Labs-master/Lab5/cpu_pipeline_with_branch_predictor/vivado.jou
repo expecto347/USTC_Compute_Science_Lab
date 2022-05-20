@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Feb 25 00:40:55 2021
+# Process ID: 20792
+# Current directory: F:/Data/USTC-CS-Resources/CS/Computer-Organization-and-Design/USTC-2020-COD-Labs/Lab5/cpu_pipeline_with_branch_predictor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18340 F:\Data\USTC-CS-Resources\CS\Computer-Organization-and-Design\USTC-2020-COD-Labs\Lab5\cpu_pipeline_with_branch_predictor\cpu_pipeline_with_branch_predictor.xpr
+# Log file: F:/Data/USTC-CS-Resources/CS/Computer-Organization-and-Design/USTC-2020-COD-Labs/Lab5/cpu_pipeline_with_branch_predictor/vivado.log
+# Journal file: F:/Data/USTC-CS-Resources/CS/Computer-Organization-and-Design/USTC-2020-COD-Labs/Lab5/cpu_pipeline_with_branch_predictor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Data/USTC-CS-Resources/CS/Computer-Organization-and-Design/USTC-2020-COD-Labs/Lab5/cpu_pipeline_with_branch_predictor/cpu_pipeline_with_branch_predictor.xpr
+update_compile_order -fileset sources_1

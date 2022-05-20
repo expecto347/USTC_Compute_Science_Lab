@@ -1,0 +1,17 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_more/Multicycle_CPU_more.sim/sim_1/impl/func/xsim/dbu_tb_func_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-311] analyzing module cpu_multicycle
+INFO: [VRFC 10-311] analyzing module dbu
+INFO: [VRFC 10-311] analyzing module dist_mem_256x32
+INFO: [VRFC 10-311] analyzing module edge_taker
+INFO: [VRFC 10-311] analyzing module edge_taker_0
+INFO: [VRFC 10-311] analyzing module edge_taker_1
+INFO: [VRFC 10-311] analyzing module nixietube
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-311] analyzing module dist_mem_256x32_dist_mem_gen_v8_0_13
+INFO: [VRFC 10-311] analyzing module dist_mem_256x32_dist_mem_gen_v8_0_13_synth
+INFO: [VRFC 10-311] analyzing module dist_mem_256x32_dpram
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_more/Multicycle_CPU_more.srcs/sim_1/new/dbu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dbu_tb

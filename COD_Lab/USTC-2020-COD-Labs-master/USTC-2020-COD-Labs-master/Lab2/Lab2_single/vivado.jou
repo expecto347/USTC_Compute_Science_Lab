@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Apr  6 23:27:48 2022
+# Process ID: 11020
+# Current directory: C:/Users/expecto/Desktop/Lab/COD_Lab/USTC-2020-COD-Labs-master/USTC-2020-COD-Labs-master/Lab2/Lab2_single
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent832 C:\Users\expecto\Desktop\Lab\COD_Lab\USTC-2020-COD-Labs-master\USTC-2020-COD-Labs-master\Lab2\Lab2_single\Lab2_single.xpr
+# Log file: C:/Users/expecto/Desktop/Lab/COD_Lab/USTC-2020-COD-Labs-master/USTC-2020-COD-Labs-master/Lab2/Lab2_single/vivado.log
+# Journal file: C:/Users/expecto/Desktop/Lab/COD_Lab/USTC-2020-COD-Labs-master/USTC-2020-COD-Labs-master/Lab2/Lab2_single\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/expecto/Desktop/Lab/COD_Lab/USTC-2020-COD-Labs-master/USTC-2020-COD-Labs-master/Lab2/Lab2_single/Lab2_single.xpr
+update_compile_order -fileset sources_1
+save_project_as project_1 C:/Users/expecto/Desktop/project_1 -force
+convert_ips [get_files  C:/Users/expecto/Desktop/project_1/project_1.srcs/sources_1/ip/blk_mem_gen_16x8/blk_mem_gen_16x8.xci]

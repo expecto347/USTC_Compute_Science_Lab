@@ -1,0 +1,43 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 54ffa8bfc07d4a7dad421e3c24a0a0a9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot dbu_tb_func_synth xil_defaultlib.dbu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.ALU
+Compiling module unisims_ver.FDCE_default
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.FDPE_default
+Compiling module xil_defaultlib.control_unit
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.RAM128X1D
+Compiling module xil_defaultlib.dist_mem_512x32__dpram
+Compiling module xil_defaultlib.dist_mem_512x32__dist_mem_gen_v8...
+Compiling module xil_defaultlib.dist_mem_512x32__dist_mem_gen_v8...
+Compiling module xil_defaultlib.dist_mem_512x32
+Compiling module unisims_ver.MUXF7
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.cpu_multicycle
+Compiling module xil_defaultlib.edge_taker
+Compiling module xil_defaultlib.edge_taker_0
+Compiling module xil_defaultlib.edge_taker_1
+Compiling module xil_defaultlib.dbu
+Compiling module xil_defaultlib.cpu_top
+Compiling module xil_defaultlib.dbu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dbu_tb_func_synth

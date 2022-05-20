@@ -1,0 +1,52 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto cddfca8622214ec2a777651aea810133 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot dbu_tb_TA_func_synth xil_defaultlib.dbu_tb_TA xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDCE_default
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.CARRY4
+Compiling module xil_defaultlib.ALU
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.LUT4
+Compiling module xil_defaultlib.dist_instruction_memory_256x32_r...
+Compiling module xil_defaultlib.dist_instruction_memory_256x32_d...
+Compiling module xil_defaultlib.dist_instruction_memory_256x32_d...
+Compiling module xil_defaultlib.dist_instruction_memory_256x32
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.RAM128X1D
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module xil_defaultlib.dist_memory_256x32_dpram
+Compiling module xil_defaultlib.dist_memory_256x32_dist_mem_gen_...
+Compiling module xil_defaultlib.dist_memory_256x32_dist_mem_gen_...
+Compiling module xil_defaultlib.dist_memory_256x32
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.MUXF7
+Compiling module unisims_ver.MUXF8
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.cpu_one_circle
+Compiling module xil_defaultlib.edge_taker
+Compiling module xil_defaultlib.edge_taker_0
+Compiling module unisims_ver.FDPE(INIT=1'b0)
+Compiling module unisims_ver.latchsre_ldce
+Compiling module unisims_ver.LDCE
+Compiling module unisims_ver.FDPE_default
+Compiling module xil_defaultlib.nixietube
+Compiling module xil_defaultlib.edge_taker_1
+Compiling module xil_defaultlib.dbu
+Compiling module xil_defaultlib.dbu_tb_TA
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dbu_tb_TA_func_synth

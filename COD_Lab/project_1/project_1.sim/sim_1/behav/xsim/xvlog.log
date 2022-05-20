@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/project_1/project_1.srcs/sources_1/new/edge_taker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_taker
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/project_1/project_1.srcs/sources_1/new/fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/project_1/project_1.srcs/sources_1/new/ram_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/project_1/project_1.srcs/sources_1/new/sdu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sdu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/project_1/project_1.srcs/sim_1/new/fifo_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_tb

@@ -1,0 +1,20 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab3/Single_Cycle_CPU/Single_Cycle_CPU.sim/sim_1/synth/func/xsim/dbu_tb_TA_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module cpu_one_circle
+INFO: [VRFC 10-311] analyzing module dbu
+INFO: [VRFC 10-311] analyzing module dist_instruction_memory_256x32
+INFO: [VRFC 10-311] analyzing module dist_memory_256x32
+INFO: [VRFC 10-311] analyzing module edge_taker
+INFO: [VRFC 10-311] analyzing module edge_taker_0
+INFO: [VRFC 10-311] analyzing module edge_taker_1
+INFO: [VRFC 10-311] analyzing module nixietube
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-311] analyzing module dist_instruction_memory_256x32_dist_mem_gen_v8_0_13
+INFO: [VRFC 10-311] analyzing module dist_instruction_memory_256x32_dist_mem_gen_v8_0_13_synth
+INFO: [VRFC 10-311] analyzing module dist_instruction_memory_256x32_rom
+INFO: [VRFC 10-311] analyzing module dist_memory_256x32_dist_mem_gen_v8_0_13
+INFO: [VRFC 10-311] analyzing module dist_memory_256x32_dist_mem_gen_v8_0_13_synth
+INFO: [VRFC 10-311] analyzing module dist_memory_256x32_dpram
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab3/Single_Cycle_CPU/Single_Cycle_CPU.srcs/sim_1/new/dbu_tb_TA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dbu_tb_TA

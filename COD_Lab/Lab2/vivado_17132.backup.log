@@ -1,0 +1,1699 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Apr  7 16:29:03 2022
+# Process ID: 17132
+# Current directory: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5640 C:\Users\expecto\Desktop\Lab\COD_Lab\Lab2\Lab2.xpr
+# Log file: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/vivado.log
+# Journal file: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_taker
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_tb
+ERROR: [VRFC 10-4982] syntax error near ''' [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v:75]
+WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v:47]
+ERROR: [VRFC 10-2865] module 'fifo_tb' ignored due to previous errors [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_taker
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.edge_taker
+Compiling module xil_defaultlib.ram_8
+Compiling module xil_defaultlib.fifo
+Compiling module xil_defaultlib.fifo_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot fifo_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fifo_tb_behav -key {Behavioral:sim_1:Functional:fifo_tb} -tclbatch {fifo_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source fifo_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 848.363 ; gain = 23.223
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/fifo_tb/inst/inst_3}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 872.684 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_taker
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_tb
+ERROR: [VRFC 10-4982] syntax error near '+' [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v:50]
+ERROR: [VRFC 10-2865] module 'fifo_tb' ignored due to previous errors [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_taker
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_tb
+ERROR: [VRFC 10-4982] syntax error near '+' [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v:50]
+ERROR: [VRFC 10-2865] module 'fifo_tb' ignored due to previous errors [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_taker
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.edge_taker
+Compiling module xil_defaultlib.ram_8
+Compiling module xil_defaultlib.fifo
+Compiling module xil_defaultlib.fifo_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot fifo_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fifo_tb_behav -key {Behavioral:sim_1:Functional:fifo_tb} -tclbatch {fifo_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source fifo_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/fifo_tb/inst/inst_3/regfile}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 921.035 ; gain = 0.000
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/fifo_tb/inst/inst_1/p}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 921.035 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_taker
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.edge_taker
+Compiling module xil_defaultlib.ram_8
+Compiling module xil_defaultlib.fifo
+Compiling module xil_defaultlib.fifo_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot fifo_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fifo_tb_behav -key {Behavioral:sim_1:Functional:fifo_tb} -tclbatch {fifo_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source fifo_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 921.035 ; gain = 0.000
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/fifo_tb/inst/inst_3/regfile}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 921.035 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 921.035 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1039.012 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1039.012 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1239.219 ; gain = 10.324
+run all
+run: Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 1239.219 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1239.219 ; gain = 0.000
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fifo_tb_behav -key {Behavioral:sim_1:Functional:fifo_tb} -tclbatch {fifo_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source fifo_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run 10 us
+current_wave_config {Untitled 4}
+Untitled 4
+add_wave {{/fifo_tb/inst/inst_3/regfile}} 
+run all
+run: Time (s): cpu = 00:00:48 ; elapsed = 00:00:37 . Memory (MB): peak = 1571.934 ; gain = 311.324
+run 10 us
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1576.480 ; gain = 0.000
+step
+Stopped at time : 1005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" Line 46
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_taker
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.edge_taker
+Compiling module xil_defaultlib.ram_8
+Compiling module xil_defaultlib.fifo
+Compiling module xil_defaultlib.fifo_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot fifo_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fifo_tb_behav -key {Behavioral:sim_1:Functional:fifo_tb} -tclbatch {fifo_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source fifo_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1576.480 ; gain = 0.000
+run 10 us
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/fifo_tb/inst/inst_3/regfile}} 
+run 10 us
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1576.480 ; gain = 0.000
+run 10 us
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/fifo_tb/inst/rst_1}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1576.480 ; gain = 0.000
+run 10 us
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/fifo_tb/inst/inst_2/p}} 
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/fifo_tb/inst/inst_1/p}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1576.480 ; gain = 0.000
+run 10 us
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/fifo_tb/inst/head_ptr}} 
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/fifo_tb/inst/tail_ptr}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_taker
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_tb
+ERROR: [VRFC 10-2989] 'dnq' is not declared [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v:64]
+ERROR: [VRFC 10-2865] module 'fifo_tb' ignored due to previous errors [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_taker
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.edge_taker
+Compiling module xil_defaultlib.ram_8
+Compiling module xil_defaultlib.fifo
+Compiling module xil_defaultlib.fifo_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot fifo_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1576.480 ; gain = 0.000
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_taker
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.edge_taker
+Compiling module xil_defaultlib.ram_8
+Compiling module xil_defaultlib.fifo
+Compiling module xil_defaultlib.fifo_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot fifo_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fifo_tb_behav -key {Behavioral:sim_1:Functional:fifo_tb} -tclbatch {fifo_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source fifo_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1576.480 ; gain = 0.000
+run 10 us
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/fifo_tb/inst/inst_3/regfile}} 
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/fifo_tb/inst/rst_2}} 
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/fifo_tb/inst/mem_r0}} 
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/fifo_tb/inst/head_ptr}} 
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/fifo_tb/inst/addr_r0}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1576.480 ; gain = 0.000
+run 10 us
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1576.480 ; gain = 0.000
+run 10 us
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.runs/synth_1
+
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1576.480 ; gain = 0.000
+run 10 us
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_taker
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.edge_taker
+Compiling module xil_defaultlib.ram_8
+Compiling module xil_defaultlib.fifo
+Compiling module xil_defaultlib.fifo_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot fifo_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1576.480 ; gain = 0.000
+run 10 us
+run 10 us
+run 10 us
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_taker
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.edge_taker
+Compiling module xil_defaultlib.ram_8
+Compiling module xil_defaultlib.fifo
+Compiling module xil_defaultlib.fifo_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot fifo_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1576.480 ; gain = 0.000
+run 10 us
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_taker
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.edge_taker
+Compiling module xil_defaultlib.ram_8
+Compiling module xil_defaultlib.fifo
+Compiling module xil_defaultlib.fifo_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot fifo_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1576.480 ; gain = 0.000
+run 10 us
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" Line 46
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" Line 46
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 39
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 37
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 43
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 41
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 47
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 45
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 39
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 37
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 43
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 41
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 47
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 45
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" Line 39
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" Line 39
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" Line 37
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" Line 68
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" Line 84
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" Line 85
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" Line 86
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" Line 66
+step
+Stopped at time : 11010 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" Line 46
+step
+Stopped at time : 11010 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" Line 46
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" Line 46
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" Line 46
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 39
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 37
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 43
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 41
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 47
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 45
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 39
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 37
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 43
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 41
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 47
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/fifo_tb/inst/inst_2/p}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1576.480 ; gain = 0.000
+run 10 us
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" Line 46
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" Line 46
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 39
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 37
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 43
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 41
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 47
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 45
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 39
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 37
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 43
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 41
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 47
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 45
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" Line 39
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" Line 39
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" Line 37
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" Line 68
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" Line 84
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" Line 85
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" Line 86
+step
+Stopped at time : 11005 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" Line 66
+step
+Stopped at time : 11010 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" Line 46
+step
+Stopped at time : 11010 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" Line 46
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" Line 46
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" Line 46
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 39
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 37
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 43
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 41
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 47
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 45
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 39
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 37
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 43
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 41
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 47
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 45
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" Line 39
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" Line 39
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" Line 37
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" Line 68
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" Line 84
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" Line 85
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" Line 86
+step
+Stopped at time : 11015 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" Line 66
+step
+Stopped at time : 11020 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" Line 46
+step
+Stopped at time : 11020 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" Line 46
+step
+Stopped at time : 11025 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" Line 46
+step
+Stopped at time : 11025 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" Line 46
+step
+Stopped at time : 11025 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 39
+step
+Stopped at time : 11025 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 37
+step
+Stopped at time : 11025 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 43
+step
+Stopped at time : 11025 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 41
+step
+Stopped at time : 11025 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 47
+step
+Stopped at time : 11025 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 45
+step
+Stopped at time : 11025 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 39
+step
+Stopped at time : 11025 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 37
+step
+Stopped at time : 11025 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 43
+step
+Stopped at time : 11025 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 41
+step
+Stopped at time : 11025 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 47
+step
+Stopped at time : 11025 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 45
+step
+Stopped at time : 11025 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" Line 39
+step
+Stopped at time : 11025 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" Line 39
+step
+Stopped at time : 11025 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" Line 37
+step
+Stopped at time : 11025 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" Line 68
+step
+Stopped at time : 11025 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" Line 84
+step
+Stopped at time : 11025 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" Line 85
+step
+Stopped at time : 11025 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" Line 86
+step
+Stopped at time : 11025 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" Line 66
+step
+Stopped at time : 11030 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" Line 46
+step
+Stopped at time : 11030 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" Line 46
+step
+Stopped at time : 11035 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" Line 46
+step
+Stopped at time : 11035 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" Line 46
+step
+Stopped at time : 11035 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 39
+step
+Stopped at time : 11035 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 37
+step
+Stopped at time : 11035 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 43
+step
+Stopped at time : 11035 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 41
+step
+Stopped at time : 11035 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 47
+step
+Stopped at time : 11035 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 45
+step
+Stopped at time : 11035 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 39
+step
+Stopped at time : 11035 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 37
+step
+Stopped at time : 11035 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 43
+step
+Stopped at time : 11035 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 41
+step
+Stopped at time : 11035 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 47
+step
+Stopped at time : 11035 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 45
+step
+Stopped at time : 11035 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" Line 39
+step
+Stopped at time : 11035 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" Line 39
+step
+Stopped at time : 11035 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" Line 37
+step
+Stopped at time : 11035 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" Line 68
+step
+Stopped at time : 11035 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" Line 84
+step
+Stopped at time : 11035 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" Line 85
+step
+Stopped at time : 11035 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" Line 86
+step
+Stopped at time : 11035 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" Line 66
+step
+Stopped at time : 11040 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" Line 46
+step
+Stopped at time : 11040 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" Line 46
+step
+Stopped at time : 11045 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" Line 46
+step
+Stopped at time : 11045 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" Line 46
+step
+Stopped at time : 11045 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 39
+step
+Stopped at time : 11045 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 37
+step
+Stopped at time : 11045 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 43
+add_bp {C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v} 43
+remove_bps -file {C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v} -line 43
+step
+Stopped at time : 11045 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 41
+step
+Stopped at time : 11045 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 47
+step
+Stopped at time : 11045 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 45
+step
+Stopped at time : 11045 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 39
+step
+Stopped at time : 11045 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 37
+step
+Stopped at time : 11045 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 43
+step
+Stopped at time : 11045 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 41
+step
+Stopped at time : 11045 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 47
+step
+Stopped at time : 11045 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" Line 45
+step
+Stopped at time : 11045 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" Line 39
+step
+Stopped at time : 11045 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" Line 39
+step
+Stopped at time : 11045 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" Line 37
+step
+Stopped at time : 11045 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" Line 68
+step
+Stopped at time : 11045 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" Line 84
+step
+Stopped at time : 11045 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" Line 85
+step
+Stopped at time : 11045 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" Line 86
+step
+Stopped at time : 11045 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" Line 66
+step
+Stopped at time : 11050 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" Line 46
+step
+Stopped at time : 11050 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" Line 46
+step
+Stopped at time : 11055 ns : File "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" Line 46
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_taker
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/ram_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sim_1/new/fifo_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4c4e2bd6c8174ba2973e7818ae51224f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_tb_behav xil_defaultlib.fifo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.edge_taker
+Compiling module xil_defaultlib.ram_8
+Compiling module xil_defaultlib.fifo
+Compiling module xil_defaultlib.fifo_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot fifo_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1576.480 ; gain = 0.000
+run 10 us
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_taker
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+ERROR: [VRFC 10-1280] procedural assignment to a non-register out is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v:65]
+ERROR: [VRFC 10-2865] module 'fifo' ignored due to previous errors [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_taker
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+ERROR: [VRFC 10-1280] procedural assignment to a non-register out is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v:65]
+ERROR: [VRFC 10-2865] module 'fifo' ignored due to previous errors [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_taker
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+ERROR: [VRFC 10-1280] procedural assignment to a non-register out is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v:65]
+ERROR: [VRFC 10-2865] module 'fifo' ignored due to previous errors [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/coe.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/dist_mem_gen_0.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/edge_taker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_taker
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+ERROR: [VRFC 10-1280] procedural assignment to a non-register out is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v:65]
+ERROR: [VRFC 10-2865] module 'fifo' ignored due to previous errors [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.srcs/sources_1/new/fifo.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab2/Lab2.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  7 17:39:25 2022...

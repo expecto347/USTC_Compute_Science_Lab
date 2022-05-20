@@ -1,0 +1,8 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+WARNING: "E:\Xilinx\Vivado\2019.2\data/verilog/src/unisims/FDCE.v" Line 160: Timing violation in scope /sort_tb/SORT/register1/r_reg[0]/TChk160_123 at time 160286 ps $recrem (negedge CLR,posedge C,(0:0:0),(0:0:0),notifier,rst_clk_enable_p,rst_clk_enable_p,CLR_dly,C_dly) 
+WARNING: "E:\Xilinx\Vivado\2019.2\data/verilog/src/unisims/FDCE.v" Line 162: Timing violation in scope /sort_tb/SORT/register2/r_reg[0]/TChk162_125 at time 169987 ps $recrem (posedge CLR,posedge C,(0:0:0),(0:0:0),notifier,rst_clk_enable_p,rst_clk_enable_p,CLR_dly,C_dly) 
+WARNING: "E:\Xilinx\Vivado\2019.2\data/verilog/src/unisims/FDCE.v" Line 160: Timing violation in scope /sort_tb/SORT/register2/r_reg[0]/TChk160_123 at time 170127 ps $recrem (negedge CLR,posedge C,(0:0:0),(0:0:0),notifier,rst_clk_enable_p,rst_clk_enable_p,CLR_dly,C_dly) 
+WARNING: "E:\Xilinx\Vivado\2019.2\data/verilog/src/unisims/FDCE.v" Line 160: Timing violation in scope /sort_tb/SORT/register2/r_reg[0]/TChk160_123 at time 189987 ps $recrem (negedge CLR,posedge C,(0:0:0),(0:0:0),notifier,rst_clk_enable_p,rst_clk_enable_p,CLR_dly,C_dly) 
+WARNING: "E:\Xilinx\Vivado\2019.2\data/verilog/src/unisims/FDCE.v" Line 160: Timing violation in scope /sort_tb/SORT/register0/r_reg[0]/TChk160_123 at time 191795 ps $recrem (negedge CLR,posedge C,(0:0:0),(0:0:0),notifier,rst_clk_enable_p,rst_clk_enable_p,CLR_dly,C_dly) 
+$finish called at time : 200 ns : File "D:/VivadoProject/COD/Lab1/ALU_sort/ALU_sort.srcs/sim_1/imports/new/lab1_sort_tb.v" Line 19

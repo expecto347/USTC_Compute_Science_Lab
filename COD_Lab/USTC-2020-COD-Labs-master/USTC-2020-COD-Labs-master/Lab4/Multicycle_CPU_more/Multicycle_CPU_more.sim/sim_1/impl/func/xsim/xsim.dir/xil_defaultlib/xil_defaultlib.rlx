@@ -1,0 +1,6 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+D:/VivadoProject/COD/Lab4/Multicycle_CPU_more/Multicycle_CPU_more.sim/sim_1/impl/func/xsim/dbu_tb_func_impl.v,1590581082,verilog,,D:/VivadoProject/COD/Lab4/Multicycle_CPU_more/Multicycle_CPU_more.srcs/sim_1/new/dbu_tb.v,,ALU;control_unit;cpu_multicycle;dbu;dist_mem_256x32;dist_mem_256x32_dist_mem_gen_v8_0_13;dist_mem_256x32_dist_mem_gen_v8_0_13_synth;dist_mem_256x32_dpram;edge_taker;edge_taker_0;edge_taker_1;glbl;nixietube;register_file,,,,,,,,
+D:/VivadoProject/COD/Lab4/Multicycle_CPU_more/Multicycle_CPU_more.srcs/sim_1/new/dbu_tb.v,1590580073,verilog,,,,dbu_tb,,,,,,,,

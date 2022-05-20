@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu May  5 23:01:48 2022
+# Process ID: 9044
+# Current directory: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10972 C:\Users\expecto\Desktop\Lab\COD_Lab\Lab4\one_circle_CPU\one_circle_CPU.xpr
+# Log file: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/vivado.log
+# Journal file: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source TOP_sim.tcl
+current_wave_config {Untitled 1}
+add_wave {{/TOP_sim/top/cpu/pc/curPC}} 
+current_wave_config {Untitled 1}
+add_wave {{/TOP_sim/top/cpu/register_file/registers}} 
+current_wave_config {Untitled 1}
+add_wave {{/TOP_sim/top/cpu/datamem/ram}} 
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+run 10 us
+close_sim

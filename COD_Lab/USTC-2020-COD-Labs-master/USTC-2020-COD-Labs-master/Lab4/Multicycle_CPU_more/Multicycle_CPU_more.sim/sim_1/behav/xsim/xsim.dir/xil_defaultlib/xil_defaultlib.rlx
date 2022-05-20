@@ -1,0 +1,15 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+D:/VivadoProject/COD/Lab4/Multicycle_CPU_more/Multicycle_CPU_more.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+D:/VivadoProject/COD/Lab4/Multicycle_CPU_more/Multicycle_CPU_more.srcs/sim_1/new/dbu_tb.v,1589599748,verilog,,,,dbu_tb,,,,,,,,
+D:/VivadoProject/COD/Lab4/Multicycle_CPU_more/Multicycle_CPU_more.srcs/sources_1/imports/new/ALU.v,1588933613,verilog,,D:/VivadoProject/COD/Lab4/Multicycle_CPU_more/Multicycle_CPU_more.srcs/sources_1/new/alu_control.v,,ALU,,,,,,,,
+D:/VivadoProject/COD/Lab4/Multicycle_CPU_more/Multicycle_CPU_more.srcs/sources_1/imports/new/control_unit.v,1590128545,verilog,,D:/VivadoProject/COD/Lab4/Multicycle_CPU_more/Multicycle_CPU_more.srcs/sources_1/new/cpu_multicycle.v,,control_unit,,,,,,,,
+D:/VivadoProject/COD/Lab4/Multicycle_CPU_more/Multicycle_CPU_more.srcs/sources_1/imports/new/dbu.v,1589598998,verilog,,D:/VivadoProject/COD/Lab4/Multicycle_CPU_more/Multicycle_CPU_more.srcs/sources_1/imports/new/edge_taker.v,,dbu,,,,,,,,
+D:/VivadoProject/COD/Lab4/Multicycle_CPU_more/Multicycle_CPU_more.srcs/sources_1/imports/new/edge_taker.v,1588574143,verilog,,D:/VivadoProject/COD/Lab4/Multicycle_CPU_more/Multicycle_CPU_more.srcs/sources_1/imports/new/nixietube.v,,edge_taker,,,,,,,,
+D:/VivadoProject/COD/Lab4/Multicycle_CPU_more/Multicycle_CPU_more.srcs/sources_1/imports/new/nixietube.v,1588922107,verilog,,D:/VivadoProject/COD/Lab4/Multicycle_CPU_more/Multicycle_CPU_more.srcs/sources_1/imports/new/register_file.v,,nixietube,,,,,,,,
+D:/VivadoProject/COD/Lab4/Multicycle_CPU_more/Multicycle_CPU_more.srcs/sources_1/imports/new/register_file.v,1588908942,verilog,,D:/VivadoProject/COD/Lab4/Multicycle_CPU_more/Multicycle_CPU_more.srcs/sim_1/new/dbu_tb.v,,register_file,,,,,,,,
+D:/VivadoProject/COD/Lab4/Multicycle_CPU_more/Multicycle_CPU_more.srcs/sources_1/ip/dist_mem_256x32/sim/dist_mem_256x32.v,1589962005,verilog,,D:/VivadoProject/COD/Lab4/Multicycle_CPU_more/Multicycle_CPU_more.srcs/sources_1/imports/new/ALU.v,,dist_mem_256x32,,,,,,,,
+D:/VivadoProject/COD/Lab4/Multicycle_CPU_more/Multicycle_CPU_more.srcs/sources_1/new/alu_control.v,1589962134,verilog,,D:/VivadoProject/COD/Lab4/Multicycle_CPU_more/Multicycle_CPU_more.srcs/sources_1/imports/new/control_unit.v,,alu_control,,,,,,,,
+D:/VivadoProject/COD/Lab4/Multicycle_CPU_more/Multicycle_CPU_more.srcs/sources_1/new/cpu_multicycle.v,1589598865,verilog,,D:/VivadoProject/COD/Lab4/Multicycle_CPU_more/Multicycle_CPU_more.srcs/sources_1/imports/new/dbu.v,,cpu_multicycle,,,,,,,,

@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"dbu_tb_func_impl.v" \
+"../../../../../Multicycle_CPU_more.srcs/sim_1/new/dbu_tb.v" \
+
+# Do not sort compile order
+nosort
