@@ -1,4 +1,3 @@
 {
-    "makefile.extensionOutputFolder": "./.vscode",
-    "C_Cpp.errorSquiggles": "Disabled"
+    "makefile.extensionOutputFolder": "./.vscode"
 }

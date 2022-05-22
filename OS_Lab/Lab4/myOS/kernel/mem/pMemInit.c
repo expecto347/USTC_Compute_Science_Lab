@@ -23,22 +23,40 @@ void memTest(unsigned long start, unsigned long grainSize){
 		unsigned char *MemPointer = (unsigned char*)start; //定义初始指针地址
 		unsigned char a,b; //存储读出来的两个字节
 		while(1){
-		a = MemPointer[0];
-		b = MemPointer[1]; //存储头两个变量，以防止破坏内存
+			a = *MemPointer;
+			b = *(MemPointer + 1); //存储头两个变量，以防止破坏内存
 
-    	MemPointer[0] = 0xAA;
-		MemPointer[1] = 0x55; //向grain的头两个字节写入0xAA55
+			*MemPointer = 0xAA;
+			*(MemPointer + 1) = 0x55; //向grain的头两个字节写入0xAA55
 
-		if(MemPointer[0] != 0xAA || MemPointer[1] != 0x55){
-			MemPointer[0] = a;
-			MemPointer[1] = b;
-			break;
+			if(*MemPointer != 0xAA || *(MemPointer + 1) != 0x55){
+				*MemPointer = a;
+				*(MemPointer + 1) = b;
+				break;
+			} // 判断是否正常更改
+
+			*MemPointer = a;
+			*(MemPointer + 1) = b; //写回原来的字节
+
+			a = *(MemPointer + grainSize -1);
+			b = *(MemPointer + grainSize -2);
+
+			*(MemPointer + grainSize -1) = 0xAA;
+			*(MemPointer + grainSize -2) = 0x55;
+
+			if(*(MemPointer + grainSize -1) != 0xAA || *(MemPointer + grainSize -2) != 0x55){
+				*(MemPointer + grainSize -1) = a;
+				*(MemPointer + grainSize -2) = b;
+				break;
+			}  // 判断是否正常更改
+
+			*(MemPointer + grainSize -1) = a;
+			*(MemPointer + grainSize -2) = b; //写回原来的字节
+
+			MemPointer = MemPointer + grainSize;
 		}
-		}
+		
 	}
-	//myPrintk(0x7,"MemStart: %x  \n",);
-	//myPrintk(0x7,"MemSize:  %x  \n",);
-	
 }
 
 extern unsigned long _end;
