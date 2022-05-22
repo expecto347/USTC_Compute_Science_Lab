@@ -55,7 +55,7 @@ void memTest(unsigned long start, unsigned long grainSize){
 
 			MemPointer = MemPointer + grainSize;
 		}
-		
+		myPrintk(0x7,"MemSize:  %x  \n", (MemPointer - start -grainSize));
 	}
 }
 
