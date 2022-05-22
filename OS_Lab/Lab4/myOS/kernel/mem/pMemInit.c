@@ -55,7 +55,7 @@ void memTest(unsigned long start, unsigned long grainSize){
 
 			MemPointer = MemPointer + grainSize;
 		}
-		pMemSize = MemPointer - start; //总共可用的内存大小
+		pMemSize = (unsigned long)MemPointer - start; //总共可用的内存大小
 		myPrintk(0x7,"MemSize:  %x  \n", pMemSize);
 	}
 }

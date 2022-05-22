@@ -117,7 +117,7 @@ unsigned long eFPartitionAlloc(unsigned long EFPHandler){
 	} //使得eeb指向有第一个空闲位置的结构体指针，并且判断他是否是零，如果是零即没有空闲位置了，那么返回NULL；
 	else{
 		eFPartition1->firstFree = eeb->next_start;
-		return eeb + 0x4;
+		return (unsigned long)eeb + 0x4;
 	}//否则返回可用的内存地址
 }
 
