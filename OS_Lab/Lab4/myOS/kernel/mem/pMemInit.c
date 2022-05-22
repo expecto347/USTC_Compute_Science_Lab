@@ -12,8 +12,32 @@ void memTest(unsigned long start, unsigned long grainSize){
 	1、开始的地址要大于1M，需要做一个if判断。
 	2、grainsize不能太小，也要做一个if判断
 	*/
-	myPrintk(0x7,"MemStart: %x  \n",？？？？);
-	myPrintk(0x7,"MemSize:  %x  \n",？？？？？);
+	if (start < 0x100000){
+		myPrintk(0x7,"The starting address must not be less than 1M, Please enter a valid address and try it again.");
+	}
+	else if (grainSize < 0x4){
+		myPrintk(0x7,"The grainSize must not be smaller than 4 bytes, Plase enter a valid grainSize and try it again.");
+	}
+	else{
+		myPrintk(0x7,"MemStart: %x  \n", start);
+		unsigned char *MemPointer = (unsigned char*)start; //定义初始指针地址
+		unsigned char a,b; //存储读出来的两个字节
+		while(1){
+		a = MemPointer[0];
+		b = MemPointer[1]; //存储头两个变量，以防止破坏内存
+
+    	MemPointer[0] = 0xAA;
+		MemPointer[1] = 0x55; //向grain的头两个字节写入0xAA55
+
+		if(MemPointer[0] != 0xAA || MemPointer[1] != 0x55){
+			MemPointer[0] = a;
+			MemPointer[1] = b;
+			break;
+		}
+		}
+	}
+	//myPrintk(0x7,"MemStart: %x  \n",);
+	//myPrintk(0x7,"MemSize:  %x  \n",);
 	
 }
 
