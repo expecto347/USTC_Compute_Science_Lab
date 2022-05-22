@@ -19,7 +19,7 @@ void memTest(unsigned long start, unsigned long grainSize){
 		myPrintk(0x7,"The grainSize must not be smaller than 4 bytes, Plase enter a valid grainSize and try it again.");
 	}
 	else{
-		myPrintk(0x7,"MemStart: %x  \n", start);
+		myPrintk(0x7,"MemStart:  %x  \n", start);
 		unsigned char *MemPointer = (unsigned char*)start; //定义初始指针地址
 		unsigned char a,b; //存储读出来的两个字节
 		while(1){
@@ -55,7 +55,8 @@ void memTest(unsigned long start, unsigned long grainSize){
 
 			MemPointer = MemPointer + grainSize;
 		}
-		myPrintk(0x7,"MemSize:  %x  \n", (MemPointer - start -grainSize));
+		pMemSize = MemPointer - start; //总共可用的内存大小
+		myPrintk(0x7,"MemSize:  %x  \n", pMemSize);
 	}
 }
 
