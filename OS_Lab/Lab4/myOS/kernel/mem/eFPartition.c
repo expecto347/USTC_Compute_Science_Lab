@@ -1,6 +1,6 @@
 #include "../../include/myPrintk.h"
 // 一个EEB表示一个空闲可用的Block
-#define NULL (void*)0
+#define NULL 0
 typedef struct EEB {
 	unsigned long next_start;
 }EEB;	//占4个字节
@@ -29,7 +29,7 @@ void eFPartitionWalkByAddr(unsigned long EFPHandler){
 	1、打印eFPartiiton结构体的信息，可以调用上面的showeFPartition函数。
 	2、遍历每一个EEB，打印出他们的地址以及下一个EEB的地址（可以调用上面的函数showEEB）
 	*/
-	EEB *EEB_pointer = (EEB *)(EFPHandler + 0xc); 
+	EEB *EEB_pointer = (EEB *)((eFPartition *)EFPHandler)->firstFree; 
 
 	showeFPartition((eFPartition *)EFPHandler); //打印eFPartiiton结构体的信息
 
@@ -92,11 +92,13 @@ unsigned long eFPartitionInit(unsigned long start, unsigned long perSize, unsign
 
 	EEB *EEB_pointer = (EEB *)new_eFPartition->firstFree; //指针指向第一个可用的EEB模块
 
-	for(int i = n; i-- ;i != 1){
+	while(n > 1){
 		EEB_pointer->next_start = (unsigned long)EEB_pointer + Actual_PerSize + EEB_size;
 		EEB_pointer = (EEB *)EEB_pointer->next_start;
+		n--;
 	}
-	EEB_pointer->next_start = NULL; //完成EEB模块的初始化，使得初始时候每个模块都是可用的模块，并且指向正确的位置；
+	EEB_pointer->next_start = (unsigned long)NULL; //完成EEB模块的初始化，使得初始时候每个模块都是可用的模块，并且指向正确的位置；
+	
 	return (unsigned long)new_eFPartition;
 }
 
@@ -138,4 +140,6 @@ unsigned long eFPartitionFree(unsigned long EFPHandler,unsigned long mbStart){
 	eFPartition2->firstFree = (unsigned long)eeb; //将eeb指向第一个firstfree上，并且将firstfree更新为这个刚释放的EEB上面，即将这块内存放在了链表的开头
 
 	return EFPHandler; //不知道返回啥，感觉没啥好返回的，随便瞎鸡儿返回一个开头句柄；
+
+	//To do: 判断一下是否可以release，即判断一下是否正常分配出去了
 }
