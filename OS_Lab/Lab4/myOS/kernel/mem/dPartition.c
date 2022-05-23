@@ -78,23 +78,68 @@ void dPartitionWalkByAddr(unsigned long dp){
 **/
 
 unsigned long dPartitionAllocFirstFit(unsigned long dp, unsigned long size){
-	//本函数需要实现！！！
 	/*功能：分配一个空间
 	1.使用firstfit的算法分配空间，当然也可以使用其他fit，不限制。
 	2.成功分配返回首地址，不成功返回0
 	3.从空闲内存块组成的链表中拿出一块供我们来分配空间(如果提供给分配空间的内存块空间大于size，我们还将把剩余部分放回链表中)，并维护相应的空闲链表以及句柄
 	注意的地方：
 		1.EMB类型的数据的存在本身就占用了一定的空间。
-
 	*/
+	EMB *EMB_pointer1 = (EMB *)((dPartition *)dp)->firstFreeStart; 
+	EMB *EMB_pointer2 = (EMB *)((dPartition *)dp)->firstFreeStart;//获取EMB的首地址
+
+	if(EMB_pointer1 == (EMB *)NULL) return (unsigned long)NULL; //已经没有任何的空闲的内存块了
+
+	if(EMB_pointer1->size >= size){
+		if(EMB_pointer1->size > size + EMB_size) {
+			EMB *EMB_pointer3 = (EMB *)(EMB_pointer1 + size + EMB_size);
+
+			EMB_pointer1->size = size;  //更新节点大小，这个方便对内存free的时候知道可以free多少
+			EMB_pointer3->nextStart = EMB_pointer1->nextStart;
+			EMB_pointer3->size = EMB_pointer1->size - size -EMB_size; 
+			((dPartition *)dp)->firstFreeStart = (unsigned long)EMB_pointer3; //更改结构体，更新空闲状态
+
+			return (unsigned long)EMB_pointer1 + EMB_size; //返回可用的内存地址，需要注意应该多加一个EMB块的大小
+		}
+		else{
+			((dPartition *)dp)->firstFreeStart = (unsigned long)(EMB_pointer1->nextStart); 
+			/*如果分配后剩余的内存大小不能够存放一个完整的EMB文件，那么就只能舍弃剩下的这一点内存了，
+			并且不对size进行更新，方便回收的时候将这部分内存回收回去，以免造成浪费*/
+			return (unsigned long)EMB_pointer1 + EMB_size;
+		}
+	}
+
+	EMB_pointer2 = EMB_pointer2->nextStart;
+	while(EMB_pointer2 != (unsigned long)NULL){
+		if(EMB_pointer2->size >= size){
+			if(EMB_pointer2->size > size + EMB_size) {
+				EMB *EMB_pointer3 = (EMB *)(EMB_pointer2 + size + EMB_size);
+
+				EMB_pointer2->size = size;  //更新节点大小，这个方便对内存free的时候知道可以free多少
+				EMB_pointer3->nextStart = EMB_pointer1->nextStart;
+				EMB_pointer3->size = EMB_pointer2->size - size -EMB_size; 
+				EMB_pointer1->nextStart = (unsigned long)EMB_pointer3; //更改结构体，更新空闲状态
+
+				return (unsigned long)EMB_pointer2 + EMB_size; //返回可用的内存地址，需要注意应该多加一个EMB块的大小
+			}
+
+			else{
+				EMB_pointer1->nextStart = (unsigned long)(EMB_pointer2->nextStart); 
+				/*如果分配后剩余的内存大小不能够存放一个完整的EMB文件，那么就只能舍弃剩下的这一点内存了，
+				并且不对size进行更新，方便回收的时候将这部分内存回收回去，以免造成浪费*/
+				return (unsigned long)EMB_pointer2 + EMB_size;
+			}
+		}
+
+		EMB_pointer2 = EMB_pointer2->nextStart;
+		EMB_pointer1 = EMB_pointer1->nextStart; //更新地址
+	}
+
+	return (unsigned long)NULL; //没有可用的空闲内存，返回NULL地址表示分配失败
 
 }
 
-/*
- *r
- */
 unsigned long dPartitionFreeFirstFit(unsigned long dp, unsigned long start){
-	//本函数需要实现！！！
 	/*功能：释放一个空间
 	1.按照对应的fit的算法释放空间
 	2.注意检查要释放的start~end这个范围是否在dp有效分配范围内
@@ -102,7 +147,43 @@ unsigned long dPartitionFreeFirstFit(unsigned long dp, unsigned long start){
 		返回0 error
 	3.需要考虑两个空闲且相邻的内存块的合并
 	*/
-	
+
+	EMB *EMB_pointer1 = (EMB *)((dPartition *)dp)->firstFreeStart;
+	EMB *EMB_pointer2 = (EMB *)((dPartition *)dp)->firstFreeStart;
+	EMB *EMB_pointer3 = (EMB *)(start-EMB_size);
+	dPartition *dp_pointer = (dPartition *)dp;//声明几个结构体指针类型
+
+	if(start < (dp + dPartition_size) || start > (dp + dPartition_size + EMB_size + dp_pointer->size)){
+		return 0;//检查释放的start是否在dp有效分配范围内，因为end是由操作系统记录的，所以只要保证start是正确的即可
+	}
+
+	if(EMB_pointer3 < EMB_pointer1){
+		if((unsigned long)EMB_pointer1 == ((unsigned long)EMB_pointer3 + 0x8 + EMB_pointer3->size)){
+			dp_pointer->firstFreeStart = (unsigned long)EMB_pointer3;
+			EMB_pointer3->nextStart = EMB_pointer1->nextStart;
+			EMB_pointer3->size = EMB_pointer3->size + EMB_size + EMB_pointer1->size; //将空闲区块合并
+			return 1;
+		}
+		else{
+			dp_pointer->firstFreeStart = (unsigned long)EMB_pointer3;
+			EMB_pointer3->nextStart = (unsigned long)EMB_pointer1;
+			return 1;
+		}
+	}
+
+	EMB_pointer2 = EMB_pointer2->nextStart;
+	while(EMB_pointer2 != (EMB *)NULL){
+		if(EMB_pointer3 < EMB_pointer2){
+			if((unsigned long)EMB_pointer2 == ((unsigned long)EMB_pointer3 + 0x8 + EMB_pointer3->size)){
+				dp_pointer->firstFreeStart = (unsigned long)EMB_pointer3;
+				EMB_pointer3->nextStart = EMB_pointer1->nextStart;
+				EMB_pointer3->size = EMB_pointer3->size + EMB_size + EMB_pointer1->size; //将空闲区块合并
+				return 1;
+			}
+		}
+	}
+
+
 }
 
 //wrap: we select firstFit, you can select another one
