@@ -1,4 +1,5 @@
 #include "../../include/myPrintk.h"
+#define NULL 0
 
 
 //dPartition 是整个动态分区内存的数据结构
@@ -30,7 +31,6 @@ void showEMB(struct EMB * emb){
 }
 
 unsigned long dPartitionInit(unsigned long start, unsigned long totalSize){
-	//本函数需要实现！！！
 	/*功能：初始化内存。
 	1.在地址start处，首先是要有dPartition结构体表示整个数据结构(也即句柄)。
 	2.然后，一整块的EMB被分配（以后使用内存会逐渐拆分），在内存中紧紧跟在dP后面，然后dP的firstFreeStart指向EMB。
@@ -38,10 +38,23 @@ unsigned long dPartitionInit(unsigned long start, unsigned long totalSize){
 	注意有两个地方的大小问题：
 		第一个是由于内存肯定要有一个EMB和一个dPartition，totalSize肯定要比这两个加起来大。
 		第二个注意EMB的size属性不是totalsize，因为dPartition和EMB自身都需要要占空间。
-	
 	*/
-	
+	if(totalSize <= dPartition_size + EMB_size){
+		myPrintk(0x7,"totalSize must  more than 16, Please enter a valid totalSize!"); //要求内存大小不得小于16
+		return (unsigned long)NULL;
+	}
+	else{
+		dPartition *new_dPartition = (dPartition *)start;
+		EMB *emb_pointer;
 
+		new_dPartition->firstFreeStart = start + 0x10;
+		new_dPartition->size = totalSize; //初始化dPartition结构体的内容
+
+		emb_pointer = (EMB *)new_dPartition->firstFreeStart;
+		emb_pointer->size = totalSize - dPartition_size - EMB_size;//初始化总大小
+		emb_pointer->nextStart = (unsigned long)NULL;//第一个指针需要指向NULL，完成链表的初始化，此时只有一个节点
+		return start; //返回句柄
+	}
 }
 
 void dPartitionWalkByAddr(unsigned long dp){
@@ -49,10 +62,14 @@ void dPartitionWalkByAddr(unsigned long dp){
 	/*功能：本函数遍历输出EMB 方便调试
 	1.先打印dP的信息，可调用上面的showdPartition。
 	2.然后按地址的大小遍历EMB，对于每一个EMB，可以调用上面的showEMB输出其信息
-
 	*/
-	
+	EMB *EMB_pointer = (EMB *)((dPartition *)dp)->firstFreeStart;
 
+	showdPartition((dPartition *)dp);
+
+	for(;EMB_pointer != (unsigned long)NULL; EMB_pointer = EMB_pointer->nextStart){
+		showEMB(EMB_pointer);
+	}//打印EMB结构体的信息
 }
 
 //=================firstfit, order: address, low-->high=====================
