@@ -51,11 +51,19 @@ void addNewCmd(	unsigned char *cmd,
 		int (*func)(int argc, unsigned char **argv), 
 		void (*help_func)(void), 
 		unsigned char* description){
-	//本函数需要实现！！！
     /*功能：增加命令
     1.使用malloc创建一个cm的结构体，新增命令。
     2.同时还需要维护一个表头为ourCmds的链表。
     */
+    struct cmd *tmpCmd;
+    tmpCmd = (struct cmd *)malloc(cmd_size);
+    tmpCmd->nextCmd = ourCmds;
+    tmpCmd->func = func;
+    tmpCmd->help_func = help_func;
+    strcpy(cmd,tmpCmd->cmd);
+    strcpy(description,tmpCmd->description); //设置新命令的各项参数
+
+    ourCmds = tmpCmd; //头指针更新为我们新加上去的节点
 
 }
 

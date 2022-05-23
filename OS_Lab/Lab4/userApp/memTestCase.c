@@ -90,8 +90,10 @@ int testdP1(int argc, unsigned char **argv){
 			myPrintf(0x7, "Alloc a memBlock with size 0x%x, ", i);
 			if(x1) {	
 				myPrintf(0x5, "success(addr=0x%x)!",x1);
+				// dPartitionWalkByAddr(x);
 				dPartitionFree(xHandler,x1);
 				myPrintf(0x7, "......Relaesed;\n");
+				// dPartitionWalkByAddr(x);
 			} else {
 				myPrintf(0x5, "failed!\n");
 				break;

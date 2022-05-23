@@ -70,5 +70,6 @@ void pMemInit(void){
 		pMemStart = _end_addr;
 	}
 
-	pMemHandler = dPartitionInit(pMemStart,pMemSize);	
+	pMemHandler = dPartitionInit(pMemStart,pMemSize);
+	dPartitionWalkByAddr(pMemHandler);
 }

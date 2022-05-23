@@ -58,7 +58,6 @@ unsigned long dPartitionInit(unsigned long start, unsigned long totalSize){
 }
 
 void dPartitionWalkByAddr(unsigned long dp){
-	//本函数需要实现！！！
 	/*功能：本函数遍历输出EMB 方便调试
 	1.先打印dP的信息，可调用上面的showdPartition。
 	2.然后按地址的大小遍历EMB，对于每一个EMB，可以调用上面的showEMB输出其信息
@@ -67,7 +66,7 @@ void dPartitionWalkByAddr(unsigned long dp){
 
 	showdPartition((dPartition *)dp);
 
-	for(;EMB_pointer != (unsigned long)NULL; EMB_pointer = EMB_pointer->nextStart){
+	for(;EMB_pointer != (unsigned long)NULL; EMB_pointer = (EMB *)EMB_pointer->nextStart){
 		showEMB(EMB_pointer);
 	}//打印EMB结构体的信息
 }
@@ -92,11 +91,11 @@ unsigned long dPartitionAllocFirstFit(unsigned long dp, unsigned long size){
 
 	if(EMB_pointer1->size >= size){
 		if(EMB_pointer1->size > size + EMB_size) {
-			EMB *EMB_pointer3 = (EMB *)(EMB_pointer1 + size + EMB_size);
+			EMB *EMB_pointer3 = (EMB *)((unsigned long)EMB_pointer1 + size + EMB_size);
 
+			EMB_pointer3->size = EMB_pointer1->size - size - EMB_size;
 			EMB_pointer1->size = size;  //更新节点大小，这个方便对内存free的时候知道可以free多少
-			EMB_pointer3->nextStart = EMB_pointer1->nextStart;
-			EMB_pointer3->size = EMB_pointer1->size - size -EMB_size; 
+			EMB_pointer3->nextStart = EMB_pointer1->nextStart; 
 			((dPartition *)dp)->firstFreeStart = (unsigned long)EMB_pointer3; //更改结构体，更新空闲状态
 
 			return (unsigned long)EMB_pointer1 + EMB_size; //返回可用的内存地址，需要注意应该多加一个EMB块的大小
@@ -109,11 +108,11 @@ unsigned long dPartitionAllocFirstFit(unsigned long dp, unsigned long size){
 		}
 	}
 
-	EMB_pointer2 = EMB_pointer2->nextStart;
+	EMB_pointer2 = (EMB *)EMB_pointer2->nextStart;
 	while(EMB_pointer2 != (unsigned long)NULL){
 		if(EMB_pointer2->size >= size){
 			if(EMB_pointer2->size > size + EMB_size) {
-				EMB *EMB_pointer3 = (EMB *)(EMB_pointer2 + size + EMB_size);
+				EMB *EMB_pointer3 = (EMB *)((unsigned long)EMB_pointer2 + size + EMB_size);
 
 				EMB_pointer2->size = size;  //更新节点大小，这个方便对内存free的时候知道可以free多少
 				EMB_pointer3->nextStart = EMB_pointer1->nextStart;
@@ -131,8 +130,8 @@ unsigned long dPartitionAllocFirstFit(unsigned long dp, unsigned long size){
 			}
 		}
 
-		EMB_pointer2 = EMB_pointer2->nextStart;
-		EMB_pointer1 = EMB_pointer1->nextStart; //更新地址
+		EMB_pointer2 = (EMB *)EMB_pointer2->nextStart;
+		EMB_pointer1 = (EMB *)EMB_pointer1->nextStart; //更新地址
 	}
 
 	return (unsigned long)NULL; //没有可用的空闲内存，返回NULL地址表示分配失败
@@ -171,19 +170,45 @@ unsigned long dPartitionFreeFirstFit(unsigned long dp, unsigned long start){
 		}
 	}
 
-	EMB_pointer2 = EMB_pointer2->nextStart;
+	EMB_pointer2 = (EMB *)EMB_pointer2->nextStart;
 	while(EMB_pointer2 != (EMB *)NULL){
-		if(EMB_pointer3 < EMB_pointer2){
+		if(EMB_pointer3 > EMB_pointer1 || EMB_pointer3 < EMB_pointer2){
 			if((unsigned long)EMB_pointer2 == ((unsigned long)EMB_pointer3 + 0x8 + EMB_pointer3->size)){
-				dp_pointer->firstFreeStart = (unsigned long)EMB_pointer3;
-				EMB_pointer3->nextStart = EMB_pointer1->nextStart;
-				EMB_pointer3->size = EMB_pointer3->size + EMB_size + EMB_pointer1->size; //将空闲区块合并
+				if((unsigned long)EMB_pointer3 == ((unsigned long)EMB_pointer1 + 0x8 + EMB_pointer1->size)){
+					EMB_pointer1->size = EMB_pointer1->size + EMB_pointer2->size + EMB_pointer3->size + 2*EMB_size; //正确计算大小，需要注意的是有两个EMB_size
+					EMB_pointer1->nextStart = EMB_pointer2->nextStart;
+					return 1; //处理两边都是空闲情况下的融合
+				}
+				else {
+					EMB_pointer1->nextStart = (unsigned long)EMB_pointer3;
+					EMB_pointer3->nextStart = EMB_pointer2->nextStart;
+					EMB_pointer3->size = EMB_pointer3->size + EMB_size + EMB_pointer1->size; //将空闲区块合并
+					return 1;
+				}
+			}
+			else if((unsigned long)EMB_pointer3 == ((unsigned long)EMB_pointer1 + 0x8 + EMB_pointer1->size)){
+				EMB_pointer1->size = EMB_pointer1->size + EMB_pointer3->size + EMB_size; //正确计算大小
+				EMB_pointer1->nextStart = (unsigned long)EMB_pointer2;
+				return 1; //处理只有左边是空闲状态的情况
+			}
+			else{
+				EMB_pointer1->nextStart = (unsigned long)EMB_pointer3;
+				EMB_pointer3->nextStart = (unsigned long)EMB_pointer2; //一般情况下就是简单的插入操作
 				return 1;
 			}
 		}
+		EMB_pointer1 = (EMB *)EMB_pointer1->nextStart;
+		EMB_pointer2 = (EMB *)EMB_pointer2->nextStart;
 	}
-
-
+	if((unsigned long)EMB_pointer3 == ((unsigned long)EMB_pointer1 + 0x8 + EMB_pointer1->size)){
+		EMB_pointer1->size = EMB_pointer1->size + EMB_size + EMB_pointer3->size;
+		return 1; //将最后一块内存融合
+	}
+	else{
+		EMB_pointer1->nextStart = (unsigned long)EMB_pointer3;
+		EMB_pointer3->nextStart = (unsigned long)NULL;// 如果到最后都没有正确释放内存，那就插入链表末尾；
+		return 1;
+	}
 }
 
 //wrap: we select firstFit, you can select another one
