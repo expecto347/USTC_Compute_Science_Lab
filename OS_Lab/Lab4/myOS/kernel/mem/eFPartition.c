@@ -97,6 +97,7 @@ unsigned long eFPartitionInit(unsigned long start, unsigned long perSize, unsign
 		EEB_pointer = (EEB *)EEB_pointer->next_start;
 	}
 	EEB_pointer->next_start = NULL; //完成EEB模块的初始化，使得初始时候每个模块都是可用的模块，并且指向正确的位置；
+	return (unsigned long)new_eFPartition;
 }
 
 
