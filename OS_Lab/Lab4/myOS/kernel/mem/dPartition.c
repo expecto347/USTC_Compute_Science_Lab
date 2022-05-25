@@ -152,6 +152,8 @@ unsigned long dPartitionFreeFirstFit(unsigned long dp, unsigned long start){
 	EMB *EMB_pointer3 = (EMB *)(start-EMB_size);
 	dPartition *dp_pointer = (dPartition *)dp;//声明几个结构体指针类型
 
+	myPrintk(0x7,"0x%x\n",EMB_pointer3);
+
 	if(start < (dp + dPartition_size) || start > (dp + dPartition_size + EMB_size + dp_pointer->size)){
 		return 0;//检查释放的start是否在dp有效分配范围内，因为end是由操作系统记录的，所以只要保证start是正确的即可
 	}
