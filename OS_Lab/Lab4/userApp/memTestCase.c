@@ -317,21 +317,41 @@ int user_malloc(int argc, unsigned char **argv){
 		}
 		size = size + size_1;
 	}
-	myPrintf(0x7,"%x\n",size);
+
+	// myPrintf(0x7,"%x\n",size);
+
 	tmp_handler = malloc(size);
 	if(tmp_handler) {
 		myPrintf(0x7,"Suceessful! Address = 0x%x\n", tmp_handler);
-		dPartitionWalkByAddr(pMemHandler);
+		// dPartitionWalkByAddr(pMemHandler);
 	}
 	else myPrintf(0x7,"Failed, maybe there are not enough space!\n");
 }
 
 int user_free(int argc, unsigned char **argv){
 	unsigned long t;
-	t = free(argv[1]);
+	unsigned long tmp_handler;
+	unsigned long handler = 0,handler_1,length;
+	int i,n;
+
+	for(n=0;argv[1][n] != 0;n++);
+
+	n--;
+	length = n;
+
+	for(;n>=0;n--){
+		handler_1 = (unsigned long)(argv[1][length-n] - 48);
+		for(i=n;i!=0;i--){
+			handler_1 = handler_1 * 16;
+		}
+		handler = handler + handler_1;
+	}
+
+	t = free(handler);
+	
 	if(t) {
 		myPrintf(0x7,"Successful!\n");
-		dPartitionWalkByAddr(pMemHandler);
+		// dPartitionWalkByAddr(pMemHandler);
 	}
 	else myPrintf(0x7,"Failed!\n");
 }
