@@ -18,7 +18,7 @@ void doSomeTestBefore(void){
 }
 
 void myMain(void){    
-    clear_screen();
+    // clear_screen();
 
     doSomeTestBefore();
 

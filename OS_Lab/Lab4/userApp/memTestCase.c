@@ -300,6 +300,26 @@ int testdP3(int argc, unsigned char **argv){
 	} else myPrintf(0x7,"MALLOC FAILED, CAN't TEST dPartition\n");		
 }
 
+int user_malloc(int argc, unsigned char **argv){
+	unsigned long tmp_handler;
+	tmp_handler = malloc(argv[1]);
+	if(tmp_handler) {
+		myPrintf(0x7,"Suceessful! Address = 0x%x", tmp_handler);
+		dPartitionWalkByAddr(pMemHandler);
+	}
+	else myPrintf(0x7,"Failed, maybe there are not enough space!");
+}
+
+int user_free(int argc, unsigned char **argv){
+	unsigned long t;
+	t = free(argv[1]);
+	if(t) {
+		myPrintf(0x7,"Successful!");
+		dPartitionWalkByAddr(pMemHandler);
+	}
+	else myPrintf(0x7,"Failed!");
+}
+
 #define NULL (void*)0
 void memTestCaseInit(void){	
 	addNewCmd("testMalloc1\0", testCase1, NULL, "Malloc, write and read.\0");
@@ -311,4 +331,7 @@ void memTestCaseInit(void){
 	addNewCmd("testdP3\0", testdP3, NULL, "Init a dPatition(size=0x100) A:B:C:- ==> A:B:- ==> A:- ==> - .\0");
 	
 	addNewCmd("testeFP\0", testeFP, NULL, "Init a eFPatition. Alloc all and Free all.\0");
+
+	addNewCmd("malloc\0", user_malloc, NULL, "Malloc a space!");
+	addNewCmd("free\0", user_free, NULL, "Free the space!");
 }

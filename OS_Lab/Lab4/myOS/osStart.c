@@ -16,6 +16,7 @@ void pressAnyKeyToStart(void){
 }
 
 void osStart(void){
+	clear_screen();
 	pressAnyKeyToStart(); // prepare for uart device
 	init8259A();
 	init8253();
