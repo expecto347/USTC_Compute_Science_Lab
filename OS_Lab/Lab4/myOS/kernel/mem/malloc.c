@@ -15,6 +15,6 @@ unsigned long kmalloc(unsigned long size){
     return dPartitionAlloc(KHandler,size);
 }
 
-unsigned long kmalloc(unsigned long start){
+unsigned long kfree(unsigned long start){
     return dPartitionFree(KHandler,start);
 }
