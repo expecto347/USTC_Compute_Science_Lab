@@ -323,7 +323,7 @@ int user_malloc(int argc, unsigned char **argv){
 	tmp_handler = malloc(size);
 	if(tmp_handler) {
 		myPrintf(0x7,"Suceessful! Address = 0x%x\n", tmp_handler);
-		// dPartitionWalkByAddr(pMemHandler);
+		dPartitionWalkByAddr(pMemHandler);
 	}
 	else myPrintf(0x7,"Failed, maybe there are not enough space!\n");
 }
@@ -348,10 +348,10 @@ int user_free(int argc, unsigned char **argv){
 	}
 
 	t = free(handler);
-	
+
 	if(t) {
 		myPrintf(0x7,"Successful!\n");
-		// dPartitionWalkByAddr(pMemHandler);
+		dPartitionWalkByAddr(pMemHandler);
 	}
 	else myPrintf(0x7,"Failed!\n");
 }
