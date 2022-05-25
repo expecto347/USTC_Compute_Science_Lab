@@ -302,22 +302,38 @@ int testdP3(int argc, unsigned char **argv){
 
 int user_malloc(int argc, unsigned char **argv){
 	unsigned long tmp_handler;
-	tmp_handler = malloc(argv[1]);
+	unsigned long size = 0,size_1,length;
+	int i,n;
+
+	for(n=0;argv[1][n] != 0;n++);
+
+	n--;
+	length = n;
+
+	for(;n!=0;n--){
+		size_1 = (unsigned long)(argv[1][length-n] - 48);
+		for(i=n;i!=0;i--){
+			size_1 = size_1 * 10;
+		}
+		size = size + size_1;
+	}
+	myPrintf(0x7,"%d\n",size);
+	tmp_handler = malloc(size);
 	if(tmp_handler) {
-		myPrintf(0x7,"Suceessful! Address = 0x%x", tmp_handler);
+		myPrintf(0x7,"Suceessful! Address = 0x%x\n", tmp_handler);
 		dPartitionWalkByAddr(pMemHandler);
 	}
-	else myPrintf(0x7,"Failed, maybe there are not enough space!");
+	else myPrintf(0x7,"Failed, maybe there are not enough space!\n");
 }
 
 int user_free(int argc, unsigned char **argv){
 	unsigned long t;
 	t = free(argv[1]);
 	if(t) {
-		myPrintf(0x7,"Successful!");
+		myPrintf(0x7,"Successful!\n");
 		dPartitionWalkByAddr(pMemHandler);
 	}
-	else myPrintf(0x7,"Failed!");
+	else myPrintf(0x7,"Failed!\n");
 }
 
 #define NULL (void*)0
