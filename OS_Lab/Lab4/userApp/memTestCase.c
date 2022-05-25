@@ -340,9 +340,20 @@ int user_free(int argc, unsigned char **argv){
 	length = n;
 
 	for(;n>=0;n--){
-		handler_1 = (unsigned long)(argv[1][length-n] - 48);
-		for(i=n;i!=0;i--){
-			handler_1 = handler_1 * 16;
+		if(argv[1][length-n] >= 48 && argv[1][length-n] <= 57){
+			handler_1 = (unsigned long)(argv[1][length-n] - 48);
+			for(i=n;i!=0;i--){
+				handler_1 = handler_1 * 16;
+			}
+		}
+		else if(argv[1][length-n] >= 'a' && argv[1][length-n] <= 'z'){
+			handler_1 = (unsigned long)(argv[1][length-n] - 87);
+			for(i=n;i!=0;i--){
+				handler_1 = handler_1 * 16;
+			}
+		}
+		else{
+			myPrintf(0x7,"Please enter a valid address based on 16!");
 		}
 		handler = handler + handler_1;
 	}
