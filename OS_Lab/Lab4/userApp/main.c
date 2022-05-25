@@ -13,7 +13,7 @@ void wallClock_hook_main(void){
 }
 
 void doSomeTestBefore(void){		
-	setWallClock(18,59,59);		//set time 18:59:59
+	setWallClock(0,0,0);		//set time 00:00:00
     	setWallClockHook(&wallClock_hook_main);
 }
 

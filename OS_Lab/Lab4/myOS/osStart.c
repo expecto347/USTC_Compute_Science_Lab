@@ -24,7 +24,9 @@ void osStart(void){
 
 	clear_screen();
 
-	pMemInit();  //after this, we can use kmalloc/kfree and malloc/free
+	pMemInit();
+	KernelMemInit();
+	UserMemInit(0x100000);  //给用户态分配一个10M大小的内存，可以自定义修改
 
 	{
 		unsigned long tmp = dPartitionAlloc(pMemHandler,100);
