@@ -313,7 +313,7 @@ int user_malloc(int argc, unsigned char **argv){
 	for(;n>=0;n--){
 		size_1 = (unsigned long)(argv[1][length-n] - 48);
 		for(i=n;i!=0;i--){
-			size_1 = size_1 * 16;
+			size_1 = size_1 * 10;
 		}
 		size = size + size_1;
 	}
