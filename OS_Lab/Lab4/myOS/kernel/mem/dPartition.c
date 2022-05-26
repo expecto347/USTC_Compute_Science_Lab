@@ -175,7 +175,7 @@ unsigned long dPartitionFreeFirstFit(unsigned long dp, unsigned long start){
 
 	EMB_pointer2 = (EMB *)EMB_pointer2->nextStart;
 	while(EMB_pointer2 != (EMB *)NULL){
-		if(EMB_pointer3 > EMB_pointer1 || EMB_pointer3 < EMB_pointer2){
+		if(EMB_pointer3 > EMB_pointer1 && EMB_pointer3 < EMB_pointer2){
 			if((unsigned long)EMB_pointer2 == ((unsigned long)EMB_pointer3 + 0x8 + EMB_pointer3->size)){
 				if((unsigned long)EMB_pointer3 == ((unsigned long)EMB_pointer1 + 0x8 + EMB_pointer1->size)){
 					EMB_pointer1->size = EMB_pointer1->size + EMB_pointer2->size + EMB_pointer3->size + 2*EMB_size; //正确计算大小，需要注意的是有两个EMB_size
@@ -185,7 +185,7 @@ unsigned long dPartitionFreeFirstFit(unsigned long dp, unsigned long start){
 				else {
 					EMB_pointer1->nextStart = (unsigned long)EMB_pointer3;
 					EMB_pointer3->nextStart = EMB_pointer2->nextStart;
-					EMB_pointer3->size = EMB_pointer3->size + EMB_size + EMB_pointer1->size; //将空闲区块合并
+					EMB_pointer3->size = EMB_pointer3->size + EMB_size + EMB_pointer2->size; //将空闲区块合并
 					return 1;
 				}
 			}
