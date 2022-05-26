@@ -115,7 +115,7 @@ unsigned long dPartitionAllocFirstFit(unsigned long dp, unsigned long size){
 				EMB *EMB_pointer3 = (EMB *)((unsigned long)EMB_pointer2 + size + EMB_size);
 
 				EMB_pointer2->size = size;  //更新节点大小，这个方便对内存free的时候知道可以free多少
-				EMB_pointer3->nextStart = EMB_pointer1->nextStart;
+				EMB_pointer3->nextStart = EMB_pointer2->nextStart;
 				EMB_pointer3->size = EMB_pointer2->size - size -EMB_size; 
 				EMB_pointer1->nextStart = (unsigned long)EMB_pointer3; //更改结构体，更新空闲状态
 
