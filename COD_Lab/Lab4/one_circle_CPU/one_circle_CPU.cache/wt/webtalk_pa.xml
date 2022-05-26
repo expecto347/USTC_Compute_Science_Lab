@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Thu May  5 23:30:28 2022">
+<application name="pa" timeStamp="Thu May 26 19:56:24 2022">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="a64d09e8eb3542d8909e79044898e5ba" type="ProjectID"/>
 <property name="ProjectIteration" value="34" type="ProjectIteration"/>
@@ -25,7 +25,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="EditDelete" value="9" type="JavaHandler"/>
 <property name="LaunchOpenTarget" value="1" type="JavaHandler"/>
 <property name="OpenHardwareManager" value="6" type="JavaHandler"/>
-<property name="OpenProject" value="1" type="JavaHandler"/>
+<property name="OpenProject" value="2" type="JavaHandler"/>
 <property name="OpenRecentTarget" value="2" type="JavaHandler"/>
 <property name="RecustomizeCore" value="32" type="JavaHandler"/>
 <property name="ReportMethodology" value="1" type="JavaHandler"/>
@@ -40,7 +40,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SimulationRunAll" value="2" type="JavaHandler"/>
 <property name="SimulationRunForTime" value="78" type="JavaHandler"/>
 <property name="ViewTaskProjectManager" value="1" type="JavaHandler"/>
-<property name="ViewTaskRTLAnalysis" value="5" type="JavaHandler"/>
+<property name="ViewTaskRTLAnalysis" value="6" type="JavaHandler"/>
 </item>
 <item name="Gui Handlers">
 <property name="AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS" value="7" type="GuiHandlerData"/>
@@ -50,7 +50,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES" value="4" type="GuiHandlerData"/>
 <property name="BaseDialog_CANCEL" value="51" type="GuiHandlerData"/>
 <property name="BaseDialog_NO" value="2" type="GuiHandlerData"/>
-<property name="BaseDialog_OK" value="159" type="GuiHandlerData"/>
+<property name="BaseDialog_OK" value="160" type="GuiHandlerData"/>
 <property name="BaseDialog_YES" value="29" type="GuiHandlerData"/>
 <property name="CmdMsgDialog_MESSAGES" value="7" type="GuiHandlerData"/>
 <property name="CmdMsgDialog_OK" value="10" type="GuiHandlerData"/>
@@ -66,12 +66,12 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="FileSetPanel_FILE_SET_PANEL_TREE" value="690" type="GuiHandlerData"/>
 <property name="FileSetPanel_MESSAGES" value="1" type="GuiHandlerData"/>
 <property name="FilterToolBar_SHOW_ALL" value="1" type="GuiHandlerData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="150" type="GuiHandlerData"/>
-<property name="GettingStartedView_OPEN_PROJECT" value="1" type="GuiHandlerData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="151" type="GuiHandlerData"/>
+<property name="GettingStartedView_OPEN_PROJECT" value="2" type="GuiHandlerData"/>
 <property name="GraphicalView_ZOOM_FIT" value="85" type="GuiHandlerData"/>
 <property name="GraphicalView_ZOOM_IN" value="176" type="GuiHandlerData"/>
 <property name="GraphicalView_ZOOM_OUT" value="87" type="GuiHandlerData"/>
-<property name="HJFileChooserRecentListPreview_RECENT_DIRECTORIES" value="27" type="GuiHandlerData"/>
+<property name="HJFileChooserRecentListPreview_RECENT_DIRECTORIES" value="28" type="GuiHandlerData"/>
 <property name="LaunchPanel_DONT_SHOW_THIS_DIALOG_AGAIN" value="1" type="GuiHandlerData"/>
 <property name="LaunchPanel_GENERATE_SCRIPTS_ONLY" value="1" type="GuiHandlerData"/>
 <property name="LaunchPanel_LAUNCH_RUNS_ON_LOCAL_HOST" value="1" type="GuiHandlerData"/>
@@ -136,7 +136,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="XPG_IPSymbol_SHOW_DISABLED_PORTS" value="2" type="GuiHandlerData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="2" type="GuiMode"/>
+<property name="GuiMode" value="1" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
 <property name="TclMode" value="0" type="TclMode"/>
 </item>
