@@ -301,6 +301,7 @@ int testdP3(int argc, unsigned char **argv){
 }
 
 int user_malloc(int argc, unsigned char **argv){
+	/*该模块可以给用户自己分配他们所需要大小的内存，并且返回分配好的内存的地址*/
 	unsigned long tmp_handler;
 	unsigned long size = 0,size_1,length;
 	int i,n;
@@ -316,7 +317,7 @@ int user_malloc(int argc, unsigned char **argv){
 			size_1 = size_1 * 10;
 		}
 		size = size + size_1;
-	}
+	} //对传入的字符进行判断，将char *类型转换成unsigned long类型
 
 	// myPrintf(0x7,"%x\n",size);
 
@@ -329,6 +330,7 @@ int user_malloc(int argc, unsigned char **argv){
 }
 
 int user_free(int argc, unsigned char **argv){
+	/*该模块给用户提供了释放特定地址内存的指令，为用户调试提供了基础*/
 	unsigned long t;
 	unsigned long tmp_handler;
 	unsigned long handler = 0,handler_1,length;
@@ -356,7 +358,7 @@ int user_free(int argc, unsigned char **argv){
 			myPrintf(0x7,"Please enter a valid address based on 16!");
 		}
 		handler = handler + handler_1;
-	}
+	} //进行16进制转换，将用户输入的16进制地址转换为10进制；
 
 	t = free(handler);
 
