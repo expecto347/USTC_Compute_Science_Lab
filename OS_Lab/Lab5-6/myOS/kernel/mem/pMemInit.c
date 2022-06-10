@@ -101,6 +101,6 @@ void UserMemInit(unsigned long size){
 		else myPrintk(0x7,"Failed!\n");
 	}
 	else{
-		myPrintk(0x7,"The user memory init failed!You should init the kernel memory first!");
+		myPrintk(0x7,"The user memory init failed! You should init the kernel memory first!"); 
 	}
 } //申请用户内存，用户内存可以修改
