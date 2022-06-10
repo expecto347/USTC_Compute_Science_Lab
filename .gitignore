@@ -3,3 +3,5 @@
 *.o
 
 output/
+
+.DS_Store
