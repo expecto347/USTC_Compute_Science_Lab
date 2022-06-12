@@ -1,16 +1,10 @@
 #include "../../include/myPrintk.h"
 #include "../../include/kmalloc.h"
+#include "../../include/task.h"
 #define ready 0 // ready 状态
 #define waiting 1 // waiting 状态
 #define stack_size 4096 //定义一个4kb大小的栈
-
-typedef struct myTCB{
-	unsigned long tid; //任务ID
-	unsigned long status;  //任务状态
-    unsigned long priority; //任务优先级
-    unsigned long* stack_pointer; //任务栈指针
-    unsigned long* stack_base; //任务栈底指针
-} myTCB; //任务控制块
+#define NULL 0 //定义一个空指针
 
 #define myTCB_SIZE 20
 
@@ -20,16 +14,17 @@ typedef struct rdyQueue{
     myTCB* idleTsk;
 } rdyQueue; //就绪队列
 
-typedef struct TCB_pool{
-    myTCB* head;
-    unsigned long size; //当前的TCB池的大小
-} TCB_pool; //TCB池
+TCB_pool* TCB_list;
 
-void stack_init(unsigned long **stk, void (*task)(void));
+void init_TCB_pool(void){
+    TCB_list = (TCB_pool*)kmalloc(sizeof(TCB_pool));
+    TCB_list->head = (myTCB*)NULL;
+    TCB_list->size = 0;
+}
 
 unsigned long tid = 0; //任务ID
 int createTsk(void (*tskBody)(void)){
-    /*功能：本函数创建负责创建一个任务，传入的参数为任务函数的指针*/
+    //功能：本函数创建负责创建一个任务，传入的参数为任务函数的指针,返回任务的tid，如果失败则返回相应的错误代码
     myTCB* tsk;
     unsigned long pointer;
     if(tsk = (myTCB*)kmalloc(myTCB_SIZE)){
@@ -40,21 +35,68 @@ int createTsk(void (*tskBody)(void)){
             pointer = pointer + stack_size - 1;//计算栈底指针
         } //申请栈空间
         else{
-            myPrintk(0x7,"the memory space is not enough\n"); //打印提示信息
+            myPrintk(0x7,"The memory space is not enough!\n"); //打印提示信息
             return -1;
         }
         tsk->stack_base = (unsigned long*)pointer;
         tsk->stack_pointer = (unsigned long*)pointer; //维护一个栈顶指针和一个栈底指针
-        stack_init(&tsk->stack_pointer, tskBody);
-        return tsk->tid; //返回任务tid
+        stack_init(&tsk->stack_pointer, tskBody); //初始化栈
+        if(TCB_list->head){
+            TCB_list->head = tsk;
+            tsk->next_myTCB = (myTCB*)NULL;
+            TCB_list->size++;
+        }
+        //如果TCB_list中没有任务，则将当前任务指针指向当前任务
+        else{
+            tsk->next_myTCB = TCB_list->head;
+            TCB_list->head = tsk;
+            TCB_list->size++;
+        }
+        //如果TCB_list中有任务，则将新创建的任务插入到链表的最后
+        return tsk->tid; //返回任务的tid
     }
     else{
-        myPrintk(0x7,"the memory space is not enough\n"); //如果内存空间不足，打印提示信息
+        myPrintk(0x7,"The memory space is not enough!\n"); //如果内存空间不足，打印提示信息
         return -2; //如果内存空间不足，返回0，表示创建任务失败
     }
 }
 
+void destroyTsk(int tskIndex){
+    //功能：本函数删除一个任务，传入的参数为任务的tid
+    if(TCB_list->head){
+        myPrintk(0x7,"Can't find the task! Please check the tid!\n"); //如果找不到则提示错误信息
+        return;
+    }
+    else if(TCB_list->head->tid == tskIndex){ //检查头指针是否就是我们所需要寻找的tid
+        kfree((unsigned long)TCB_list->head); //采用动态分配，释放这个地址
+        kfree((unsigned long)TCB_list->head->stack_base + 1 - stack_size); //释放栈
+        TCB_list->head == TCB_list->head->next_myTCB;
+        TCB_list->size--;
+        return;
+    }
+    else{
+        myTCB* tsk;
+        myTCB* preTsk;
+        preTsk = TCB_list->head;
+        tsk = TCB_list->head->next_myTCB;
+        while(tsk){
+            if(tsk->tid == tskIndex){
+                preTsk->next_myTCB = tsk->next_myTCB;
+                kfree((unsigned long)tsk); //释放当前任务地址空间
+                kfree((unsigned long)tsk->stack_base + 1 - stack_size); //释放当前任务的栈空间
+                return;
+            }
+            else{
+                preTsk = tsk;
+                tsk = tsk->next_myTCB;
+            }
+        }
+        myPrintk(0x7,"Can't find the task! Please check the tid!\n"); //提示找不到该任务
+    }
+}
+
 void stack_init(unsigned long **stk, void (*task)(void)){
+    //功能：本函数初始化栈，传入的参数为栈指针和任务函数的指针
     *(*stk)-- = (unsigned long)0x08; // CS
     *(*stk)-- = (unsigned long)task; // eip
     // pushf
