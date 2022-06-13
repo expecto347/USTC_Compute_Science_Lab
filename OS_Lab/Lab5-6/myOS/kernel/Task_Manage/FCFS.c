@@ -11,6 +11,8 @@ typedef struct rdyQueue{
 
 rdyQueue* rdyQ; //维护一个就绪队列
 
+void idleTsk(void);
+
 void init_rdyQ(void){
     rdyQ = (rdyQueue*)kmalloc(sizeof(rdyQueue));
     rdyQ->head = (myTCB*)NULL;
