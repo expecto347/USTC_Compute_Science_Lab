@@ -20,6 +20,8 @@ void doSomeTestBefore(void){
 void myMain(void){    
     // clear_screen();
 
+	myPrintf(0x7,"Hey,I'm here!\n");
+
     doSomeTestBefore();
 
 	initShell();

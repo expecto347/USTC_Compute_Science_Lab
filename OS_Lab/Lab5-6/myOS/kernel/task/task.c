@@ -1,12 +1,9 @@
 #include "../../include/myPrintk.h"
 #include "../../include/kmalloc.h"
 #include "../../include/task.h"
-#define ready 0 // ready 状态
-#define waiting 1 // waiting 状态
-#define stack_size 4096 //定义一个4kb大小的栈
+#include "../../include/CTX_SW.h"
+#define stack_size 128 //定义一个128bytes大小的栈
 #define NULL 0 //定义一个空指针
-
-#define myTCB_SIZE 20
 
 typedef struct rdyQueue{
     myTCB* head;
@@ -27,7 +24,7 @@ int createTsk(void (*tskBody)(void)){
     //功能：本函数创建负责创建一个任务，传入的参数为任务函数的指针,返回任务的tid，如果失败则返回相应的错误代码
     myTCB* tsk;
     unsigned long pointer;
-    if(tsk = (myTCB*)kmalloc(myTCB_SIZE)){
+    if(tsk = (myTCB*)kmalloc(sizeof(myTCB))){
         tsk->tid = tid;
         tid++; //给任务tid赋值，并且下一个任务tid加1
         tsk->status = waiting; //任务处于waiting状态
@@ -36,7 +33,9 @@ int createTsk(void (*tskBody)(void)){
         } //申请栈空间
         else{
             myPrintk(0x7,"The memory space is not enough!\n"); //打印提示信息
-            return -1;
+            kfree((unsigned long)tsk); //释放任务空间
+            myPrintk(0x7,"-1\n"); //打印提示信息
+            return -1; //如果内存空间不够分配堆栈那么就返回-1
         }
         tsk->stack_base = (unsigned long*)pointer;
         tsk->stack_pointer = (unsigned long*)pointer; //维护一个栈顶指针和一个栈底指针
@@ -57,7 +56,8 @@ int createTsk(void (*tskBody)(void)){
     }
     else{
         myPrintk(0x7,"The memory space is not enough!\n"); //如果内存空间不足，打印提示信息
-        return -2; //如果内存空间不足，返回0，表示创建任务失败
+        myPrintk(0x7,"-2\n"); //打印提示信息
+        return -2; //如果内存空间不足，返回-2，表示创建任务失败
     }
 }
 
@@ -97,6 +97,7 @@ void destroyTsk(int tskIndex){
 
 void stack_init(unsigned long **stk, void (*task)(void)){
     //功能：本函数初始化栈，传入的参数为栈指针和任务函数的指针
+    (*stk)--; //将栈顶指针减1，即将栈顶指针指向栈底
     *(*stk)-- = (unsigned long)0x08; // CS
     *(*stk)-- = (unsigned long)task; // eip
     // pushf
@@ -111,3 +112,11 @@ void stack_init(unsigned long **stk, void (*task)(void)){
     *(*stk)-- = (unsigned long)0x66666666; // esi
     **stk     = (unsigned long)0x77777777; // edi
 }
+
+unsigned long **prevTSK_StackPtrAddr;
+unsigned long *nextTSK_StackPtr;
+void context_switch(unsigned long **prevTskStkAddr, unsigned long *nextTskStk){
+    prevTSK_StackPtrAddr = prevTskStkAddr;
+    nextTSK_StackPtr = nextTskStk;
+    CTX_SW();
+} //上下文切换

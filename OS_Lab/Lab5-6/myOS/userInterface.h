@@ -8,6 +8,8 @@
 #include "include/wallClock.h"
 #include "include/vsprintf.h"
 #include "include/string.h"
+#include "include/FCFS.h"
+#include "include/task.h"
 
 //only for userApp
 #include "include/malloc.h"

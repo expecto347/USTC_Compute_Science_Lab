@@ -19,7 +19,7 @@ void KernelMemInit(void);
 void UserMemInit(unsigned long size);
 
 unsigned long pMemHandler;
-unsigned long KHandler;
-unsigned long UHandler;
+extern unsigned long KHandler;
+extern unsigned long UHandler;
 //TODO: seperate kernel heap and user heap
 #endif

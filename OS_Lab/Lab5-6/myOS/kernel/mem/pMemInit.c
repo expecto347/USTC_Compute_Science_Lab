@@ -1,6 +1,6 @@
 #include "../../include/myPrintk.h"
 #include "../../include/mem.h"
-#define KernelMemSize 0x8000
+#define KernelMemSize 0x100000 //内存总大小为1MB
 unsigned long pMemStart;//可用的内存的起始地址
 unsigned long pMemSize;//可用的大小
 
@@ -80,27 +80,27 @@ unsigned long KHandler = 0; //全局变量
 void KernelMemInit(void){
 	unsigned long _end_addr = (unsigned long) &_end;
 	if (pMemStart >= _end_addr) {
-		myPrintk(0x7,"Initializing kernel memory...\n");
+		myPrintk(0x5,"Initializing kernel memory...\n");
 		KHandler = dPartitionAlloc(pMemStart,KernelMemSize);
 		dPartitionInit(KHandler,KernelMemSize);
 		if(KHandler) myPrintk(0x7,"Successful! Address: 0x%x , Size=0x%x\n",KHandler,KernelMemSize);
-		else myPrintk(0x7,"Failed!\n");
+		else myPrintk(0x5,"Failed!\n");
 	}
 	else{
-		myPrintk(0x7,"The kernel memory init failed! You should init the OS memory first!\n"); //检测是否初始化系统内存
+		myPrintk(0x5,"The kernel memory init failed! You should init the OS memory first!\n"); //检测是否初始化系统内存
 	}
 } //申请内核内存，注意内核内存是由操作系统决定的，不能任意修改；
 
 unsigned long UHandler = 0;
 void UserMemInit(unsigned long size){
 	if(KHandler){
-		myPrintk(0x7,"Initializing user memory...\n");
+		myPrintk(0x5,"Initializing user memory...\n");
 		UHandler = dPartitionAlloc(pMemStart,size);
 		dPartitionInit(UHandler,size);
 		if(UHandler) myPrintk(0x7,"Successful! Address: 0x%x , Size=0x%x\n",UHandler,size);
-		else myPrintk(0x7,"Failed!\n");
+		else myPrintk(0x5,"Failed!\n");
 	}
 	else{
-		myPrintk(0x7,"The user memory init failed! You should init the kernel memory first!"); 
+		myPrintk(0x5,"The user memory init failed! You should init the kernel memory first!"); 
 	}
 } //申请用户内存，用户内存可以修改
