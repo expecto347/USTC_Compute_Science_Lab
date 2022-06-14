@@ -1,4 +1,4 @@
-gdb = 1 #是否调试
+gdb=1 #是否调试
 
 git pull
 
