@@ -2,9 +2,10 @@
 #include "../../include/kmalloc.h"
 #include "../../include/task.h"
 #include "../../include/CTX_SW.h"
-#include "../../include/FCFS.h"
 #define stack_size 1024 //定义一个1kb大小的栈
 #define NULL 0 //定义一个空指针
+
+void tskEnd(void);
 
 typedef struct rdyQueue{
     myTCB* head;
