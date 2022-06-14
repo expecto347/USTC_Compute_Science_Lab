@@ -73,8 +73,8 @@ void walk_rdyQ(void){
     myTCB* tsk = rdyQ->head;
     while(tsk != (myTCB*)NULL){
         myPrintk(0x5,"tsk %d is ready  ",tsk->tid);
-        myPrintk(0x5,"stack_top: %x  ",tsk->tid,tsk->stack_top);
-        myPrintk(0x5,"address: %x\n",tsk->tid,tsk);
+        myPrintk(0x5,"stack_top: %x  ",tsk->stack_top);
+        myPrintk(0x5,"address: %x\n",tsk);
         tsk = tsk->next_Queue;
     }
 }
