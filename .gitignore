@@ -1,7 +1,3 @@
 .vscode/
 
-*.o
-
-output/
-
 .DS_Store
