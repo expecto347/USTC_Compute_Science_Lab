@@ -1,4 +1,6 @@
 #!/bin/sh
+git restore .
+git pull
 
 make clean
 
@@ -11,4 +13,5 @@ else
 	# qemu-system-i386 -kernel output/myOS.elf -serial pty -S -s&
 	git add .
 	git commit -m "bot_auto_commit"
+	git push
 fi
