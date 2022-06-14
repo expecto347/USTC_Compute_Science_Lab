@@ -369,6 +369,15 @@ int user_free(int argc, unsigned char **argv){
 	else myPrintf(0x7,"Failed!\n");
 }
 
+int myExit(int argc, unsigned char **argv){
+	/*该模块给用户提供了退出系统的指令，为用户调试提供了基础*/
+	myPrintf(0x7,"Goodbye!\n");
+	tskEnd();
+	unsigned long* tmp;
+	tmp = preTskStackPointer;
+	context_switch(&preTskStackPointer, tmp); //切换回去原来的任务，并且保存现场，但我感觉这个现场没必要保存，因为我们甚至已经销毁了这个任务
+}
+
 #define NULL (void*)0
 void memTestCaseInit(void){	
 	addNewCmd("testMalloc1\0", testCase1, NULL, "Malloc, write and read.\0");
@@ -383,4 +392,6 @@ void memTestCaseInit(void){
 
 	addNewCmd("malloc\0", user_malloc, NULL, "Malloc a space!");
 	addNewCmd("free\0", user_free, NULL, "Free the space!");
+
+	addNewCmd("exit\0", myExit, NULL, "Exit the shell.\0");
 }

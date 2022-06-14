@@ -13,8 +13,6 @@ unsigned long free(unsigned long start){
 }//面向用户使用的函数
 
 unsigned long kmalloc(unsigned long size){
-    dPartitionWalkByAddr(KHandler);
-    myPrintk(0x5,"size:%d\n",size);
     return dPartitionAlloc(KHandler,size);
 }
 

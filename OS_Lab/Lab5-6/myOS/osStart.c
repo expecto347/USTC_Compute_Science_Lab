@@ -8,7 +8,7 @@
 #include "include/task.h"
 #include "include/FCFS.h"
 
-extern void myMain(void);		//TODO: to be generalized
+extern void scheduleInit(void);
 
 void pressAnyKeyToStart(void){
 	myPrintk(0x5,"Prepare uart device\n");
@@ -41,15 +41,10 @@ void osStart(void){
 
 	myPrintk(0x5,"Initializing task...\n");
 	init_TCB_pool(); //初始化TCB池
-	init_rdyQ(); //初始化就绪队列
+	init_rdyQ(); //初始化就绪队
+	myPrintk(0x7,"Successful\n");
 
-	// finished kernel init
-	// NOW, run userApp
-	myPrintk(0x2,"START RUNNING......\n");
-	int myMain_tid;	
-	myMain_tid = createTsk(myMain); //创建myMain任务
-	tskStart(get_Tsk(myMain_tid)); //开始运行myMain任务
-	scheduleFCFS();
-	myPrintk(0x2, "STOP RUNNING......ShutDown\n");
-	while(1);
+	scheduleInit(); //进入调度程序
+
+	while(1); //never be here
 }

@@ -51,9 +51,7 @@ unsigned long dPartitionInit(unsigned long start, unsigned long totalSize){
 		new_dPartition->size = totalSize; //初始化dPartition结构体的内容
 
 		emb_pointer = (EMB *)new_dPartition->firstFreeStart;
-		myPrintk(0x7,"%x\n", totalSize);
 		emb_pointer->size = totalSize - dPartition_size - EMB_size;//初始化总大小
-		myPrintk(0x7,"%x\n", totalSize);
 		emb_pointer->nextStart = (unsigned long)NULL;//第一个指针需要指向NULL，完成链表的初始化，此时只有一个节点
 		return start; //返回句柄
 	}
@@ -96,7 +94,6 @@ unsigned long dPartitionAllocFirstFit(unsigned long dp, unsigned long size){
 			EMB *EMB_pointer3 = (EMB *)((unsigned long)EMB_pointer1 + size + EMB_size);
 
 			EMB_pointer3->size = EMB_pointer1->size - size - EMB_size;
-			myPrintk(0x7,"%x\n", EMB_pointer3->size); //调试
 			EMB_pointer1->size = size;  //更新节点大小，这个方便对内存free的时候知道可以free多少
 			EMB_pointer3->nextStart = EMB_pointer1->nextStart; 
 			((dPartition *)dp)->firstFreeStart = (unsigned long)EMB_pointer3; //更改结构体，更新空闲状态

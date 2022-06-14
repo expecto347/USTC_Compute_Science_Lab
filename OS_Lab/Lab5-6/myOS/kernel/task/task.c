@@ -2,7 +2,7 @@
 #include "../../include/kmalloc.h"
 #include "../../include/task.h"
 #include "../../include/CTX_SW.h"
-#define stack_size 128 //定义一个128bytes大小的栈
+#define stack_size 1024 //定义一个1kb大小的栈
 #define NULL 0 //定义一个空指针
 
 typedef struct rdyQueue{
@@ -34,21 +34,20 @@ int createTsk(void (*tskBody)(void)){
         else{
             myPrintk(0x7,"The memory space is not enough!\n"); //打印提示信息
             kfree((unsigned long)tsk); //释放任务空间
-            myPrintk(0x7,"-1\n"); //打印提示信息
             return -1; //如果内存空间不够分配堆栈那么就返回-1
         }
         tsk->stack_base = (unsigned long*)pointer;
-        tsk->stack_pointer = (unsigned long*)pointer; //维护一个栈顶指针和一个栈底指针
-        stack_init(&tsk->stack_pointer, tskBody); //初始化栈
+        tsk->stack_top = (unsigned long*)pointer; //维护一个栈顶指针和一个栈底指针
+        stack_init(&tsk->stack_top, tskBody); //初始化栈
         if(TCB_list->head){
+            tsk->next_myTCB = TCB_list->head;
             TCB_list->head = tsk;
-            tsk->next_myTCB = (myTCB*)NULL;
             TCB_list->size++;
         }
         //如果TCB_list中没有任务，则将当前任务指针指向当前任务
         else{
-            tsk->next_myTCB = TCB_list->head;
             TCB_list->head = tsk;
+            tsk->next_myTCB = (myTCB*)NULL;
             TCB_list->size++;
         }
         //如果TCB_list中有任务，则将新创建的任务插入到链表的最后
@@ -56,7 +55,6 @@ int createTsk(void (*tskBody)(void)){
     }
     else{
         myPrintk(0x7,"The memory space is not enough!\n"); //如果内存空间不足，打印提示信息
-        myPrintk(0x7,"-2\n"); //打印提示信息
         return -2; //如果内存空间不足，返回-2，表示创建任务失败
     }
 }
@@ -120,3 +118,26 @@ void context_switch(unsigned long **prevTskStkAddr, unsigned long *nextTskStk){
     nextTSK_StackPtr = nextTskStk;
     CTX_SW();
 } //上下文切换
+
+myTCB* get_Tsk(int tid){
+    //根据tid获取任务
+    myTCB* tsk = TCB_list->head;
+    while(tsk != (myTCB*)NULL){
+        if(tsk->tid == tid){
+            return tsk;
+        }
+        tsk = tsk->next_myTCB;
+    }
+    return (myTCB*)NULL;
+}
+
+void walk_TCB_list(){
+    //遍历TCB_list
+    myTCB* tsk = TCB_list->head;
+    while(tsk != (myTCB*)NULL){
+        myPrintk(0x7,"tid: %d  ",tsk->tid);
+        myPrintk(0x7,"status: %d  ",tsk->status);
+        myPrintk(0x7,"addr: %x\n",tsk);
+        tsk = tsk->next_myTCB;
+    }
+}

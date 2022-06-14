@@ -26,19 +26,26 @@ int check_rdyQ(void){
     return ((rdyQ->head == (myTCB*)NULL) && (rdyQ->tail == (myTCB*)NULL));
 }//检查就绪队列是否为空
 
+myTCB currentTsk; //当前任务
 void tskStart(myTCB *tsk){
     //将任务插入就绪队列
     if(tsk->status == ready) myPrintk(0x5,"tskStart: task is already start!\n");
     else{
         tsk->status = ready;
+        currentTsk = *tsk;
         if(check_rdyQ()){
-            rdyQ->tail->next_Queue = tsk;
+            rdyQ->head = tsk;
         }
         else{
-            rdyQ->head = tsk;
+            rdyQ->tail->next_Queue = tsk;
         }   
         rdyQ->tail = tsk; //将task插入尾部
     }
+}
+
+void tskEnd(void){
+    //将任务从就绪队列中删除
+    destroyTsk(currentTsk.tid);
 }
 
 myTCB* nextTask(void){
@@ -58,17 +65,16 @@ unsigned long* preTskStackPointer; //上一个任务的栈指针
 void scheduleFCFS(void){
     //调度 
     myTCB* tsk = nextTask();
-    context_switch(&preTskStackPointer, tsk->stack_pointer); //上下文切换，将当前任务的栈指针存储在preTskStackPointer中，将下一个任务的栈指针传入，进行上下文切换
+    context_switch(&preTskStackPointer, tsk->stack_top); //上下文切换，将当前任务的栈指针存储在preTskStackPointer中，将下一个任务的栈指针传入，进行上下文切换
 }
 
-myTCB* get_Tsk(int tid){
-    //根据tid获取任务
+void walk_rdyQ(void){
+    //遍历就绪队列
     myTCB* tsk = rdyQ->head;
     while(tsk != (myTCB*)NULL){
-        if(tsk->tid == tid) return tsk;
+        myPrintk(0x5,"tsk %d is ready  ",tsk->tid);
+        myPrintk(0x5,"tsk %d stack_top: %x  ",tsk->tid,tsk->stack_top);
+        myPrintk(0x5,"tsk %d address: %x\n",tsk->tid,tsk);
         tsk = tsk->next_Queue;
-        myPrintk(0x7,"get_Tsk: tid is %x\n",tsk);
     }
-    myPrintk(0x7,"get_Tsk: tid is %x\n",tsk);
-    return (myTCB*)NULL;
 }

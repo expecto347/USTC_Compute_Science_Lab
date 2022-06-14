@@ -12,8 +12,10 @@ typedef struct rdyQueue{
 void scheduleFCFS(void);
 void init_rdyQ(void);
 void tskStart(myTCB *tsk);
-myTCB* get_Tsk(int tid);
+void tskEnd(void);
+void walk_rdyQ(void);
 
 extern unsigned long* preTskStackPointer;
 extern rdyQueue* rdyQ; //维护一个就绪队列
+extern myTCB currentTsk; //当前任务
 #endif
