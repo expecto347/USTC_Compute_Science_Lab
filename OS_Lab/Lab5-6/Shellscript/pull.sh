@@ -1,9 +1,10 @@
-g=1 #是否调试
-echo $1
+g=1
+
+echo $g
 
 git pull
 
-if [$g == $1]
+if [$g == 1]
 then
     echo $g
     qemu-system-i386 -kernel output/myOS.elf -serial pty -s -S&
