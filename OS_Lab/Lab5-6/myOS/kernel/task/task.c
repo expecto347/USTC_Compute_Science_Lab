@@ -5,6 +5,8 @@
 #define stack_size 1024 //定义一个1kb大小的栈
 #define NULL 0 //定义一个空指针
 
+void taskEnd(void);
+
 typedef struct rdyQueue{
     myTCB* head;
     myTCB* tail;
@@ -96,6 +98,7 @@ void destroyTsk(int tskIndex){
 void stack_init(unsigned long **stk, void (*task)(void)){
     //功能：本函数初始化栈，传入的参数为栈指针和任务函数的指针
     (*stk)--; //将栈顶指针减1，即将栈顶指针指向栈底
+    *(*stk)-- = (unsigned long)taskEnd; // taskEnd
     *(*stk)-- = (unsigned long)0x08; // CS
     *(*stk)-- = (unsigned long)task; // eip
     // pushf
