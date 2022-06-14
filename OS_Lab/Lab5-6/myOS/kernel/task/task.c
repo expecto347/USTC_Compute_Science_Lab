@@ -61,7 +61,7 @@ int createTsk(void (*tskBody)(void)){
 
 void destroyTsk(int tskIndex){
     //功能：本函数删除一个任务，传入的参数为任务的tid
-    if(TCB_list->head){
+    if(!TCB_list->head){
         myPrintk(0x7,"Can't find the task! Please check the tid!\n"); //如果找不到则提示错误信息
         return;
     }
