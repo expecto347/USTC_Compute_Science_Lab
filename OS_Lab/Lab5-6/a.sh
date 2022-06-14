@@ -1,3 +1,5 @@
-git pull
+./Shellscript/push.sh
 
-qemu-system-i386 -kernel output/myOS.elf -serial pty&
+ssh root@vlab.ustc.edu.cn -i ~/.ssh/vlab-vm4329.pem 'bash -s' < Shellscript/make.sh
+
+./Shellscript/pull.sh

@@ -1,4 +1,4 @@
-#!/bin/sh
+cd ~/ustc-cs/OS_Lab/Lab5-6
 git restore .
 git pull
 
