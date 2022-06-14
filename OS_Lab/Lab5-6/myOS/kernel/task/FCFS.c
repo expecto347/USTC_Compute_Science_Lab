@@ -9,7 +9,7 @@ void idleTsk_func(void){
     int color = 0x7;
     myPrintf(color,"*********************************************************\n");
 	myPrintf(color,"****************This is the idleTsk_func!****************\n");
-    myPrintf(color,"****************Waiting for new scheduling***************\n");
+    myPrintf(color,"****************Waiting for new scheduling!**************\n");
 	myPrintf(color,"*********************************************************\n");
 	myPrintf(color,"\n");
     while(1){
