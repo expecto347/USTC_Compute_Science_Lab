@@ -65,6 +65,8 @@ void scheduleInit(void){
 	tskStart(get_Tsk(Task_2_tid)); //启动Task_2任务
 	tskStart(get_Tsk(Task_3_tid)); //启动Task_3任务
 
+	walk_rdyQ();
+
 	//依次添加任务到就绪队列
 	while (1) scheduleFCFS(); //进入FCFS调度程序
 

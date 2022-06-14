@@ -1,0 +1,1 @@
+qemu-system-i386 -kernel output/myOS.elf -serial pty -S -s&
