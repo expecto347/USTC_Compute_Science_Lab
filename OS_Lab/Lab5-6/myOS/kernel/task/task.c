@@ -5,7 +5,7 @@
 #define stack_size 1024 //定义一个1kb大小的栈
 #define NULL 0 //定义一个空指针
 
-void taskEnd(void);
+extern void taskEnd(void);
 
 typedef struct rdyQueue{
     myTCB* head;

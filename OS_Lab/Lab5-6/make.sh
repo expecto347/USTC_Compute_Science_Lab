@@ -12,6 +12,6 @@ else
 	echo "make succeed"
 	# qemu-system-i386 -kernel output/myOS.elf -serial pty -S -s&
 	git add .
-	git commit -m "bot_auto_commit"
+	git commit -m "linux_auto_commit"
 	git push
 fi
