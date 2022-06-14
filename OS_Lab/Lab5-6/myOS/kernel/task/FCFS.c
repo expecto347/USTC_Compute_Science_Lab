@@ -6,10 +6,16 @@
 rdyQueue* rdyQ; //维护一个就绪队列
 
 void idleTsk_func(void){
-    myPrintk(0x7,"idleTsk is running\n");
-    myPrintk(0x7,"Waiting for new task!\n");
+    int color = 0x7;
+    myPrintf(color,"*********************************************************\n");
+	myPrintf(color,"\n");
+	myPrintf(color,"****************This is the idleTsk_func!****************\n");
+    myPrintf(color,"****************Waiting for new scheduling***************\n");
+    myPrintf(color,"\n");
+	myPrintf(color,"*********************************************************\n");
+	myPrintf(color,"\n");
     while(1){
-        ;
+        scheduleFCFS();
     }
 }
 

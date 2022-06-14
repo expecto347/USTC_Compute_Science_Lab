@@ -32,7 +32,9 @@ void Task_1(void){
 	int color;
 	color = 0x1;
 	myPrintf(color,"*********************************************************\n");
+	myPrintf(color,"\n");
 	myPrintf(color,"****************This is the Task_1 task!*****************\n");
+	myPrintf(color,"\n");
 	myPrintf(color,"*********************************************************\n");
 	myPrintf(color,"\n");
 	return;
@@ -42,7 +44,9 @@ void Task_2(void){
 	int color;
 	color = 0x2;
 	myPrintf(color,"*********************************************************\n");	
+	myPrintf(color,"\n");
 	myPrintf(color,"****************This is the Task_2 task!*****************\n");
+	myPrintf(color,"\n");
 	myPrintf(color,"*********************************************************\n");
 	myPrintf(color,"\n");
 	return;
@@ -52,7 +56,9 @@ void Task_3(void){
 	int color;
 	color = 0x3;
 	myPrintf(color,"*********************************************************\n");
+	myPrintf(color,"\n");
 	myPrintf(color,"****************This is the Task_3 task!*****************\n");
+	myPrintf(color,"\n");
 	myPrintf(color,"*********************************************************\n");
 	myPrintf(color,"\n");
 	return;
