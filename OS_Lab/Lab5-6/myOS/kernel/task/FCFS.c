@@ -7,11 +7,11 @@ rdyQueue* rdyQ; //维护一个就绪队列
 
 void idleTsk_func(void){
     int color = 0x7;
-    myPrintf(color,"*********************************************************\n");
-	myPrintf(color,"****************This is the idleTsk_func!****************\n");
-    myPrintf(color,"****************Waiting for new scheduling!**************\n");
-	myPrintf(color,"*********************************************************\n");
-	myPrintf(color,"\n");
+    myPrintk(color,"*********************************************************\n");
+	myPrintk(color,"****************This is the idleTsk_func!****************\n");
+    myPrintk(color,"****************Waiting for new scheduling!**************\n");
+	myPrintk(color,"*********************************************************\n");
+	myPrintk(color,"\n");
     while(1){
         scheduleFCFS();
     }
