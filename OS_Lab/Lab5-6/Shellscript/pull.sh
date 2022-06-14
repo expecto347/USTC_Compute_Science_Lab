@@ -1,4 +1,5 @@
 g=1 #是否调试
+echo $1
 
 git pull
 
