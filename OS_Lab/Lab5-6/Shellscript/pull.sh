@@ -1,12 +1,10 @@
-g=1
+g=1 #调试
 
-# git pull
+git pull
 
-if [$g -eq 1]
+if [ $g -eq 1 ]
 then
-    echo $g
-    # qemu-system-i386 -kernel output/myOS.elf -serial pty -s -S&
+    qemu-system-i386 -kernel output/myOS.elf -serial pty -s -S&
 else
-    # qemu-system-i386 -kernel output/myOS.elf -serial pty&
-    echo "g is not 1"
+    qemu-system-i386 -kernel output/myOS.elf -serial pty&
 fi
