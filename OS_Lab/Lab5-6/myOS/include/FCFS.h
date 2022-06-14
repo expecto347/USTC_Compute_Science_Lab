@@ -17,5 +17,5 @@ void walk_rdyQ(void);
 
 extern unsigned long* preTskStackPointer;
 extern rdyQueue* rdyQ; //维护一个就绪队列
-extern myTCB currentTsk; //当前任务
+extern myTCB* currentTsk; //当前任务
 #endif
