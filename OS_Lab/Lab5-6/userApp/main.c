@@ -32,7 +32,7 @@ void myMain(void){
 void clock(int tid, unsigned long t){
 	int i = 0;
 	while(i <= t){
-		if(time % 1000){
+		if(time % 1000 == 0){
 			myPrintf(0x7,"Task %d : ",tid);
 			myPrintf(0x7,"%d\n",i);
 		}
@@ -112,7 +112,7 @@ void scheduleInit(void){
 	//为taskPara分配空间
 
 	{
-		myMain_tskPara->arrTime = 0;
+		myMain_tskPara->arrTime = 1;
 		myMain_tskPara->exeTime = 100;
 		myMain_tskPara->priority = 0;
 	}
