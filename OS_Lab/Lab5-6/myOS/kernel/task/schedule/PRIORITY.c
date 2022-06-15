@@ -13,10 +13,12 @@ void PRIORITY_schedule(void){
         context_switch(&preTskStackPointer, tsk->stack_top); //上下文切换，将当前任务的栈指针存储在preTskStackPointer中，将下一个任务的栈指针传入，进行上下文切换
     }
     else if(tsk->tskPara->priority > currentTsk->tskPara->priority || currentTsk->status == killing){
+        myTCB* tmp;
+        tmp = currentTsk;
         currentTsk = tsk;
         rdyQ->idleTsk->stack_top = rdyQ->idleTsk->stack_base;
         stack_init(&rdyQ->idleTsk->stack_top,idleTsk_func);
-        context_switch(&currentTsk->stack_top, tsk->stack_top); //上下文切换，将当前任务的栈指针存储在currentTsk->stack_top中，将下一个任务的栈指针传入，进行上下文切换
+        context_switch(&tmp->stack_top, tsk->stack_top); //上下文切换，将当前任务的栈指针存储在currentTsk->stack_top中，将下一个任务的栈指针传入，进行上下文切换
     }
     else{
         return;
