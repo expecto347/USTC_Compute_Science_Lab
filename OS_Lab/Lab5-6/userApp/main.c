@@ -35,7 +35,7 @@ void Task_1(void){
 	color = 0x1;
 	myPrintf(color,"*********************************************************\n");
 	myPrintf(color,"****************This is the Task_1 task!*****************\n");
-	walk_tskPara(Task_1_tskPara,color);
+	walk_tskPara(Task_1_tskPara,color); //print the task parameter
 	myPrintf(color,"*********************************************************\n");
 	myPrintf(color,"\n");
 	return;
