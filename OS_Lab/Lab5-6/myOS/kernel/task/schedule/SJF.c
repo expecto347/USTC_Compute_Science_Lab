@@ -42,6 +42,9 @@ void SJF_tskEnd(void){
             else{
                 preTsk->next_Queue = tsk->next_Queue;
             }
+            if(rdyQ->head == 0){
+                rdyQ->tail = 0;
+            }
             SJF_schedule();
         }
         preTsk = tsk;
