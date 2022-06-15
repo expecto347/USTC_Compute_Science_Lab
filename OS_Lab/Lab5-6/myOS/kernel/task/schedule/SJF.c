@@ -1,4 +1,5 @@
 #include "../../../include/SJF.h"
+#include "../../../include/myPrintk.h"
 void SJF_tskStart(myTCB *tsk){
     //将任务插入就绪队列
     if(tsk->status == ready) myPrintk(0x5,"tskStart: task is already start!\n");
