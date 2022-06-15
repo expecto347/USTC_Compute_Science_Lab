@@ -192,6 +192,7 @@ void init_rdyQ(void){
     }
     tsk_tmp->stack_base = (unsigned long*)pointer;
     tsk_tmp->stack_top = (unsigned long*)pointer;
+    tsk_tmp->tskPara = tskPara_tmp;
     stack_init(&(tsk_tmp->stack_top),idleTsk_func); //创建idleTsk
 
     rdyQ = (rdyQueue*)kmalloc(sizeof(rdyQueue));
