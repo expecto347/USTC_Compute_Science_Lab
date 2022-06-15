@@ -16,7 +16,7 @@ void init_TCB_pool(void){
     TCB_list->size = 0;
 }
 
-unsigned long tid = 0; //任务ID
+unsigned long tid; //任务ID
 int createTsk(void (*tskBody)(void), tskPara *tskPara){
     //功能：本函数创建负责创建一个任务，传入的参数为任务函数的指针,返回任务的tid，如果失败则返回相应的错误代码
     myTCB* tsk;
@@ -38,21 +38,18 @@ int createTsk(void (*tskBody)(void), tskPara *tskPara){
         stack_init(&tsk->stack_top, tskBody); //初始化栈
         tsk->tskPara = tskPara; //给任务参数赋值
 
-        if(tsk->tid == 0) ; //如果是idle任务那么不把他放进去TCB_list中
-        else {
-            if(TCB_list->head){
-                tsk->next_myTCB = TCB_list->head;
-                TCB_list->head = tsk;
-                TCB_list->size++;
-            }
-            //如果TCB_list中没有任务，则将当前任务指针指向当前任务
-            else{
-                TCB_list->head = tsk;
-                tsk->next_myTCB = (myTCB*)NULL;
-                TCB_list->size++;
-            }
-            //如果TCB_list中有任务，则将新创建的任务插入到链表的最后
+        if(TCB_list->head){
+            tsk->next_myTCB = TCB_list->head;
+            TCB_list->head = tsk;
+            TCB_list->size++;
         }
+        //如果TCB_list中没有任务，则将当前任务指针指向当前任务
+        else{
+            TCB_list->head = tsk;
+            tsk->next_myTCB = (myTCB*)NULL;
+            TCB_list->size++;
+        }
+        //如果TCB_list中有任务，则将新创建的任务插入到链表的最后
         return tsk->tid; //返回任务的tid
     }
     else{
@@ -170,17 +167,30 @@ void idleTsk_func(void){
 }
 
 void init_rdyQ(void){
-    tskPara* tskPara_tmp;
-    tskPara_tmp = (tskPara*)kmalloc(sizeof(tskPara));
-    tskPara_tmp->arrTime = 0;
-    tskPara_tmp->exeTime = 0;
-    tskPara_tmp->priority = 0;
-    createTsk(idleTsk_func,tskPara_tmp); //初始化idle任务
+    myTCB* tsk_tmp;
+    unsigned long pointer;
+    
+    tsk_tmp = (myTCB*)kmalloc(sizeof(myTCB));
+
+    tsk_tmp->tid = 0;
+    tid = 1;
+
+    if(pointer = kmalloc(stack_size)){
+        pointer = pointer + stack_size - 1;//计算栈底指针
+    } //申请栈空间
+    else{
+        myPrintk(0x7,"The memory space is not enough!\n"); //打印提示信息
+        kfree((unsigned long)tsk_tmp); //释放任务空间
+        return -1; //如果内存空间不够分配堆栈那么就返回-1
+    }
+    tsk_tmp->stack_base = pointer;
+    tsk_tmp->stack_top = pointer;
+    stack_init(&(tsk_tmp->stack_top),idleTsk_func); //创建idleTsk
 
     rdyQ = (rdyQueue*)kmalloc(sizeof(rdyQueue));
     rdyQ->head = (myTCB*)NULL;
     rdyQ->tail = (myTCB*)NULL;
-    rdyQ->idleTsk = TCB_list->head;
+    rdyQ->idleTsk = tsk_tmp;
 }//初始化就绪队列
 
 int check_rdyQ(void){
