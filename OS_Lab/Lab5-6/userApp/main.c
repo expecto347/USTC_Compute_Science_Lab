@@ -118,7 +118,7 @@ void scheduleInit(void){
 	{
 		myMain_tskPara->arrTime = 1;
 		myMain_tskPara->exeTime = 100;
-		myMain_tskPara->priority = 0;
+		myMain_tskPara->priority = 1;
 	}
 
 	{
