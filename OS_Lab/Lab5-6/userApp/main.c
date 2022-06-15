@@ -15,7 +15,7 @@ void wallClock_hook_main(void){
 void doSomeTestBefore(void){		
 	setWallClock(0,0,0);		//set time 00:00:00
     setWallClockHook(&wallClock_hook_main);
-	tick_hook = &oneTickUpdateTsk;
+	setTickHook(&oneTickUpdateTsk);
 }
 
 void myMain(void){    
