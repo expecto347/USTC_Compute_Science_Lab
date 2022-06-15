@@ -170,6 +170,13 @@ void idleTsk_func(void){
 void init_rdyQ(void){
     myTCB* tsk_tmp;
     unsigned long pointer;
+    tskPara* tskPara_tmp;
+
+    tskPara_tmp = (tskPara*)kmalloc(sizeof(tskPara));
+    tskPara_tmp->arrTime = 0;
+    tskPara_tmp->priority = 0;
+    tskPara_tmp->exeTime = 0;
+    
     
     tsk_tmp = (myTCB*)kmalloc(sizeof(myTCB));
 
