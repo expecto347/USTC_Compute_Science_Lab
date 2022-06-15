@@ -103,7 +103,7 @@ void Task_5(void){
 	return;
 }
 
-void scheduleInit(void){
+voischeduleInit(void){
 	time = 0;
 	int myMain_tid, Task_1_tid, Task_2_tid, Task_3_tid, Task_4_tid, Task_5_tid;
 
