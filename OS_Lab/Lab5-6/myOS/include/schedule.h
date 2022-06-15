@@ -3,7 +3,7 @@
 #include "task.h"
 
 #define FCFS 1
-#define RR 2
+#define SJF 2
 #define PRIORITY 3
 
 extern int schedule_type;

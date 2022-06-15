@@ -1,6 +1,6 @@
 #include "../../include/myPrintk.h"
 #include "../../include/FCFS.h"
-#include "../../include/RR.h"
+#include "../../include/SJF.h"
 #include "../../include/PRIORITY.h"
 #include "../../include/schedule.h"
 
@@ -10,8 +10,8 @@ void schedule(void){
         case FCFS:
             FCFS_schedule();
             break;
-        case RR:
-            RR_schedule();
+        case SJF:
+            SJF_schedule();
             break;
         case PRIORITY:
             PRIORITY_schedule();
@@ -28,8 +28,8 @@ void tskStart(myTCB* tsk){
         case FCFS:
             FCFS_tskStart(tsk);
             break;
-        case RR:
-            RR_tskStart(tsk);
+        case SJF:
+            SJF_tskStart(tsk);
             break;
         case PRIORITY:
             PRIORITY_tskStart(tsk);
@@ -46,8 +46,8 @@ void tskEnd(void){
         case FCFS:
             FCFS_tskEnd();
             break;
-        case RR:
-            RR_tskEnd();
+        case SJF:
+            SJF_tskEnd();
             break;
         case PRIORITY:
             PRIORITY_tskEnd();
@@ -64,8 +64,8 @@ myTCB* nextTask(void){
         case FCFS:
             return FCFS_nextTask();
             break;
-        case RR:
-            return RR_nextTask();
+        case SJF:
+            return SJF_nextTask();
             break;
         case PRIORITY:
             return PRIORITY_nextTask();
