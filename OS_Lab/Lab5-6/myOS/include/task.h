@@ -3,12 +3,6 @@
 #define ready 0 // ready 状态
 #define waiting 1 // waiting 状态
 
-typedef struct rdyQueue{
-    myTCB* head;
-    myTCB* tail;
-    myTCB* idleTsk;
-} rdyQueue; //就绪队列
-
 typedef struct tskPara {
     unsigned long priority; //优先级
     unsigned long arrTime; //到达时间
@@ -29,6 +23,12 @@ typedef struct TCB_pool{
     myTCB* head;
     unsigned long size;
 } TCB_pool;
+
+typedef struct rdyQueue{
+    myTCB* head;
+    myTCB* tail;
+    myTCB* idleTsk;
+} rdyQueue; //就绪队列
 
 void stack_init(unsigned long **stk, void (*task)(void));
 void init_TCB_pool(void);
