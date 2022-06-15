@@ -21,10 +21,7 @@ void FCFS_tskStart(myTCB *tsk){
 void FCFS_tskEnd(void){
     //将任务从就绪队列中删除
     destroyTsk(currentTsk->tid); //从任务池中销毁任务
-    
-    unsigned long* tmp;
-	tmp = preTskStackPointer;
-	context_switch(&preTskStackPointer, tmp); //保存现场并且切换回上文
+    FCFS_schedule(); //调度
 }
 
 myTCB* FCFS_nextTask(void){
