@@ -34,6 +34,7 @@ void clock(int tid, unsigned long t){
 	while(i <= t){
 		if(time % 1000 == 0){
 			myPrintf(0x7,"Task %d : ",tid);
+			myPrintf(0x7,"time: %d  ",time);
 			myPrintf(0x7,"%d\n",i);
 			i++;
 		}
