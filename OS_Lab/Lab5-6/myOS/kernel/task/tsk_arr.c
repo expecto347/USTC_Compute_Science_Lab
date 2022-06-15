@@ -5,14 +5,14 @@
 
 int time;
 void oneTickUpdateTsk(void){
-    arrangeTsk();
-    time = time + 1;
+    if(time % 1000 == 0) arrangeTsk();
+    time = time + 10;
 }
 
 void arrangeTsk(){
     myTCB* tsk = TCB_list->head;
     while(tsk){
-        if((tsk->status) == waiting && (tsk->tskPara->arrTime == time)){
+        if((tsk->status) == waiting && (tsk->tskPara->arrTime == time / 1000)){
             tskStart(tsk);
         }
         tsk = tsk->next_myTCB;
