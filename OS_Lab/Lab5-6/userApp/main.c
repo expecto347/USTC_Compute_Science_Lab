@@ -36,7 +36,7 @@ void clock(int tid, unsigned long t){
 	while(i <= t){
 		if(time >= tmp + 1000){//过了1s
 			myPrintf(0x7,"Task %d : ",tid);
-			myPrintf(0x7,"%d\n",i);
+			myPrintf(0x7,"%d / TotalTime: %d\n",i,t);
 			i++;
 			tmp = time;
 		}
@@ -122,19 +122,19 @@ void scheduleInit(void){
 	}
 
 	{
-		Task_1_tskPara->arrTime = 20;
+		Task_1_tskPara->arrTime = 5;
 		Task_1_tskPara->exeTime = 50;
 		Task_1_tskPara->priority = 1;
 	}
 
 	{
-		Task_2_tskPara->arrTime = 20;
+		Task_2_tskPara->arrTime = 10;
 		Task_2_tskPara->exeTime = 30;
 		Task_2_tskPara->priority = 2;
 	}
 
 	{
-		Task_3_tskPara->arrTime = 20;
+		Task_3_tskPara->arrTime = 15;
 		Task_3_tskPara->exeTime = 40;
 		Task_3_tskPara->priority = 3;
 	}
@@ -146,7 +146,7 @@ void scheduleInit(void){
 	}
 
 	{
-		Task_5_tskPara->arrTime = 20;
+		Task_5_tskPara->arrTime = 25;
 		Task_5_tskPara->exeTime = 10;
 		Task_5_tskPara->priority = 5;
 	}

@@ -16,11 +16,11 @@ void SJF_tskStart(myTCB *tsk){
     }
 }
 
-myTCB* currentTsk; //当前任务
+myTCB* currentTsk = 0; //当前任务
 void SJF_schedule(void){
     //调度 
     myTCB* tsk = SJF_nextTask();
-    if(tsk->tid == 0 && currentTsk->tid == 0) return; //如果当前任务以及下一个任务都是idle任务，则不做任何操作
+    if(tsk->tid == 0 && currentTsk->tid == 0 && currentTsk != 0) return; //如果当前任务以及下一个任务都是idle任务，则不做任何操作
     else{
         currentTsk = tsk;
         rdyQ->idleTsk->stack_top = rdyQ->idleTsk->stack_base;

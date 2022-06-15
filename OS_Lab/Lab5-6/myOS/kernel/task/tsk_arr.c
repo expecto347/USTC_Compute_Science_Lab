@@ -7,6 +7,8 @@ int time;
 void oneTickUpdateTsk(void){
     if(time % 1000 == 0) arrangeTsk();
     time = time + 10;
+
+    if(schedule_type == PRIORITY) schedule(); //优先级调度
 }
 
 void arrangeTsk(){
