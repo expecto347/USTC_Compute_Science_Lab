@@ -23,7 +23,7 @@ void setWallClockHook(void (*func)(void)) {
 }
 
 void oneTickUpdateWallClock(void){
-	ms += 10;  // ?100HZ?
+	ms += 1000;  // ?1HZ?
         if (ms>=1000) {ms=0;ss++;}
         if (ss>=60) {ss=0;mm++;}
         if (mm>=60) {mm=0;hh++;}
