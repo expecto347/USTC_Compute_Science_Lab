@@ -38,18 +38,21 @@ int createTsk(void (*tskBody)(void), tskPara *tskPara){
         stack_init(&tsk->stack_top, tskBody); //初始化栈
         tsk->tskPara = tskPara; //给任务参数赋值
 
-        if(TCB_list->head){
-            tsk->next_myTCB = TCB_list->head;
-            TCB_list->head = tsk;
-            TCB_list->size++;
+        if(tsk->tid == 0) ; //如果是idle任务那么不把他放进去TCB_list中
+        else {
+            if(TCB_list->head){
+                tsk->next_myTCB = TCB_list->head;
+                TCB_list->head = tsk;
+                TCB_list->size++;
+            }
+            //如果TCB_list中没有任务，则将当前任务指针指向当前任务
+            else{
+                TCB_list->head = tsk;
+                tsk->next_myTCB = (myTCB*)NULL;
+                TCB_list->size++;
+            }
+            //如果TCB_list中有任务，则将新创建的任务插入到链表的最后
         }
-        //如果TCB_list中没有任务，则将当前任务指针指向当前任务
-        else{
-            TCB_list->head = tsk;
-            tsk->next_myTCB = (myTCB*)NULL;
-            TCB_list->size++;
-        }
-        //如果TCB_list中有任务，则将新创建的任务插入到链表的最后
         return tsk->tid; //返回任务的tid
     }
     else{
@@ -173,6 +176,7 @@ void init_rdyQ(void){
     tskPara_tmp->exeTime = 0;
     tskPara_tmp->priority = 0;
     createTsk(idleTsk_func,tskPara_tmp); //初始化idle任务
+
     rdyQ = (rdyQueue*)kmalloc(sizeof(rdyQueue));
     rdyQ->head = (myTCB*)NULL;
     rdyQ->tail = (myTCB*)NULL;
