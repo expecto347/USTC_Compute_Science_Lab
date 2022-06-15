@@ -99,13 +99,6 @@ void scheduleInit(void){
 	Task_2_tid = createTsk(Task_2,myMain_tskPara); //创建Task_2任务
 	Task_3_tid = createTsk(Task_3,myMain_tskPara); //创建Task_3任务
 
-	tskStart(get_Tsk(myMain_tid)); //启动myMain任务
-	tskStart(get_Tsk(Task_1_tid)); //启动Task_1任务
-	tskStart(get_Tsk(Task_2_tid)); //启动Task_2任务
-	tskStart(get_Tsk(Task_3_tid)); //启动Task_3任务
-
-	walk_rdyQ();
-
 	//依次添加任务到就绪队列
 	while (1) schedule(); //进入FCFS调度程序
 
