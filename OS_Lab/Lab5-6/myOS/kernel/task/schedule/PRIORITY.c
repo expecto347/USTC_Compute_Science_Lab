@@ -6,7 +6,7 @@ void PRIORITY_schedule(void){
     myTCB* tsk = PRIORITY_nextTask();
 
     if(tsk->tid == 0 && currentTsk->tid == 0 && currentTsk != 0) return; //如果当前任务以及下一个任务都是idle任务，则不做任何操作
-    else if(currentTsk = 0){
+    else if(currentTsk == 0){
         currentTsk = tsk;
         rdyQ->idleTsk->stack_top = rdyQ->idleTsk->stack_base;
         stack_init(&rdyQ->idleTsk->stack_top,idleTsk_func);
