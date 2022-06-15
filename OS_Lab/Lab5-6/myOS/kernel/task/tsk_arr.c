@@ -5,8 +5,8 @@
 
 int time = 0;
 void oneTickUpdateTsk(void){
-    time = time + 10;
     if(time % 1000) arrangeTsk(time/1000);
+    time = time + 10;
 }
 
 void arrangeTsk(int time){

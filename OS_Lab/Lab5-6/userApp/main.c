@@ -71,7 +71,7 @@ void scheduleInit(void){
 	//为taskPara分配空间
 
 	{
-		myMain_tskPara->arrTime = 0;
+		myMain_tskPara->arrTime =5;
 		myMain_tskPara->exeTime = 0;
 		myMain_tskPara->priority = 0;
 	}
