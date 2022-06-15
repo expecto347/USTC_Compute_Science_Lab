@@ -123,20 +123,20 @@ void scheduleInit(void){
 
 	{
 		Task_1_tskPara->arrTime = 5;
-		Task_1_tskPara->exeTime = 10;
-		Task_1_tskPara->priority = 1;
+		Task_1_tskPara->exeTime = 7;
+		Task_1_tskPara->priority = 2;
 	}
 
 	{
 		Task_2_tskPara->arrTime = 15;
 		Task_2_tskPara->exeTime = 10;
-		Task_2_tskPara->priority = 2;
+		Task_2_tskPara->priority = 8;
 	}
 
 	{
 		Task_3_tskPara->arrTime = 20;
 		Task_3_tskPara->exeTime = 20;
-		Task_3_tskPara->priority = 1;
+		Task_3_tskPara->priority = 3;
 	}
 
 	{
