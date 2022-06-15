@@ -2,10 +2,10 @@
 
 extern void oneTickUpdateWallClock(void);       //TODO: to be generalized
 
-#ifndef __TICK_HOOK__
-#define __TICK_HOOK__
-void (*tick_hook)(void) = 0; //{};
-#endif
+// #ifndef __TICK_HOOK__
+// #define __TICK_HOOK__
+// void (*tick_hook)(void) = 0; //{};
+// #endif
 
 int tick_number = 0;
 void tick(void){
