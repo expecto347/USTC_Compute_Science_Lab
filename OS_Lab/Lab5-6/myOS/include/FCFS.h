@@ -3,7 +3,6 @@
 #include "task.h"
 
 void FCFS_schedule(void);
-void FCFS_init(void);
 void FCFS_tskStart(myTCB *tsk);
 void FCFS_tskEnd(void);
 myTCB* FCFS_nextTask(void);

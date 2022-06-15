@@ -75,26 +75,26 @@ void scheduleInit(void){
 	//为taskPara分配空间
 
 	{
-		myMain_tskPara->arrTime =5;
-		myMain_tskPara->exeTime = 0;
+		myMain_tskPara->arrTime = 5;
+		myMain_tskPara->exeTime = 100;
 		myMain_tskPara->priority = 0;
 	}
 
 	{
 		Task_1_tskPara->arrTime = 10;
-		Task_1_tskPara->exeTime = 0;
+		Task_1_tskPara->exeTime = 20;
 		Task_1_tskPara->priority = 1;
 	}
 
 	{
 		Task_2_tskPara->arrTime = 20;
-		Task_2_tskPara->exeTime = 0;
+		Task_2_tskPara->exeTime = 30;
 		Task_2_tskPara->priority = 2;
 	}
 
 	{
-		Task_3_tskPara->arrTime = 30;
-		Task_3_tskPara->exeTime = 0;
+		Task_3_tskPara->arrTime = 50;
+		Task_3_tskPara->exeTime = 5;
 		Task_3_tskPara->priority = 3;
 	}
 

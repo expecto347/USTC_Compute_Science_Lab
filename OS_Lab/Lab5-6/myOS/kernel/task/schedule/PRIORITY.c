@@ -2,7 +2,6 @@
 
 void PRIORITY_schedule(void){
     ;
-
 }
 void PRIORITY_init(void){
     ;
@@ -14,5 +13,5 @@ void PRIORITY_tskEnd(void){
     ;
 }
 myTCB* PRIORITY_nextTask(void){
-
+    ;
 }
