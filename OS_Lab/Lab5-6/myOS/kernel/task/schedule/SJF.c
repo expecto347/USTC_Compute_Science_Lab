@@ -42,12 +42,11 @@ void SJF_tskEnd(void){
             else{
                 preTsk->next_Queue = tsk->next_Queue;
             }
+            SJF_schedule();
         }
         preTsk = tsk;
         tsk = tsk->next_Queue;
     } //从就绪队列中删除任务
-
-    SJF_schedule(); //进行调度
 }
 
 myTCB* SJF_nextTask(void){
