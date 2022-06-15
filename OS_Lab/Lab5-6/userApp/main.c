@@ -29,12 +29,23 @@ void myMain(void){
     return;
 }
 
+void clock(int tid, unsigned long t){
+	int i = 0;
+	while(i <= t){
+		if(time % 1000){
+			myPrintf(0x7,"Task %d : ",tid);
+			myPrintf(0x7,"%d\n",i);
+		}
+	}
+}
+
 void Task_1(void){
 	int color;
 	color = 0x1;
 	myPrintf(color,"*********************************************************\n");
 	myPrintf(color,"****************This is the Task_1 task!*****************\n");
 	walk_tskPara(Task_1_tskPara,color); //print the task parameter
+	clock(1, Task_1_tskPara->exeTime);
 	myPrintf(color,"*********************************************************\n");
 	myPrintf(color,"\n");
 	return;
@@ -46,6 +57,7 @@ void Task_2(void){
 	myPrintf(color,"*********************************************************\n");	
 	myPrintf(color,"****************This is the Task_2 task!*****************\n");
 	walk_tskPara(Task_2_tskPara,color);
+	clock(2, Task_2_tskPara->exeTime);
 	myPrintf(color,"*********************************************************\n");
 	myPrintf(color,"\n");
 	return;
@@ -57,6 +69,7 @@ void Task_3(void){
 	myPrintf(color,"*********************************************************\n");
 	myPrintf(color,"****************This is the Task_3 task!*****************\n");
 	walk_tskPara(Task_3_tskPara,color);
+	clock(3, Task_3_tskPara->exeTime);
 	myPrintf(color,"*********************************************************\n");
 	myPrintf(color,"\n");
 	return;
@@ -68,6 +81,7 @@ void Task_4(void){
 	myPrintf(color,"*********************************************************\n");
 	myPrintf(color,"****************This is the Task_4 task!*****************\n");
 	walk_tskPara(Task_4_tskPara,color);
+	clock(4, Task_4_tskPara->exeTime);
 	myPrintf(color,"*********************************************************\n");
 	myPrintf(color,"\n");
 	return;
@@ -79,6 +93,7 @@ void Task_5(void){
 	myPrintf(color,"*********************************************************\n");
 	myPrintf(color,"****************This is the Task_5 task!*****************\n");
 	walk_tskPara(Task_5_tskPara,color);
+	clock(5, Task_5_tskPara->exeTime);
 	myPrintf(color,"*********************************************************\n");
 	myPrintf(color,"\n");
 	return;
