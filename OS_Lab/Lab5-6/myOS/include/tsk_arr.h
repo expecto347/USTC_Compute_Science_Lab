@@ -3,6 +3,6 @@
 
 extern int time;
 void oneTickUpdateTsk(void);
-void arrangeTsk(int time);
+void arrangeTsk();
 
 #endif

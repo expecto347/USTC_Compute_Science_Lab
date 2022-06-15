@@ -45,7 +45,7 @@ unsigned long* preTskStackPointer; //上一个任务的栈指针
 void FCFS_schedule(void){
     //调度 
     myTCB* tsk = nextTask();
-    if(currentTsk->tid == 0) return; //如果当前任务是idle任务，则不做任何操作
+    if(tsk->tid == 0 && currentTsk->tid == 0) return; //如果当前任务以及下一个任务都是idle任务，则不做任何操作
     else{
         currentTsk = tsk;
         context_switch(&preTskStackPointer, tsk->stack_top); //上下文切换，将当前任务的栈指针存储在preTskStackPointer中，将下一个任务的栈指针传入，进行上下文切换
