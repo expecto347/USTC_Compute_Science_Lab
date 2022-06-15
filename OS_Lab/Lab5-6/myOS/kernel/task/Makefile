@@ -1,2 +1,4 @@
-TASK_OBJS =	output/myOS/kernel/task/FCFS.o \
-			output/myOS/kernel/task/task.o
+include $(SRC_RT)/myOS/kernel/task/schedule/Makefile
+
+TASK_OBJS = output/myOS/kernel/task/task.o \
+			$(SCHEDULE_OBJS)
