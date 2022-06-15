@@ -154,6 +154,7 @@ void walk_rdyQ(void){
 }
 
 void idleTsk_func(void){
+    static int num = 0;
     int color = 0x7;
     myPrintk(color,"*********************************************************\n");
 	myPrintk(color,"****************This is the idleTsk_func!****************\n");

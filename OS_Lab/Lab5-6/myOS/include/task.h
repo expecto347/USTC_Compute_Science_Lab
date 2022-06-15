@@ -42,8 +42,9 @@ void walk_rdyQ(void);
 void init_rdyQ(void);
 int check_rdyQ(void);
 
-
 myTCB* nextTask(void);
+
+void idleTsk_func(void);
 
 extern unsigned long tid;
 extern TCB_pool* TCB_list;
