@@ -43,6 +43,8 @@ void SJF_tskEnd(void){
                 preTsk->next_Queue = tsk->next_Queue;
             }
         }
+        preTsk = tsk;
+        tsk = tsk->next_Queue;
     } //从就绪队列中删除任务
 
     SJF_schedule(); //进行调度
