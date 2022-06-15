@@ -8,7 +8,7 @@
 #include "include/task.h"
 #include "include/schedule.h"
 
-int schedule_type = PRIORITY; //调度算法
+int schedule_type = FCFS; //调度算法
 
 extern void scheduleInit(void);
 void doSomeTestBefore(void);
