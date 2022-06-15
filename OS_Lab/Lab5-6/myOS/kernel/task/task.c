@@ -182,10 +182,9 @@ void init_rdyQ(void){
     else{
         myPrintk(0x7,"The memory space is not enough!\n"); //打印提示信息
         kfree((unsigned long)tsk_tmp); //释放任务空间
-        return -1; //如果内存空间不够分配堆栈那么就返回-1
     }
-    tsk_tmp->stack_base = pointer;
-    tsk_tmp->stack_top = pointer;
+    tsk_tmp->stack_base = (unsigned long*)pointer;
+    tsk_tmp->stack_top = (unsigned long*)pointer;
     stack_init(&(tsk_tmp->stack_top),idleTsk_func); //创建idleTsk
 
     rdyQ = (rdyQueue*)kmalloc(sizeof(rdyQueue));
