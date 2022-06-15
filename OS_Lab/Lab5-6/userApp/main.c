@@ -31,12 +31,14 @@ void myMain(void){
 
 void clock(int tid, unsigned long t){
 	int i = 0;
+	int tmp;
 	while(i <= t){
-		if(time % 1000 == 0){
+		tmp = time;
+		if(time = tmp + 1000){//过了1s
 			myPrintf(0x7,"Task %d : ",tid);
-			myPrintf(0x7,"time: %d  ",time);
 			myPrintf(0x7,"%d\n",i);
 			i++;
+			tmp = time;
 		}
 	}
 }
