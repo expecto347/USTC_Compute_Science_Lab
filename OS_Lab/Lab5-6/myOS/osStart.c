@@ -6,7 +6,7 @@
 #include "include/mem.h"
 #include "include/myPrintk.h"
 #include "include/task.h"
-#include "include/FCFS.h"
+#include "include/schedule.h"
 
 extern void scheduleInit(void);
 
@@ -42,6 +42,7 @@ void osStart(void){
 	myPrintk(0x5,"Initializing task...\n");
 	init_TCB_pool(); //初始化TCB池
 	init_rdyQ(); //初始化就绪队
+	int schedule_type = 1;
 	myPrintk(0x7,"Successful\n");
 
 	scheduleInit(); //进入调度程序

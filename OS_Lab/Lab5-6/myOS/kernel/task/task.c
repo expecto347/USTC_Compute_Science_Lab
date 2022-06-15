@@ -8,12 +8,6 @@
 
 rdyQueue* rdyQ; //维护一个就绪队列
 
-typedef struct rdyQueue{
-    myTCB* head;
-    myTCB* tail;
-    myTCB* idleTsk;
-} rdyQueue; //就绪队列
-
 TCB_pool* TCB_list;
 
 void init_TCB_pool(void){
@@ -167,7 +161,7 @@ void idleTsk_func(void){
 	myPrintk(color,"*********************************************************\n");
 	myPrintk(color,"\n");
     while(1){
-        FCFS_schedule();
+        schedule();
     }
 }
 
