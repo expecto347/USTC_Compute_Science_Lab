@@ -95,9 +95,9 @@ void scheduleInit(void){
 	}
 
 	myMain_tid = createTsk(myMain,myMain_tskPara); //创建myMain任务
-	Task_1_tid = createTsk(Task_1,myMain_tskPara); //创建Task_1任务
-	Task_2_tid = createTsk(Task_2,myMain_tskPara); //创建Task_2任务
-	Task_3_tid = createTsk(Task_3,myMain_tskPara); //创建Task_3任务
+	Task_1_tid = createTsk(Task_1,Task_1_tskPara); //创建Task_1任务
+	Task_2_tid = createTsk(Task_2,Task_2_tskPara); //创建Task_2任务
+	Task_3_tid = createTsk(Task_3,Task_3_tskPara); //创建Task_3任务
 
 	//依次添加任务到就绪队列
 	while (1) schedule(); //进入调度程序
