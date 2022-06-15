@@ -4,10 +4,11 @@
 #include "../../include/schedule.h"
 
 int time;
+int run = 0;
 void oneTickUpdateTsk(void){
     if(time % 1000 == 0) {
         arrangeTsk();
-        if(schedule_type == PRIORITY) schedule(); //优先级调度
+        if(schedule_type == PRIORITY && run) schedule(); //优先级调度
     }
     time = time + 10;
 }

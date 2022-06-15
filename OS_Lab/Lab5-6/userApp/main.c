@@ -158,6 +158,8 @@ void scheduleInit(void){
 	Task_4_tid = createTsk(Task_4,Task_4_tskPara); //创建Task_4任务
 	Task_5_tid = createTsk(Task_5,Task_5_tskPara); //创建Task_5任务
 
+	run = 1;
+
 	//依次添加任务到就绪队列
 	while (1) schedule(); //进入调度程序
 
