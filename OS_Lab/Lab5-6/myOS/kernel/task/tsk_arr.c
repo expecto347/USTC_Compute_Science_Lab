@@ -3,7 +3,7 @@
 #include "../../include/tsk_arr.h"
 #include "../../include/schedule.h"
 
-int time = 0;
+int time;
 void oneTickUpdateTsk(void){
     if(time % 1000) arrangeTsk(time/1000);
     time = time + 10;

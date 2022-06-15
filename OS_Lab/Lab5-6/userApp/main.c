@@ -61,6 +61,7 @@ void Task_3(void){
 
 
 void scheduleInit(void){
+	time = 0;
 	int myMain_tid, Task_1_tid, Task_2_tid, Task_3_tid;
 	tskPara *myMain_tskPara, *Task_1_tskPara, *Task_2_tskPara, *Task_3_tskPara;
 
