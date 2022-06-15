@@ -3,6 +3,8 @@
 #include "shell.h"
 #include "memTestCase.h"
 
+tskPara *myMain_tskPara, *Task_1_tskPara, *Task_2_tskPara, *Task_3_tskPara;
+
 void wallClock_hook_main(void){
 	int _h, _m, _s;
 	char hhmmss[]="hh:mm:ss\0\0\0\0";
@@ -33,6 +35,7 @@ void Task_1(void){
 	color = 0x1;
 	myPrintf(color,"*********************************************************\n");
 	myPrintf(color,"****************This is the Task_1 task!*****************\n");
+	walk_tskPara(Task_1_tskPara,color);
 	myPrintf(color,"*********************************************************\n");
 	myPrintf(color,"\n");
 	return;
@@ -43,6 +46,7 @@ void Task_2(void){
 	color = 0x2;
 	myPrintf(color,"*********************************************************\n");	
 	myPrintf(color,"****************This is the Task_2 task!*****************\n");
+	walk_tskPara(Task_2_tskPara,color);
 	myPrintf(color,"*********************************************************\n");
 	myPrintf(color,"\n");
 	return;
@@ -53,6 +57,7 @@ void Task_3(void){
 	color = 0x3;
 	myPrintf(color,"*********************************************************\n");
 	myPrintf(color,"****************This is the Task_3 task!*****************\n");
+	walk_tskPara(Task_3_tskPara,color);
 	myPrintf(color,"*********************************************************\n");
 	myPrintf(color,"\n");
 	return;
@@ -62,7 +67,6 @@ void Task_3(void){
 void scheduleInit(void){
 	time = 0;
 	int myMain_tid, Task_1_tid, Task_2_tid, Task_3_tid;
-	tskPara *myMain_tskPara, *Task_1_tskPara, *Task_2_tskPara, *Task_3_tskPara;
 
 	myMain_tskPara = (tskPara*)malloc(sizeof(tskPara));
 	Task_1_tskPara = (tskPara*)malloc(sizeof(tskPara));

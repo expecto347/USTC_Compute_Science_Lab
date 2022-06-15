@@ -36,8 +36,10 @@ int createTsk(void (*tskBody)(void),tskPara *tskPara);
 void destroyTsk(int tskIndex);
 void context_switch(unsigned long **prevTskStkAddr, unsigned long *nextTskStk);
 myTCB* get_Tsk(int tid);
+
 void walk_TCB_list(void);
 void walk_rdyQ(void);
+void walk_tskPara(tskPara* tmp, int color);
 
 void init_rdyQ(void);
 int check_rdyQ(void);
@@ -45,6 +47,7 @@ int check_rdyQ(void);
 myTCB* nextTask(void);
 
 void idleTsk_func(void);
+
 
 extern unsigned long tid;
 extern TCB_pool* TCB_list;

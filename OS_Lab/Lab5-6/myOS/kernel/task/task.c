@@ -183,3 +183,10 @@ int check_rdyQ(void){
     //检查就绪队列是否为空，如果是空的则返回1,如果不是空的则返回0
     return ((rdyQ->head == (myTCB*)NULL) && (rdyQ->tail == (myTCB*)NULL));
 }//检查就绪队列是否为空
+
+void walk_tskPara(tskPara* tmp, int color){
+    //遍历tskPara
+    myPrintk(color,"arrTime: %d  ",tmp->arrTime);
+    myPrintk(color,"exeTime: %d  ",tmp->exeTime);
+    myPrintk(color,"priority: %d\n",tmp->priority);
+}
