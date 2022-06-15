@@ -12,6 +12,7 @@ void SJF_tskStart(myTCB *tsk){
             rdyQ->tail->next_Queue = tsk;
         }   
         rdyQ->tail = tsk; //将task插入尾部
+        tsk->next_Queue = 0;
     }
 }
 
