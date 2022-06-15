@@ -31,6 +31,20 @@ void SJF_schedule(void){
 void SJF_tskEnd(void){
     //将任务从就绪队列中删除
     destroyTsk(currentTsk->tid); //从任务池中销毁任务
+
+    myTCB* tsk = rdyQ->head;
+    myTCB* preTsk = 0;
+    while(tsk != 0){
+        if(tsk == currentTsk){
+            if(preTsk == 0){
+                rdyQ->head = tsk->next_Queue;
+            }
+            else{
+                preTsk->next_Queue = tsk->next_Queue;
+            }
+        }
+    } //从就绪队列中删除任务
+
     SJF_schedule(); //进行调度
 }
 

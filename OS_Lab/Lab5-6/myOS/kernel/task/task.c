@@ -81,6 +81,7 @@ void destroyTsk(int tskIndex){
                 preTsk->next_myTCB = tsk->next_myTCB;
                 kfree((unsigned long)tsk); //释放当前任务地址空间
                 kfree((unsigned long)tsk->stack_base + 1 - stack_size); //释放当前任务的栈空间
+                TCB_list->size--;
                 return;
             }
             else{
