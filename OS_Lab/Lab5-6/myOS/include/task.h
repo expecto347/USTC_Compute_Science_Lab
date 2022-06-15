@@ -2,7 +2,6 @@
 #define __TASK_H_
 #define ready 0 // ready 状态
 #define waiting 1 // waiting 状态
-#include "schedule.h"
 
 typedef struct tskPara {
     unsigned long priority; //优先级
@@ -42,6 +41,9 @@ void walk_rdyQ(void);
 
 void init_rdyQ(void);
 int check_rdyQ(void);
+
+
+myTCB* nextTask(void);
 
 extern unsigned long tid;
 extern TCB_pool* TCB_list;
