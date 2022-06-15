@@ -11,6 +11,7 @@
 int schedule_type = FCFS; //调度算法
 
 extern void scheduleInit(void);
+void doSomeTestBefore(void);
 
 void pressAnyKeyToStart(void){
 	myPrintk(0x5,"Prepare uart device\n");
@@ -44,6 +45,10 @@ void osStart(void){
 	myPrintk(0x5,"Initializing task...\n");
 	init_TCB_pool(); //初始化TCB池
 	init_rdyQ(); //初始化就绪队
+	myPrintk(0x7,"Successful\n");
+
+	myPrintk(0x5,"Setting the timer...\n");
+	doSomeTestBefore();
 	myPrintk(0x7,"Successful\n");
 
 	scheduleInit(); //进入调度程序

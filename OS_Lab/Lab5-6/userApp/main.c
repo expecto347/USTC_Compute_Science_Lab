@@ -21,7 +21,6 @@ void doSomeTestBefore(void){
 void myMain(void){    
     // clear_screen();
 	myPrintf(0x7,"This is the myMain task!\n");
-    doSomeTestBefore();
 	myPrintf(0x7,"Initialize the myOS!\n");
 	initShell();
     memTestCaseInit();
