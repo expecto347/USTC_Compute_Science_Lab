@@ -1,7 +1,7 @@
 #include "../../../include/PRIORITY.h"
 #include "../../../include/myPrintk.h"
 
-myTCB* currentTsk = 0;//当前任务
+myTCB* currentTsk;//当前任务
 void PRIORITY_schedule(void){
     myTCB* tsk = PRIORITY_nextTask();
 
