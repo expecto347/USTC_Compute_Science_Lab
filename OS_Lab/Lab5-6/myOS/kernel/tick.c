@@ -1,3 +1,5 @@
+#include "../include/tick.h"
+
 extern void oneTickUpdateWallClock(void);       //TODO: to be generalized
 
 //#ifndef __TICK_HOOK__
@@ -20,4 +22,8 @@ void tick(void){
 	if(watchdogTimer_func) watchdogTimer_func(); 
     */
 	if(tick_hook) tick_hook();  //user defined   
+}
+
+void setTickHook(void (*func)(void)) {
+	tick_hook = func;
 }

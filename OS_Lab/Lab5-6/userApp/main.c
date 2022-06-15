@@ -14,7 +14,8 @@ void wallClock_hook_main(void){
 
 void doSomeTestBefore(void){		
 	setWallClock(0,0,0);		//set time 00:00:00
-    	setWallClockHook(&wallClock_hook_main);
+    setWallClockHook(&wallClock_hook_main);
+	tick_hook = &oneTickUpdateTsk;
 }
 
 void myMain(void){    
@@ -61,10 +62,42 @@ void Task_3(void){
 
 void scheduleInit(void){
 	int myMain_tid, Task_1_tid, Task_2_tid, Task_3_tid;
-	myMain_tid = createTsk(myMain); //创建myMain任务
-	Task_1_tid = createTsk(Task_1); //创建Task_1任务
-	Task_2_tid = createTsk(Task_2); //创建Task_2任务
-	Task_3_tid = createTsk(Task_3); //创建Task_3任务
+	tskPara *myMain_tskPara, *Task_1_tskPara, *Task_2_tskPara, *Task_3_tskPara;
+
+	myMain_tskPara = (tskPara*)malloc(sizeof(tskPara));
+	Task_1_tskPara = (tskPara*)malloc(sizeof(tskPara));
+	Task_2_tskPara = (tskPara*)malloc(sizeof(tskPara));
+	Task_3_tskPara = (tskPara*)malloc(sizeof(tskPara));
+	//为taskPara分配空间
+
+	{
+		myMain_tskPara->arrTime = 0;
+		myMain_tskPara->exeTime = 0;
+		myMain_tskPara->priority = 0;
+	}
+
+	{
+		Task_1_tskPara->arrTime = 10;
+		Task_1_tskPara->exeTime = 0;
+		Task_1_tskPara->priority = 1;
+	}
+
+	{
+		Task_2_tskPara->arrTime = 20;
+		Task_2_tskPara->exeTime = 0;
+		Task_2_tskPara->priority = 2;
+	}
+
+	{
+		Task_3_tskPara->arrTime = 30;
+		Task_3_tskPara->exeTime = 0;
+		Task_3_tskPara->priority = 3;
+	}
+
+	myMain_tid = createTsk(myMain,myMain_tskPara); //创建myMain任务
+	Task_1_tid = createTsk(Task_1,myMain_tskPara); //创建Task_1任务
+	Task_2_tid = createTsk(Task_2,myMain_tskPara); //创建Task_2任务
+	Task_3_tid = createTsk(Task_3,myMain_tskPara); //创建Task_3任务
 
 	tskStart(get_Tsk(myMain_tid)); //启动myMain任务
 	tskStart(get_Tsk(Task_1_tid)); //启动Task_1任务

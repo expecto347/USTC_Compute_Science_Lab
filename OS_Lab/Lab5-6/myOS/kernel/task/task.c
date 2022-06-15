@@ -2,10 +2,11 @@
 #include "../../include/kmalloc.h"
 #include "../../include/task.h"
 #include "../../include/CTX_SW.h"
+#include "../../include/schedule.h"
 #define stack_size 1024 //定义一个1kb大小的栈
 #define NULL 0 //定义一个空指针
 
-void tskEnd(void);
+rdyQueue* rdyQ; //维护一个就绪队列
 
 typedef struct rdyQueue{
     myTCB* head;
@@ -22,7 +23,7 @@ void init_TCB_pool(void){
 }
 
 unsigned long tid = 0; //任务ID
-int createTsk(void (*tskBody)(void)){
+int createTsk(void (*tskBody)(void), tskPara *tskPara){
     //功能：本函数创建负责创建一个任务，传入的参数为任务函数的指针,返回任务的tid，如果失败则返回相应的错误代码
     myTCB* tsk;
     unsigned long pointer;
@@ -41,6 +42,8 @@ int createTsk(void (*tskBody)(void)){
         tsk->stack_base = (unsigned long*)pointer;
         tsk->stack_top = (unsigned long*)pointer; //维护一个栈顶指针和一个栈底指针
         stack_init(&tsk->stack_top, tskBody); //初始化栈
+        tsk->tskPara = tskPara; //给任务参数赋值
+
         if(TCB_list->head){
             tsk->next_myTCB = TCB_list->head;
             TCB_list->head = tsk;
@@ -144,3 +147,44 @@ void walk_TCB_list(){
         tsk = tsk->next_myTCB;
     }
 }
+
+void walk_rdyQ(void){
+    //遍历就绪队列
+    myTCB* tsk = rdyQ->head;
+    while(tsk != (myTCB*)NULL){
+        myPrintk(0x5,"tsk %d is ready  ",tsk->tid);
+        myPrintk(0x5,"stack_top: %x  ",tsk->stack_top);
+        myPrintk(0x5,"address: %x\n",tsk);
+        tsk = tsk->next_Queue;
+    }
+}
+
+void idleTsk_func(void){
+    int color = 0x7;
+    myPrintk(color,"*********************************************************\n");
+	myPrintk(color,"****************This is the idleTsk_func!****************\n");
+    myPrintk(color,"****************Waiting for new scheduling!**************\n");
+	myPrintk(color,"*********************************************************\n");
+	myPrintk(color,"\n");
+    while(1){
+        FCFS_schedule();
+    }
+}
+
+void init_rdyQ(void){
+    tskPara* tskPara_tmp;
+    tskPara_tmp = (tskPara*)kmalloc(sizeof(tskPara));
+    tskPara_tmp->arrTime = 0;
+    tskPara_tmp->exeTime = 0;
+    tskPara_tmp->priority = 0;
+    createTsk(idleTsk_func,tskPara_tmp); //初始化idle任务
+    rdyQ = (rdyQueue*)kmalloc(sizeof(rdyQueue));
+    rdyQ->head = (myTCB*)NULL;
+    rdyQ->tail = (myTCB*)NULL;
+    rdyQ->idleTsk = TCB_list->head;
+}//初始化就绪队列
+
+int check_rdyQ(void){
+    //检查就绪队列是否为空，如果是空的则返回1,如果不是空的则返回0
+    return ((rdyQ->head == (myTCB*)NULL) && (rdyQ->tail == (myTCB*)NULL));
+}//检查就绪队列是否为空
