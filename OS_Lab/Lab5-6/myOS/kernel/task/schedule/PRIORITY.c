@@ -48,6 +48,9 @@ void PRIORITY_tskEnd(void){
     myTCB* tmp;
     if(rdyQ->head == currentTsk){
         rdyQ->head = currentTsk->next_Queue;
+        if(rdyQ->tail == currentTsk){
+            rdyQ->tail = 0;
+        }
     }
     else{
         tmp = rdyQ->head;
@@ -55,11 +58,10 @@ void PRIORITY_tskEnd(void){
             tmp = tmp->next_Queue;
         }
         tmp->next_Queue = currentTsk->next_Queue;
+        if(rdyQ->tail == currentTsk){
+            rdyQ->tail = tmp; 
+        }
     }
-    if(rdyQ->tail == currentTsk){
-        rdyQ->tail = tmp;
-    }
-
     PRIORITY_schedule();
 }
 myTCB* PRIORITY_nextTask(void){
