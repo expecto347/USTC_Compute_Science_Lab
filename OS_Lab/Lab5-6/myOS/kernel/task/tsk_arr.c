@@ -13,7 +13,6 @@ void arrangeTsk(int time){
     myTCB* tsk = TCB_list->head;
     while(tsk){
         if(tsk->status == waiting && tsk->tskPara->arrTime == time){
-            tsk->status = ready;
             tskStart(tsk);
         }
         tsk = tsk->next_myTCB;

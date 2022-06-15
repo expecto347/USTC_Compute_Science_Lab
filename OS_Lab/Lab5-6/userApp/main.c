@@ -100,6 +100,6 @@ void scheduleInit(void){
 	Task_3_tid = createTsk(Task_3,myMain_tskPara); //创建Task_3任务
 
 	//依次添加任务到就绪队列
-	while (1) schedule(); //进入FCFS调度程序
+	while (1) schedule(); //进入调度程序
 
 }
