@@ -107,6 +107,6 @@ void scheduleInit(void){
 	walk_rdyQ();
 
 	//依次添加任务到就绪队列
-	while (1) scheduleFCFS(); //进入FCFS调度程序
+	while (1) schedule(); //进入FCFS调度程序
 
 }
