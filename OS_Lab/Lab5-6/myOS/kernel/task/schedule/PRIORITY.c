@@ -12,7 +12,7 @@ void PRIORITY_schedule(void){
         stack_init(&rdyQ->idleTsk->stack_top,idleTsk_func);
         context_switch(&preTskStackPointer, tsk->stack_top); //上下文切换，将当前任务的栈指针存储在preTskStackPointer中，将下一个任务的栈指针传入，进行上下文切换
     }
-    else if(tsk->tskPara->priority > currentTsk->tskPara->priority){
+    else if(tsk->tskPara->priority > currentTsk->tskPara->priority || currentTsk->status == killing){
         currentTsk = tsk;
         rdyQ->idleTsk->stack_top = rdyQ->idleTsk->stack_base;
         stack_init(&rdyQ->idleTsk->stack_top,idleTsk_func);
@@ -41,6 +41,7 @@ void PRIORITY_tskStart(myTCB *tsk){
 void PRIORITY_tskEnd(void){
     //将任务从就绪队列中删除
     destroyTsk(currentTsk->tid);
+    currentTsk->status = killing;
 
     myTCB* tmp;
     if(rdyQ->head == currentTsk){

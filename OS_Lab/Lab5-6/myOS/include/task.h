@@ -2,6 +2,7 @@
 #define __TASK_H_
 #define ready 0 // ready 状态
 #define waiting 1 // waiting 状态
+#define killing 2 // killing 状态
 
 typedef struct tskPara {
     unsigned long priority; //优先级
