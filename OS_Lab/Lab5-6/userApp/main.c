@@ -123,31 +123,31 @@ void scheduleInit(void){
 
 	{
 		Task_1_tskPara->arrTime = 5;
-		Task_1_tskPara->exeTime = 7;
+		Task_1_tskPara->exeTime = 40;
 		Task_1_tskPara->priority = 2;
 	}
 
 	{
-		Task_2_tskPara->arrTime = 15;
+		Task_2_tskPara->arrTime = 10;
 		Task_2_tskPara->exeTime = 10;
 		Task_2_tskPara->priority = 8;
 	}
 
 	{
-		Task_3_tskPara->arrTime = 20;
-		Task_3_tskPara->exeTime = 20;
+		Task_3_tskPara->arrTime = 15;
+		Task_3_tskPara->exeTime = 3;
 		Task_3_tskPara->priority = 3;
 	}
 
 	{
-		Task_4_tskPara->arrTime = 35;
-		Task_4_tskPara->exeTime = 5;
+		Task_4_tskPara->arrTime = 17;
+		Task_4_tskPara->exeTime = 6;
 		Task_4_tskPara->priority = 9;
 	}
 
 	{
-		Task_5_tskPara->arrTime = 50;
-		Task_5_tskPara->exeTime = 10;
+		Task_5_tskPara->arrTime = 35;
+		Task_5_tskPara->exeTime = 1;
 		Task_5_tskPara->priority = 5;
 	}
 
@@ -161,6 +161,6 @@ void scheduleInit(void){
 	run = 1;
 
 	//依次添加任务到就绪队列
-	while (1) schedule(); //进入调度程序
+	while(1) schedule(); //进入调度程序
 
 }
