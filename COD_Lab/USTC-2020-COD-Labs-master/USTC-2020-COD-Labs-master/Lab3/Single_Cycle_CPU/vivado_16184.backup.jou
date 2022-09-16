@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu May 28 14:52:33 2020
+# Process ID: 16184
+# Current directory: D:/VivadoProject/COD/Lab3/Single_Cycle_CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8696 D:\VivadoProject\COD\Lab3\Single_Cycle_CPU\Single_Cycle_CPU.xpr
+# Log file: D:/VivadoProject/COD/Lab3/Single_Cycle_CPU/vivado.log
+# Journal file: D:/VivadoProject/COD/Lab3/Single_Cycle_CPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/VivadoProject/COD/Lab3/Single_Cycle_CPU/Single_Cycle_CPU.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/VivadoProject/COD/Lab3/Single_Cycle_CPU/dbu_tb_TA_behav.wcfg
+source dbu_tb_TA.tcl
+run all
+relaunch_sim
+close_sim
+close_project
+open_project D:/VivadoProject/COD/Lab3/Single_Cycle_CPU/Single_Cycle_CPU.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/VivadoProject/COD/Lab3/Single_Cycle_CPU/dbu_tb_TA_behav.wcfg
+source dbu_tb_TA.tcl
+relaunch_sim
+run all
+save_wave_config {D:/VivadoProject/COD/Lab3/Single_Cycle_CPU/dbu_tb_TA_behav.wcfg}
+save_wave_config {D:/VivadoProject/COD/Lab3/Single_Cycle_CPU/dbu_tb_TA_behav.wcfg}
+close_sim

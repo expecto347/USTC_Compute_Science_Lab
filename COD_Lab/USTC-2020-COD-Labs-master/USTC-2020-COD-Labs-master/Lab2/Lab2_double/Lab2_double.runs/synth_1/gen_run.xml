@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1588581310">
+  <File Type="PA-TCL" Name="fifo.tcl"/>
+  <File Type="REPORTS-TCL" Name="fifo_reports.tcl"/>
+  <File Type="RDS-RDS" Name="fifo.vds"/>
+  <File Type="RDS-UTIL" Name="fifo_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="fifo_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="fifo.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_16x8/blk_mem_gen_16x8.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab2.srcs/sources_1/ip/blk_mem_gen_16x8/blk_mem_gen_16x8.xci"/>
+        <Attr Name="ImportTime" Val="1588230442"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/edge_taker.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab2.srcs/sources_1/new/edge_taker.v"/>
+        <Attr Name="ImportTime" Val="1588225868"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fifo.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab2.srcs/sources_1/new/fifo.v"/>
+        <Attr Name="ImportTime" Val="1588235634"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ram_16x8.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab2.srcs/sources_1/new/ram_16x8.v"/>
+        <Attr Name="ImportTime" Val="1588215874"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/register_file.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab2.srcs/sources_1/new/register_file.v"/>
+        <Attr Name="ImportTime" Val="1588224907"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/init.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab2.srcs/sources_1/new/init.mem"/>
+        <Attr Name="ImportTime" Val="1588216366"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ram_init.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab2.srcs/sources_1/ram_init.coe"/>
+        <Attr Name="ImportTime" Val="1588217739"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="fifo"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/VivadoProject/Nexys-4-DDR-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Nexys-4-DDR-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1587647793"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

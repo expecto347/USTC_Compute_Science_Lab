@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="cpu_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="cpu_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="38800fs"></ZoomStartTime>
+      <ZoomEndTime time="259610fs"></ZoomEndTime>
+      <Cursor1Time time="340000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="165"></NameColumnWidth>
+      <ValueColumnWidth column_width="61"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="31" />
+   <wvobject fp_name="/cpu_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/DBU_mem_rf_addr" type="array">
+      <obj_property name="ElementShortName">DBU_mem_rf_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DBU_mem_rf_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/DBU_rf_data" type="array">
+      <obj_property name="ElementShortName">DBU_rf_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DBU_rf_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/DBU_mem_data" type="array">
+      <obj_property name="ElementShortName">DBU_mem_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DBU_mem_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/DBU_PC" type="array">
+      <obj_property name="ElementShortName">DBU_PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DBU_PC[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FF7F</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/DBU_IF_ID_NPC" type="array">
+      <obj_property name="ElementShortName">DBU_IF_ID_NPC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DBU_IF_ID_NPC[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/DBU_IF_ID_IR" type="array">
+      <obj_property name="ElementShortName">DBU_IF_ID_IR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DBU_IF_ID_IR[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_pipeline/ID_EX_WB" type="array">
+      <obj_property name="ElementShortName">ID_EX_WB[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_EX_WB[1:0]</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_pipeline/ID_EX_M" type="array">
+      <obj_property name="ElementShortName">ID_EX_M[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_EX_M[1:0]</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_pipeline/ID_EX_EX" type="array">
+      <obj_property name="ElementShortName">ID_EX_EX[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_EX_EX[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/DBU_ID_EX_IR" type="array">
+      <obj_property name="ElementShortName">DBU_ID_EX_IR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DBU_ID_EX_IR[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/DBU_ID_EX_A" type="array">
+      <obj_property name="ElementShortName">DBU_ID_EX_A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DBU_ID_EX_A[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/DBU_ID_EX_B" type="array">
+      <obj_property name="ElementShortName">DBU_ID_EX_B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DBU_ID_EX_B[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/DBU_ID_EX_IMM" type="array">
+      <obj_property name="ElementShortName">DBU_ID_EX_IMM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DBU_ID_EX_IMM[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_pipeline/ALU/a" type="array">
+      <obj_property name="ElementShortName">a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">a[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_pipeline/ALU/b" type="array">
+      <obj_property name="ElementShortName">b[31:0]</obj_property>
+      <obj_property name="ObjectShortName">b[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_pipeline/ALU/y" type="array">
+      <obj_property name="ElementShortName">y[31:0]</obj_property>
+      <obj_property name="ObjectShortName">y[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_pipeline/EX_MEM_WB" type="array">
+      <obj_property name="ElementShortName">EX_MEM_WB[1:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_MEM_WB[1:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_pipeline/EX_MEM_M" type="array">
+      <obj_property name="ElementShortName">EX_MEM_M[1:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_MEM_M[1:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/DBU_EX_MEM_B" type="array">
+      <obj_property name="ElementShortName">DBU_EX_MEM_B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DBU_EX_MEM_B[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/DBU_EX_MEM_Y" type="array">
+      <obj_property name="ElementShortName">DBU_EX_MEM_Y[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DBU_EX_MEM_Y[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/DBU_EX_MEM_WA" type="array">
+      <obj_property name="ElementShortName">DBU_EX_MEM_WA[4:0]</obj_property>
+      <obj_property name="ObjectShortName">DBU_EX_MEM_WA[4:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_pipeline/MEM_WB_WB" type="array">
+      <obj_property name="ElementShortName">MEM_WB_WB[1:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM_WB_WB[1:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/DBU_MEM_WB_MDR" type="array">
+      <obj_property name="ElementShortName">DBU_MEM_WB_MDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DBU_MEM_WB_MDR[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/DBU_MEM_WB_Y" type="array">
+      <obj_property name="ElementShortName">DBU_MEM_WB_Y[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DBU_MEM_WB_Y[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/DBU_MEM_WB_WA" type="array">
+      <obj_property name="ElementShortName">DBU_MEM_WB_WA[4:0]</obj_property>
+      <obj_property name="ObjectShortName">DBU_MEM_WB_WA[4:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_pipeline/ctrl_unit/equal" type="logic">
+      <obj_property name="ElementShortName">equal</obj_property>
+      <obj_property name="ObjectShortName">equal</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_pipeline/ctrl_unit/had_branched" type="logic">
+      <obj_property name="ElementShortName">had_branched</obj_property>
+      <obj_property name="ObjectShortName">had_branched</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_pipeline/stall" type="logic">
+      <obj_property name="ElementShortName">stall</obj_property>
+      <obj_property name="ObjectShortName">stall</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cpu_tb/cpu_pipeline/ctrl_unit/flush" type="logic">
+      <obj_property name="ElementShortName">flush</obj_property>
+      <obj_property name="ObjectShortName">flush</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+</wave_config>

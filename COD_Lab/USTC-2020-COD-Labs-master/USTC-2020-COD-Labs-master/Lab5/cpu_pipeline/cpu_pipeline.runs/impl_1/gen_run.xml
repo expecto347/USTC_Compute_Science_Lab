@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1590978691">
+  <File Type="ROUTE-PWR" Name="dbu_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="dbu.tcl"/>
+  <File Type="BITSTR-BMM" Name="dbu_bd.bmm"/>
+  <File Type="ROUTE-PWR-SUM" Name="dbu_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="dbu_reports.tcl"/>
+  <File Type="OPT-DCP" Name="dbu_opt.dcp"/>
+  <File Type="OPT-DRC" Name="dbu_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="dbu.hwdef"/>
+  <File Type="PWROPT-DCP" Name="dbu_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="dbu_placed.dcp"/>
+  <File Type="PLACE-IO" Name="dbu_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="dbu_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="dbu_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="dbu_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="dbu_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="dbu_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="dbu.bin"/>
+  <File Type="PHYSOPT-DCP" Name="dbu_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="dbu.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="dbu_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="dbu_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="dbu_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="dbu_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="dbu_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="dbu_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="dbu_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="dbu.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="dbu_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="dbu_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="dbu_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="dbu_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="dbu_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="dbu_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="dbu_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="dbu_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="dbu_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="dbu_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="dbu_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="dbu_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="dbu_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="dbu_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="dbu.bit"/>
+  <File Type="BITSTR-RBT" Name="dbu.rbt"/>
+  <File Type="BITSTR-NKY" Name="dbu.nky"/>
+  <File Type="PDI-FILE" Name="dbu.pdi"/>
+  <File Type="RCFI_FILE" Name="dbu.rcfi"/>
+  <File Type="CFI_FILE" Name="dbu.cfi"/>
+  <File Type="RNPI_FILE" Name="dbu.rnpi"/>
+  <File Type="NPI_FILE" Name="dbu.npi"/>
+  <File Type="RBD_FILE" Name="dbu.rbd"/>
+  <File Type="BITSTR-LTX" Name="dbu.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="dbu.sysdef"/>
+  <File Type="BG-BGN" Name="dbu.bgn"/>
+  <File Type="BG-DRC" Name="dbu.drc"/>
+  <File Type="RDI-RDI" Name="dbu.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/ALU.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/alu_control.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/control_unit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/cpu_pipeline.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/edge_taker.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/forwarding_unit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/hazard_detection_unit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/nixietube.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/register.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/register_file.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/dbu.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../lab3_test/ins.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../lab3_test/data.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="dbu"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/VivadoProject/Nexys-4-DDR-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Nexys-4-DDR-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1588562512"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="instr_mem_256x32"/>
+  <BlockFileSet Type="BlockSrcs" Name="data_mem_256x32"/>
+</GenRun>

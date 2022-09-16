@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri May 22 14:35:46 2020
+# Process ID: 3624
+# Current directory: D:/VivadoProject/COD/Lab4/Multicycle_CPU_more/Multicycle_CPU_more.sim/sim_1/synth/timing/xsim
+# Command line: wbtcv.exe -mode batch -source D:/VivadoProject/COD/Lab4/Multicycle_CPU_more/Multicycle_CPU_more.sim/sim_1/synth/timing/xsim/xsim.dir/dbu_tb_time_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/VivadoProject/COD/Lab4/Multicycle_CPU_more/Multicycle_CPU_more.sim/sim_1/synth/timing/xsim/webtalk.log
+# Journal file: D:/VivadoProject/COD/Lab4/Multicycle_CPU_more/Multicycle_CPU_more.sim/sim_1/synth/timing/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/VivadoProject/COD/Lab4/Multicycle_CPU_more/Multicycle_CPU_more.sim/sim_1/synth/timing/xsim/xsim.dir/dbu_tb_time_synth/webtalk/xsim_webtalk.tcl -notrace

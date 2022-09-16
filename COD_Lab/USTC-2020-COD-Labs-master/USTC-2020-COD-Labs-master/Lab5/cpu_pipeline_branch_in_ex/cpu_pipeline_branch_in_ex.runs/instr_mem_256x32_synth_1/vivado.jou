@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Jun  3 21:15:22 2020
+# Process ID: 30304
+# Current directory: D:/VivadoProject/COD/Lab5/cpu_pipeline_branch_in_ex/cpu_pipeline_branch_in_ex.runs/instr_mem_256x32_synth_1
+# Command line: vivado.exe -log instr_mem_256x32.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source instr_mem_256x32.tcl
+# Log file: D:/VivadoProject/COD/Lab5/cpu_pipeline_branch_in_ex/cpu_pipeline_branch_in_ex.runs/instr_mem_256x32_synth_1/instr_mem_256x32.vds
+# Journal file: D:/VivadoProject/COD/Lab5/cpu_pipeline_branch_in_ex/cpu_pipeline_branch_in_ex.runs/instr_mem_256x32_synth_1\vivado.jou
+#-----------------------------------------------------------
+source instr_mem_256x32.tcl -notrace

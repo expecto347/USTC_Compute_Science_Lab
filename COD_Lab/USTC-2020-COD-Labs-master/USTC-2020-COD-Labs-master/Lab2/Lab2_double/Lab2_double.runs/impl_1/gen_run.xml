@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1588581310">
+  <File Type="ROUTE-PWR" Name="fifo_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="fifo.tcl"/>
+  <File Type="BITSTR-BMM" Name="fifo_bd.bmm"/>
+  <File Type="ROUTE-PWR-SUM" Name="fifo_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="fifo_reports.tcl"/>
+  <File Type="OPT-DCP" Name="fifo_opt.dcp"/>
+  <File Type="OPT-DRC" Name="fifo_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="fifo.hwdef"/>
+  <File Type="PWROPT-DCP" Name="fifo_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="fifo_placed.dcp"/>
+  <File Type="PLACE-IO" Name="fifo_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="fifo_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="fifo_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="fifo_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="fifo_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="fifo_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="fifo.bin"/>
+  <File Type="PHYSOPT-DCP" Name="fifo_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="fifo.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="fifo_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="fifo_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="fifo_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="fifo_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="fifo_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="fifo_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="fifo.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="fifo_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="fifo.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="fifo_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="fifo_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="fifo.sysdef"/>
+  <File Type="ROUTE-PWR-RPX" Name="fifo_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="fifo_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="fifo_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="fifo_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="fifo_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="fifo_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="fifo_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="fifo.vdi"/>
+  <File Type="ROUTE-BUS-SKEW" Name="fifo_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="fifo_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="fifo_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="fifo_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="fifo_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="fifo.bit"/>
+  <File Type="BITSTR-RBT" Name="fifo.rbt"/>
+  <File Type="BITSTR-NKY" Name="fifo.nky"/>
+  <File Type="PDI-FILE" Name="fifo.pdi"/>
+  <File Type="RCFI_FILE" Name="fifo.rcfi"/>
+  <File Type="CFI_FILE" Name="fifo.cfi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RNPI_FILE" Name="fifo.rnpi"/>
+  <File Type="NPI_FILE" Name="fifo.npi"/>
+  <File Type="RBD_FILE" Name="fifo.rbd"/>
+  <File Type="BG-BGN" Name="fifo.bgn"/>
+  <File Type="BG-DRC" Name="fifo.drc"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_16x8/blk_mem_gen_16x8.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab2.srcs/sources_1/ip/blk_mem_gen_16x8/blk_mem_gen_16x8.xci"/>
+        <Attr Name="ImportTime" Val="1588230442"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/edge_taker.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab2.srcs/sources_1/new/edge_taker.v"/>
+        <Attr Name="ImportTime" Val="1588225868"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fifo.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab2.srcs/sources_1/new/fifo.v"/>
+        <Attr Name="ImportTime" Val="1588235634"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ram_16x8.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab2.srcs/sources_1/new/ram_16x8.v"/>
+        <Attr Name="ImportTime" Val="1588215874"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/register_file.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab2.srcs/sources_1/new/register_file.v"/>
+        <Attr Name="ImportTime" Val="1588224907"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/init.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab2.srcs/sources_1/new/init.mem"/>
+        <Attr Name="ImportTime" Val="1588216366"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ram_init.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab2.srcs/sources_1/ram_init.coe"/>
+        <Attr Name="ImportTime" Val="1588217739"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="fifo"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/VivadoProject/Nexys-4-DDR-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Nexys-4-DDR-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1587647793"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

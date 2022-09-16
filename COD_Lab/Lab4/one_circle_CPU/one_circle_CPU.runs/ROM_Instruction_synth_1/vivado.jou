@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu May 26 16:15:54 2022
+# Process ID: 13836
+# Current directory: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.runs/ROM_Instruction_synth_1
+# Command line: vivado.exe -log ROM_Instruction.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ROM_Instruction.tcl
+# Log file: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.runs/ROM_Instruction_synth_1/ROM_Instruction.vds
+# Journal file: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.runs/ROM_Instruction_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ROM_Instruction.tcl -notrace

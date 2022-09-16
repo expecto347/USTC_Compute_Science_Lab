@@ -1,0 +1,9 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "files.associations": {
+        "myprintk.h": "c",
+        "wallclock.h": "c",
+        "vsprintf.h": "c",
+        "stdarg.h": "c"
+    }
+}

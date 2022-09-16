@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Feb 25 00:39:52 2021
+# Process ID: 21816
+# Current directory: F:/Data/USTC-CS-Resources/CS/Computer-Organization-and-Design/USTC-2020-COD-Labs/Lab6/cpu_pipeline_with_bus
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5352 F:\Data\USTC-CS-Resources\CS\Computer-Organization-and-Design\USTC-2020-COD-Labs\Lab6\cpu_pipeline_with_bus\cpu_pipeline_with_bus.xpr
+# Log file: F:/Data/USTC-CS-Resources/CS/Computer-Organization-and-Design/USTC-2020-COD-Labs/Lab6/cpu_pipeline_with_bus/vivado.log
+# Journal file: F:/Data/USTC-CS-Resources/CS/Computer-Organization-and-Design/USTC-2020-COD-Labs/Lab6/cpu_pipeline_with_bus\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/Data/USTC-CS-Resources/CS/Computer-Organization-and-Design/USTC-2020-COD-Labs/Lab6/cpu_pipeline_with_bus/cpu_pipeline_with_bus.xpr
+update_compile_order -fileset sources_1

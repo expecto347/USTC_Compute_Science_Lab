@@ -1,0 +1,11 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/expecto/Desktop/COD-experiment/Lab1-ALU/Lab1-ALU.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/expecto/Desktop/COD-experiment/Lab1-ALU/Lab1-ALU.srcs/sim_1/new/alu_sim.v,1648720175,verilog,,,,ALU_sim,,,,,,,,
+C:/Users/expecto/Desktop/COD-experiment/Lab1-ALU/Lab1-ALU.srcs/sim_1/new/sim11.v,1648731681,verilog,,,,Sim11,,,,,,,,
+C:/Users/expecto/Desktop/COD-experiment/Lab1-ALU/Lab1-ALU.srcs/sources_1/new/ALU.v,1648717890,verilog,,,,top_module,,,,,,,,
+C:/Users/expecto/Desktop/COD-experiment/Lab1-ALU/Lab1-ALU.srcs/sources_1/new/FLS.v,1648733656,verilog,,C:/Users/expecto/Desktop/COD-experiment/Lab1-ALU/Lab1-ALU.srcs/sources_1/new/Sig.v,,fls,,,,,,,,
+C:/Users/expecto/Desktop/COD-experiment/Lab1-ALU/Lab1-ALU.srcs/sources_1/new/Sig.v,1648726910,verilog,,C:/Users/expecto/Desktop/COD-experiment/Lab1-ALU/Lab1-ALU.srcs/sim_1/new/sim11.v,,Sig,,,,,,,,
+C:/Users/expecto/Desktop/COD-experiment/Lab1-ALU/Lab1-ALU.srcs/sources_1/new/alu6.v,1648719878,verilog,,C:/Users/expecto/Desktop/COD-experiment/Lab1-ALU/Lab1-ALU.srcs/sim_1/new/alu_sim.v,,alu32,,,,,,,,

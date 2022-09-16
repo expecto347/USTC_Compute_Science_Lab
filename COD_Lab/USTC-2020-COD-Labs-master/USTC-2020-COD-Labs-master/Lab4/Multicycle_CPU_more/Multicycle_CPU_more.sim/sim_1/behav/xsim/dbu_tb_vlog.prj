@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Multicycle_CPU_more.srcs/sources_1/ip/dist_mem_256x32/sim/dist_mem_256x32.v" \
+"../../../../Multicycle_CPU_more.srcs/sources_1/imports/new/ALU.v" \
+"../../../../Multicycle_CPU_more.srcs/sources_1/new/alu_control.v" \
+"../../../../Multicycle_CPU_more.srcs/sources_1/imports/new/control_unit.v" \
+"../../../../Multicycle_CPU_more.srcs/sources_1/new/cpu_multicycle.v" \
+"../../../../Multicycle_CPU_more.srcs/sources_1/imports/new/dbu.v" \
+"../../../../Multicycle_CPU_more.srcs/sources_1/imports/new/edge_taker.v" \
+"../../../../Multicycle_CPU_more.srcs/sources_1/imports/new/nixietube.v" \
+"../../../../Multicycle_CPU_more.srcs/sources_1/imports/new/register_file.v" \
+"../../../../Multicycle_CPU_more.srcs/sim_1/new/dbu_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,108 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu May 28 15:15:44 2020
+# Process ID: 10120
+# Current directory: D:/VivadoProject/COD/Lab4/using_hzy_nixietube
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16036 D:\VivadoProject\COD\Lab4\using_hzy_nixietube\using_hzy_nixietube.xpr
+# Log file: D:/VivadoProject/COD/Lab4/using_hzy_nixietube/vivado.log
+# Journal file: D:/VivadoProject/COD/Lab4/using_hzy_nixietube\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/VivadoProject/COD/Lab4/using_hzy_nixietube/using_hzy_nixietube.xpr
+update_compile_order -fileset sources_1
+open_project C:/Users/89565/Desktop/hzy/hzy.xpr
+update_compile_order -fileset sources_1
+current_project using_hzy_nixietube
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+current_project hzy
+current_project using_hzy_nixietube
+current_project hzy
+current_project using_hzy_nixietube
+launch_simulation
+open_wave_config D:/VivadoProject/COD/Lab4/using_hzy_nixietube/using_hzy_nixietube.srcs/sim_1/imports/Multicycle_CPU_new/dbu_tb_behav.wcfg
+source dbu_tb.tcl
+run all
+relaunch_sim
+current_project hzy
+current_project using_hzy_nixietube
+close_sim
+current_project hzy
+launch_simulation
+source dbu_tb.tcl
+close_sim
+close_project
+launch_simulation -mode post-synthesis -type timing
+open_wave_config D:/VivadoProject/COD/Lab4/using_hzy_nixietube/using_hzy_nixietube.srcs/sim_1/imports/Multicycle_CPU_new/dbu_tb_behav.wcfg
+source dbu_tb.tcl
+synth_design -rtl -name rtl_1
+current_design synth_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+close_design
+open_run synth_1 -name synth_1
+open_run impl_1
+open_project C:/Users/89565/Desktop/hzy/hzy.xpr
+update_compile_order -fileset sources_1
+close_project
+open_project D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.xpr
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+current_design synth_1
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+close_design
+refresh_design
+open_run synth_1 -name synth_1
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+refresh_design
+open_run synth_1 -name synth_1
+close_design
+open_run synth_1 -name synth_1
+close_design
+open_run synth_1 -name synth_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+close_design
+refresh_design
+open_run synth_1 -name synth_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+close_design
+refresh_design
+close_design
+open_run synth_1 -name synth_1
+open_project D:/VivadoProject/COD/Lab3/Single_Cycle_CPU/Single_Cycle_CPU.xpr
+update_compile_order -fileset sources_1
+close_project
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+close_design
+open_run synth_1 -name synth_1
+close_design
+current_project using_hzy_nixietube
+close_sim
+close_project
+launch_simulation
+open_wave_config D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/dbu_tb_behav.wcfg
+source dbu_tb.tcl
+run all
+close_sim

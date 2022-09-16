@@ -1,0 +1,8 @@
+{
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.associations": {
+        "stdio.h": "c",
+        "myprintk.h": "c",
+        "vga.h": "c"
+    }
+}

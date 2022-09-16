@@ -1,0 +1,84 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Apr 21 21:42:08 2022
+# Process ID: 7344
+# Current directory: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13564 C:\Users\expecto\Desktop\Lab\COD_Lab\Lab4\one_circle_CPU\one_circle_CPU.xpr
+# Log file: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/vivado.log
+# Journal file: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+launch_simulation
+source top.tcl
+close_sim
+set_property is_enabled false [get_files  C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sim_1/new/CPU_sim.v]
+set_property is_enabled true [get_files  C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sim_1/new/TOP_sim2.v]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source TOP_sim2.tcl
+current_wave_config {Untitled 3}
+add_wave {{/TOP_sim2/top/cpu/curPC}} 
+current_wave_config {Untitled 3}
+add_wave {{/TOP_sim2/top/cpu/nextPC}} 
+current_wave_config {Untitled 3}
+add_wave {{/TOP_sim2/top/cpu/PC_ins}} 
+current_wave_config {Untitled 3}
+add_wave {{/TOP_sim2/top/cpu/register_file/registers}} 
+current_wave_config {Untitled 3}
+add_wave {{/TOP_sim2/top/cpu/datamem/ram}} 
+relaunch_sim
+run 10 us
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+close_sim
+set_property -dict [list CONFIG.coefficient_file {C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/fib_test.coe}] [get_ips ROM_Instruction]
+generate_target all [get_files  C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci]
+catch { config_ip_cache -export [get_ips -all ROM_Instruction] }
+export_ip_user_files -of_objects [get_files C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci]
+export_simulation -of_objects [get_files C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci] -directory C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.ip_user_files -ipstatic_source_dir C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.cache/compile_simlib/modelsim} {questa=C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.cache/compile_simlib/questa} {riviera=C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.cache/compile_simlib/riviera} {activehdl=C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+launch_simulation
+source TOP_sim2.tcl
+close_sim
+set_property -dict [list CONFIG.coefficient_file {C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/te.coe}] [get_ips ROM_Instruction]
+generate_target all [get_files  C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci]
+catch { config_ip_cache -export [get_ips -all ROM_Instruction] }
+export_ip_user_files -of_objects [get_files C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci]
+launch_runs -jobs 6 ROM_Instruction_synth_1
+export_simulation -of_objects [get_files C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci] -directory C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.ip_user_files -ipstatic_source_dir C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.cache/compile_simlib/modelsim} {questa=C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.cache/compile_simlib/questa} {riviera=C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.cache/compile_simlib/riviera} {activehdl=C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property -dict [list CONFIG.coefficient_file {C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/tes.coe}] [get_ips ROM_Instruction]
+generate_target all [get_files  C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci]
+catch { config_ip_cache -export [get_ips -all ROM_Instruction] }
+export_ip_user_files -of_objects [get_files C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci] -no_script -sync -force -quiet
+reset_run ROM_Instruction_synth_1
+launch_runs -jobs 6 ROM_Instruction_synth_1
+export_simulation -of_objects [get_files C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci] -directory C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.ip_user_files -ipstatic_source_dir C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.cache/compile_simlib/modelsim} {questa=C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.cache/compile_simlib/questa} {riviera=C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.cache/compile_simlib/riviera} {activehdl=C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+launch_simulation
+source TOP_sim2.tcl
+current_wave_config {Untitled 5}
+add_wave {{/TOP_sim2/top/cpu/curPC}} 
+current_wave_config {Untitled 5}
+add_wave {{/TOP_sim2/top/cpu/nextPC}} 
+relaunch_sim
+run 10 us
+close_sim

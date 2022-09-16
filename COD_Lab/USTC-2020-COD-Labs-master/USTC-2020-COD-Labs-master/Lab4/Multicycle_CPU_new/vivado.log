@@ -1,0 +1,1161 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu May 28 13:28:52 2020
+# Process ID: 11820
+# Current directory: D:/VivadoProject/COD/Lab4/Multicycle_CPU_new
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13024 D:\VivadoProject\COD\Lab4\Multicycle_CPU_new\Multicycle_CPU_new.xpr
+# Log file: D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/vivado.log
+# Journal file: D:/VivadoProject/COD/Lab4/Multicycle_CPU_new\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:09 . Memory (MB): peak = 924.465 ; gain = 211.574
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'dbu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dbu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/ip/dist_mem_512x32/sim/dist_mem_512x32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_512x32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/alu_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/cpu_multicycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_multicycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/dbu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dbu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/edge_taker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_taker
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/nixietube.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nixietube
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sim_1/new/dbu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dbu_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/behav/xsim'
+"xelab -wto b7b14fa1586744dfaf920d00be07371d --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot dbu_tb_behav xil_defaultlib.dbu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto b7b14fa1586744dfaf920d00be07371d --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot dbu_tb_behav xil_defaultlib.dbu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'a' [D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/cpu_multicycle.v:100]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'dpra' [D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/cpu_multicycle.v:101]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'dbu_ra' [D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/cpu_multicycle.v:111]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'wa' [D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/cpu_multicycle.v:112]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.edge_taker
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.dist_mem_512x32
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.alu_control
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.cpu_multicycle
+Compiling module xil_defaultlib.nixietube
+Compiling module xil_defaultlib.dbu
+Compiling module xil_defaultlib.dbu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dbu_tb_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/behav/xsim/xsim.dir/dbu_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu May 28 13:30:56 2020...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1005.734 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dbu_tb_behav -key {Behavioral:sim_1:Functional:dbu_tb} -tclbatch {dbu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source dbu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dbu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1006.070 ; gain = 0.336
+run all
+$finish called at time : 1580 ns : File "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sim_1/new/dbu_tb.v" Line 106
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1010.516 ; gain = 3.703
+launch_simulation -mode post-synthesis -type timing
+Command: launch_simulation -mode post-synthesis -type timing
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching post-synthesis timing simulation in 'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/synth/timing/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'd:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/ip/dist_mem_512x32/dist_mem_512x32.dcp' for cell 'cpu_multicycle/mem'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1282.055 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 404 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/constrs_1/new/constraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1363.406 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  RAM128X1D => RAM128X1D (MUXF7(x2), RAMD64E(x4)): 128 instances
+
+open_run: Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 1492.766 ; gain = 482.250
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/synth/timing/xsim/dbu_tb_time_synth.v"
+write_verilog: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1534.180 ; gain = 39.223
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/synth/timing/xsim/dbu_tb_time_synth.sdf"
+write_sdf: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1917.492 ; gain = 383.313
+INFO: [SIM-utils-36] Netlist generated:D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/synth/timing/xsim/dbu_tb_time_synth.v
+INFO: [SIM-utils-37] SDF generated:D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/synth/timing/xsim/dbu_tb_time_synth.sdf
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/synth/timing/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'dbu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/synth/timing/xsim'
+"xvlog --incr --relax -prj dbu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/synth/timing/xsim/dbu_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM128X1D_UNIQ_BASE_
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD1
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD10
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD100
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD101
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD102
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD103
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD104
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD105
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD106
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD107
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD108
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD109
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD11
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD110
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD111
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD112
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD113
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD114
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD115
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD116
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD117
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD118
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD119
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD12
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD120
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD121
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD122
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD123
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD124
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD125
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD126
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD127
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD13
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD14
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD15
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD16
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD17
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD18
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD19
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD2
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD20
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD21
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD22
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD23
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD24
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD25
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD26
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD27
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD28
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD29
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD3
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD30
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD31
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD32
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD33
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD34
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD35
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD36
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD37
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD38
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD39
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD4
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD40
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD41
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD42
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD43
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD44
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD45
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD46
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD47
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD48
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD49
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD5
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD50
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD51
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD52
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD53
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD54
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD55
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD56
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD57
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD58
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD59
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD6
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD60
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD61
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD62
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD63
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD64
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD65
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD66
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD67
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD68
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD69
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD7
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD70
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD71
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD72
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD73
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD74
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD75
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD76
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD77
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD78
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD79
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD8
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD80
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD81
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD82
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD83
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD84
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD85
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD86
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD87
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD88
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD89
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD9
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD90
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD91
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD92
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD93
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD94
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD95
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD96
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD97
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD98
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD99
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-311] analyzing module cpu_multicycle
+INFO: [VRFC 10-311] analyzing module dbu
+INFO: [VRFC 10-311] analyzing module dist_mem_512x32
+INFO: [VRFC 10-311] analyzing module edge_taker
+INFO: [VRFC 10-311] analyzing module edge_taker_0
+INFO: [VRFC 10-311] analyzing module edge_taker_1
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-311] analyzing module dist_mem_512x32_dist_mem_gen_v8_0_13
+INFO: [VRFC 10-311] analyzing module dist_mem_512x32_dist_mem_gen_v8_0_13_synth
+INFO: [VRFC 10-311] analyzing module dist_mem_512x32_dpram
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sim_1/new/dbu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dbu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/synth/timing/xsim'
+"xelab -wto b7b14fa1586744dfaf920d00be07371d --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot dbu_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.dbu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto b7b14fa1586744dfaf920d00be07371d --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot dbu_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.dbu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "dbu_tb_time_synth.sdf", for root module "dbu_tb/dbu".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "dbu_tb_time_synth.sdf", for root module "dbu_tb/dbu".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.FDCE_default
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.CARRY4
+Compiling module xil_defaultlib.ALU
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.FDPE_default
+Compiling module xil_defaultlib.control_unit
+Compiling module simprims_ver.GND
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.RAMD64E(RAM_ADDRESS_MASK=2'b10,R...
+Compiling module simprims_ver.RAMD64E(RAM_ADDRESS_MASK=2'b10,R...
+Compiling module simprims_ver.MUXF7
+Compiling module xil_defaultlib.RAM128X1D_UNIQ_BASE_
+Compiling module xil_defaultlib.RAM128X1D_HD1
+Compiling module xil_defaultlib.RAM128X1D_HD2
+Compiling module xil_defaultlib.RAM128X1D_HD3
+Compiling module xil_defaultlib.RAM128X1D_HD4
+Compiling module xil_defaultlib.RAM128X1D_HD5
+Compiling module xil_defaultlib.RAM128X1D_HD6
+Compiling module xil_defaultlib.RAM128X1D_HD7
+Compiling module xil_defaultlib.RAM128X1D_HD8
+Compiling module xil_defaultlib.RAM128X1D_HD9
+Compiling module xil_defaultlib.RAM128X1D_HD10
+Compiling module xil_defaultlib.RAM128X1D_HD11
+Compiling module xil_defaultlib.RAM128X1D_HD12
+Compiling module xil_defaultlib.RAM128X1D_HD13
+Compiling module xil_defaultlib.RAM128X1D_HD14
+Compiling module xil_defaultlib.RAM128X1D_HD15
+Compiling module xil_defaultlib.RAM128X1D_HD16
+Compiling module xil_defaultlib.RAM128X1D_HD17
+Compiling module xil_defaultlib.RAM128X1D_HD18
+Compiling module xil_defaultlib.RAM128X1D_HD19
+Compiling module xil_defaultlib.RAM128X1D_HD20
+Compiling module xil_defaultlib.RAM128X1D_HD21
+Compiling module xil_defaultlib.RAM128X1D_HD22
+Compiling module xil_defaultlib.RAM128X1D_HD23
+Compiling module xil_defaultlib.RAM128X1D_HD24
+Compiling module xil_defaultlib.RAM128X1D_HD25
+Compiling module xil_defaultlib.RAM128X1D_HD26
+Compiling module xil_defaultlib.RAM128X1D_HD27
+Compiling module xil_defaultlib.RAM128X1D_HD28
+Compiling module xil_defaultlib.RAM128X1D_HD29
+Compiling module xil_defaultlib.RAM128X1D_HD30
+Compiling module xil_defaultlib.RAM128X1D_HD31
+Compiling module xil_defaultlib.RAM128X1D_HD32
+Compiling module xil_defaultlib.RAM128X1D_HD33
+Compiling module xil_defaultlib.RAM128X1D_HD34
+Compiling module xil_defaultlib.RAM128X1D_HD35
+Compiling module xil_defaultlib.RAM128X1D_HD36
+Compiling module xil_defaultlib.RAM128X1D_HD37
+Compiling module xil_defaultlib.RAM128X1D_HD38
+Compiling module xil_defaultlib.RAM128X1D_HD39
+Compiling module xil_defaultlib.RAM128X1D_HD40
+Compiling module xil_defaultlib.RAM128X1D_HD41
+Compiling module xil_defaultlib.RAM128X1D_HD42
+Compiling module xil_defaultlib.RAM128X1D_HD43
+Compiling module xil_defaultlib.RAM128X1D_HD44
+Compiling module xil_defaultlib.RAM128X1D_HD45
+Compiling module xil_defaultlib.RAM128X1D_HD46
+Compiling module xil_defaultlib.RAM128X1D_HD47
+Compiling module xil_defaultlib.RAM128X1D_HD48
+Compiling module xil_defaultlib.RAM128X1D_HD49
+Compiling module xil_defaultlib.RAM128X1D_HD50
+Compiling module xil_defaultlib.RAM128X1D_HD51
+Compiling module xil_defaultlib.RAM128X1D_HD52
+Compiling module xil_defaultlib.RAM128X1D_HD53
+Compiling module xil_defaultlib.RAM128X1D_HD54
+Compiling module xil_defaultlib.RAM128X1D_HD55
+Compiling module xil_defaultlib.RAM128X1D_HD56
+Compiling module xil_defaultlib.RAM128X1D_HD57
+Compiling module xil_defaultlib.RAM128X1D_HD58
+Compiling module xil_defaultlib.RAM128X1D_HD59
+Compiling module xil_defaultlib.RAM128X1D_HD60
+Compiling module xil_defaultlib.RAM128X1D_HD61
+Compiling module xil_defaultlib.RAM128X1D_HD62
+Compiling module xil_defaultlib.RAM128X1D_HD63
+Compiling module xil_defaultlib.RAM128X1D_HD64
+Compiling module xil_defaultlib.RAM128X1D_HD65
+Compiling module xil_defaultlib.RAM128X1D_HD66
+Compiling module xil_defaultlib.RAM128X1D_HD67
+Compiling module xil_defaultlib.RAM128X1D_HD68
+Compiling module xil_defaultlib.RAM128X1D_HD69
+Compiling module xil_defaultlib.RAM128X1D_HD70
+Compiling module xil_defaultlib.RAM128X1D_HD71
+Compiling module xil_defaultlib.RAM128X1D_HD72
+Compiling module xil_defaultlib.RAM128X1D_HD73
+Compiling module xil_defaultlib.RAM128X1D_HD74
+Compiling module xil_defaultlib.RAM128X1D_HD75
+Compiling module xil_defaultlib.RAM128X1D_HD76
+Compiling module xil_defaultlib.RAM128X1D_HD77
+Compiling module xil_defaultlib.RAM128X1D_HD78
+Compiling module xil_defaultlib.RAM128X1D_HD79
+Compiling module xil_defaultlib.RAM128X1D_HD80
+Compiling module xil_defaultlib.RAM128X1D_HD81
+Compiling module xil_defaultlib.RAM128X1D_HD82
+Compiling module xil_defaultlib.RAM128X1D_HD83
+Compiling module xil_defaultlib.RAM128X1D_HD84
+Compiling module xil_defaultlib.RAM128X1D_HD85
+Compiling module xil_defaultlib.RAM128X1D_HD86
+Compiling module xil_defaultlib.RAM128X1D_HD87
+Compiling module xil_defaultlib.RAM128X1D_HD88
+Compiling module xil_defaultlib.RAM128X1D_HD89
+Compiling module xil_defaultlib.RAM128X1D_HD90
+Compiling module xil_defaultlib.RAM128X1D_HD91
+Compiling module xil_defaultlib.RAM128X1D_HD92
+Compiling module xil_defaultlib.RAM128X1D_HD93
+Compiling module xil_defaultlib.RAM128X1D_HD94
+Compiling module xil_defaultlib.RAM128X1D_HD95
+Compiling module xil_defaultlib.RAM128X1D_HD96
+Compiling module xil_defaultlib.RAM128X1D_HD97
+Compiling module xil_defaultlib.RAM128X1D_HD98
+Compiling module xil_defaultlib.RAM128X1D_HD99
+Compiling module xil_defaultlib.RAM128X1D_HD100
+Compiling module xil_defaultlib.RAM128X1D_HD101
+Compiling module xil_defaultlib.RAM128X1D_HD102
+Compiling module xil_defaultlib.RAM128X1D_HD103
+Compiling module xil_defaultlib.RAM128X1D_HD104
+Compiling module xil_defaultlib.RAM128X1D_HD105
+Compiling module xil_defaultlib.RAM128X1D_HD106
+Compiling module xil_defaultlib.RAM128X1D_HD107
+Compiling module xil_defaultlib.RAM128X1D_HD108
+Compiling module xil_defaultlib.RAM128X1D_HD109
+Compiling module xil_defaultlib.RAM128X1D_HD110
+Compiling module xil_defaultlib.RAM128X1D_HD111
+Compiling module xil_defaultlib.RAM128X1D_HD112
+Compiling module xil_defaultlib.RAM128X1D_HD113
+Compiling module xil_defaultlib.RAM128X1D_HD114
+Compiling module xil_defaultlib.RAM128X1D_HD115
+Compiling module xil_defaultlib.RAM128X1D_HD116
+Compiling module xil_defaultlib.RAM128X1D_HD117
+Compiling module xil_defaultlib.RAM128X1D_HD118
+Compiling module xil_defaultlib.RAM128X1D_HD119
+Compiling module xil_defaultlib.RAM128X1D_HD120
+Compiling module xil_defaultlib.RAM128X1D_HD121
+Compiling module xil_defaultlib.RAM128X1D_HD122
+Compiling module xil_defaultlib.RAM128X1D_HD123
+Compiling module xil_defaultlib.RAM128X1D_HD124
+Compiling module xil_defaultlib.RAM128X1D_HD125
+Compiling module xil_defaultlib.RAM128X1D_HD126
+Compiling module xil_defaultlib.RAM128X1D_HD127
+Compiling module xil_defaultlib.dist_mem_512x32_dpram
+Compiling module xil_defaultlib.dist_mem_512x32_dist_mem_gen_v8_...
+Compiling module xil_defaultlib.dist_mem_512x32_dist_mem_gen_v8_...
+Compiling module xil_defaultlib.dist_mem_512x32
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.cpu_multicycle
+Compiling module xil_defaultlib.edge_taker
+Compiling module xil_defaultlib.edge_taker_0
+Compiling module xil_defaultlib.edge_taker_1
+Compiling module xil_defaultlib.dbu
+Compiling module xil_defaultlib.dbu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dbu_tb_time_synth
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/synth/timing/xsim/xsim.dir/dbu_tb_time_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu May 28 13:34:14 2020...
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:01:09 . Memory (MB): peak = 1917.492 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '69' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/synth/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dbu_tb_time_synth -key {Post-Synthesis:sim_1:Timing:dbu_tb} -tclbatch {dbu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source dbu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dbu_tb_time_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:52 ; elapsed = 00:01:48 . Memory (MB): peak = 1953.465 ; gain = 942.949
+run all
+$finish called at time : 1580 ns : File "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sim_1/new/dbu_tb.v" Line 106
+add_bp {D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sim_1/new/dbu_tb.v} 54
+remove_bps -file {D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sim_1/new/dbu_tb.v} -line 54
+add_bp {D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sim_1/new/dbu_tb.v} 55
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1962.750 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode post-synthesis -type timing
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching post-synthesis timing simulation in 'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/synth/timing/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/synth/timing/xsim/dbu_tb_time_synth.v"
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/synth/timing/xsim/dbu_tb_time_synth.sdf"
+INFO: [SIM-utils-36] Netlist generated:D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/synth/timing/xsim/dbu_tb_time_synth.v
+INFO: [SIM-utils-37] SDF generated:D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/synth/timing/xsim/dbu_tb_time_synth.sdf
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/synth/timing/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'dbu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/synth/timing/xsim'
+"xvlog --incr --relax -prj dbu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/synth/timing/xsim/dbu_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM128X1D_UNIQ_BASE_
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD1
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD10
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD100
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD101
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD102
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD103
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD104
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD105
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD106
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD107
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD108
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD109
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD11
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD110
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD111
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD112
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD113
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD114
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD115
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD116
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD117
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD118
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD119
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD12
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD120
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD121
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD122
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD123
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD124
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD125
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD126
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD127
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD13
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD14
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD15
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD16
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD17
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD18
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD19
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD2
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD20
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD21
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD22
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD23
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD24
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD25
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD26
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD27
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD28
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD29
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD3
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD30
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD31
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD32
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD33
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD34
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD35
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD36
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD37
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD38
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD39
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD4
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD40
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD41
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD42
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD43
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD44
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD45
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD46
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD47
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD48
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD49
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD5
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD50
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD51
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD52
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD53
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD54
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD55
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD56
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD57
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD58
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD59
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD6
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD60
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD61
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD62
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD63
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD64
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD65
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD66
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD67
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD68
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD69
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD7
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD70
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD71
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD72
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD73
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD74
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD75
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD76
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD77
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD78
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD79
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD8
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD80
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD81
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD82
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD83
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD84
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD85
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD86
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD87
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD88
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD89
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD9
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD90
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD91
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD92
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD93
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD94
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD95
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD96
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD97
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD98
+INFO: [VRFC 10-311] analyzing module RAM128X1D_HD99
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-311] analyzing module cpu_multicycle
+INFO: [VRFC 10-311] analyzing module dbu
+INFO: [VRFC 10-311] analyzing module dist_mem_512x32
+INFO: [VRFC 10-311] analyzing module edge_taker
+INFO: [VRFC 10-311] analyzing module edge_taker_0
+INFO: [VRFC 10-311] analyzing module edge_taker_1
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-311] analyzing module dist_mem_512x32_dist_mem_gen_v8_0_13
+INFO: [VRFC 10-311] analyzing module dist_mem_512x32_dist_mem_gen_v8_0_13_synth
+INFO: [VRFC 10-311] analyzing module dist_mem_512x32_dpram
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sim_1/new/dbu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dbu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1979.180 ; gain = 16.430
+Command: launch_simulation -simset sim_1 -mode post-synthesis -type timing
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching post-synthesis timing simulation in 'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/synth/timing/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/synth/timing/xsim'
+"xelab -wto b7b14fa1586744dfaf920d00be07371d --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot dbu_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.dbu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto b7b14fa1586744dfaf920d00be07371d --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot dbu_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.dbu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "dbu_tb_time_synth.sdf", for root module "dbu_tb/dbu".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "dbu_tb_time_synth.sdf", for root module "dbu_tb/dbu".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.FDCE_default
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.CARRY4
+Compiling module xil_defaultlib.ALU
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.FDPE_default
+Compiling module xil_defaultlib.control_unit
+Compiling module simprims_ver.GND
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.RAMD64E(RAM_ADDRESS_MASK=2'b10,R...
+Compiling module simprims_ver.RAMD64E(RAM_ADDRESS_MASK=2'b10,R...
+Compiling module simprims_ver.MUXF7
+Compiling module xil_defaultlib.RAM128X1D_UNIQ_BASE_
+Compiling module xil_defaultlib.RAM128X1D_HD1
+Compiling module xil_defaultlib.RAM128X1D_HD2
+Compiling module xil_defaultlib.RAM128X1D_HD3
+Compiling module xil_defaultlib.RAM128X1D_HD4
+Compiling module xil_defaultlib.RAM128X1D_HD5
+Compiling module xil_defaultlib.RAM128X1D_HD6
+Compiling module xil_defaultlib.RAM128X1D_HD7
+Compiling module xil_defaultlib.RAM128X1D_HD8
+Compiling module xil_defaultlib.RAM128X1D_HD9
+Compiling module xil_defaultlib.RAM128X1D_HD10
+Compiling module xil_defaultlib.RAM128X1D_HD11
+Compiling module xil_defaultlib.RAM128X1D_HD12
+Compiling module xil_defaultlib.RAM128X1D_HD13
+Compiling module xil_defaultlib.RAM128X1D_HD14
+Compiling module xil_defaultlib.RAM128X1D_HD15
+Compiling module xil_defaultlib.RAM128X1D_HD16
+Compiling module xil_defaultlib.RAM128X1D_HD17
+Compiling module xil_defaultlib.RAM128X1D_HD18
+Compiling module xil_defaultlib.RAM128X1D_HD19
+Compiling module xil_defaultlib.RAM128X1D_HD20
+Compiling module xil_defaultlib.RAM128X1D_HD21
+Compiling module xil_defaultlib.RAM128X1D_HD22
+Compiling module xil_defaultlib.RAM128X1D_HD23
+Compiling module xil_defaultlib.RAM128X1D_HD24
+Compiling module xil_defaultlib.RAM128X1D_HD25
+Compiling module xil_defaultlib.RAM128X1D_HD26
+Compiling module xil_defaultlib.RAM128X1D_HD27
+Compiling module xil_defaultlib.RAM128X1D_HD28
+Compiling module xil_defaultlib.RAM128X1D_HD29
+Compiling module xil_defaultlib.RAM128X1D_HD30
+Compiling module xil_defaultlib.RAM128X1D_HD31
+Compiling module xil_defaultlib.RAM128X1D_HD32
+Compiling module xil_defaultlib.RAM128X1D_HD33
+Compiling module xil_defaultlib.RAM128X1D_HD34
+Compiling module xil_defaultlib.RAM128X1D_HD35
+Compiling module xil_defaultlib.RAM128X1D_HD36
+Compiling module xil_defaultlib.RAM128X1D_HD37
+Compiling module xil_defaultlib.RAM128X1D_HD38
+Compiling module xil_defaultlib.RAM128X1D_HD39
+Compiling module xil_defaultlib.RAM128X1D_HD40
+Compiling module xil_defaultlib.RAM128X1D_HD41
+Compiling module xil_defaultlib.RAM128X1D_HD42
+Compiling module xil_defaultlib.RAM128X1D_HD43
+Compiling module xil_defaultlib.RAM128X1D_HD44
+Compiling module xil_defaultlib.RAM128X1D_HD45
+Compiling module xil_defaultlib.RAM128X1D_HD46
+Compiling module xil_defaultlib.RAM128X1D_HD47
+Compiling module xil_defaultlib.RAM128X1D_HD48
+Compiling module xil_defaultlib.RAM128X1D_HD49
+Compiling module xil_defaultlib.RAM128X1D_HD50
+Compiling module xil_defaultlib.RAM128X1D_HD51
+Compiling module xil_defaultlib.RAM128X1D_HD52
+Compiling module xil_defaultlib.RAM128X1D_HD53
+Compiling module xil_defaultlib.RAM128X1D_HD54
+Compiling module xil_defaultlib.RAM128X1D_HD55
+Compiling module xil_defaultlib.RAM128X1D_HD56
+Compiling module xil_defaultlib.RAM128X1D_HD57
+Compiling module xil_defaultlib.RAM128X1D_HD58
+Compiling module xil_defaultlib.RAM128X1D_HD59
+Compiling module xil_defaultlib.RAM128X1D_HD60
+Compiling module xil_defaultlib.RAM128X1D_HD61
+Compiling module xil_defaultlib.RAM128X1D_HD62
+Compiling module xil_defaultlib.RAM128X1D_HD63
+Compiling module xil_defaultlib.RAM128X1D_HD64
+Compiling module xil_defaultlib.RAM128X1D_HD65
+Compiling module xil_defaultlib.RAM128X1D_HD66
+Compiling module xil_defaultlib.RAM128X1D_HD67
+Compiling module xil_defaultlib.RAM128X1D_HD68
+Compiling module xil_defaultlib.RAM128X1D_HD69
+Compiling module xil_defaultlib.RAM128X1D_HD70
+Compiling module xil_defaultlib.RAM128X1D_HD71
+Compiling module xil_defaultlib.RAM128X1D_HD72
+Compiling module xil_defaultlib.RAM128X1D_HD73
+Compiling module xil_defaultlib.RAM128X1D_HD74
+Compiling module xil_defaultlib.RAM128X1D_HD75
+Compiling module xil_defaultlib.RAM128X1D_HD76
+Compiling module xil_defaultlib.RAM128X1D_HD77
+Compiling module xil_defaultlib.RAM128X1D_HD78
+Compiling module xil_defaultlib.RAM128X1D_HD79
+Compiling module xil_defaultlib.RAM128X1D_HD80
+Compiling module xil_defaultlib.RAM128X1D_HD81
+Compiling module xil_defaultlib.RAM128X1D_HD82
+Compiling module xil_defaultlib.RAM128X1D_HD83
+Compiling module xil_defaultlib.RAM128X1D_HD84
+Compiling module xil_defaultlib.RAM128X1D_HD85
+Compiling module xil_defaultlib.RAM128X1D_HD86
+Compiling module xil_defaultlib.RAM128X1D_HD87
+Compiling module xil_defaultlib.RAM128X1D_HD88
+Compiling module xil_defaultlib.RAM128X1D_HD89
+Compiling module xil_defaultlib.RAM128X1D_HD90
+Compiling module xil_defaultlib.RAM128X1D_HD91
+Compiling module xil_defaultlib.RAM128X1D_HD92
+Compiling module xil_defaultlib.RAM128X1D_HD93
+Compiling module xil_defaultlib.RAM128X1D_HD94
+Compiling module xil_defaultlib.RAM128X1D_HD95
+Compiling module xil_defaultlib.RAM128X1D_HD96
+Compiling module xil_defaultlib.RAM128X1D_HD97
+Compiling module xil_defaultlib.RAM128X1D_HD98
+Compiling module xil_defaultlib.RAM128X1D_HD99
+Compiling module xil_defaultlib.RAM128X1D_HD100
+Compiling module xil_defaultlib.RAM128X1D_HD101
+Compiling module xil_defaultlib.RAM128X1D_HD102
+Compiling module xil_defaultlib.RAM128X1D_HD103
+Compiling module xil_defaultlib.RAM128X1D_HD104
+Compiling module xil_defaultlib.RAM128X1D_HD105
+Compiling module xil_defaultlib.RAM128X1D_HD106
+Compiling module xil_defaultlib.RAM128X1D_HD107
+Compiling module xil_defaultlib.RAM128X1D_HD108
+Compiling module xil_defaultlib.RAM128X1D_HD109
+Compiling module xil_defaultlib.RAM128X1D_HD110
+Compiling module xil_defaultlib.RAM128X1D_HD111
+Compiling module xil_defaultlib.RAM128X1D_HD112
+Compiling module xil_defaultlib.RAM128X1D_HD113
+Compiling module xil_defaultlib.RAM128X1D_HD114
+Compiling module xil_defaultlib.RAM128X1D_HD115
+Compiling module xil_defaultlib.RAM128X1D_HD116
+Compiling module xil_defaultlib.RAM128X1D_HD117
+Compiling module xil_defaultlib.RAM128X1D_HD118
+Compiling module xil_defaultlib.RAM128X1D_HD119
+Compiling module xil_defaultlib.RAM128X1D_HD120
+Compiling module xil_defaultlib.RAM128X1D_HD121
+Compiling module xil_defaultlib.RAM128X1D_HD122
+Compiling module xil_defaultlib.RAM128X1D_HD123
+Compiling module xil_defaultlib.RAM128X1D_HD124
+Compiling module xil_defaultlib.RAM128X1D_HD125
+Compiling module xil_defaultlib.RAM128X1D_HD126
+Compiling module xil_defaultlib.RAM128X1D_HD127
+Compiling module xil_defaultlib.dist_mem_512x32_dpram
+Compiling module xil_defaultlib.dist_mem_512x32_dist_mem_gen_v8_...
+Compiling module xil_defaultlib.dist_mem_512x32_dist_mem_gen_v8_...
+Compiling module xil_defaultlib.dist_mem_512x32
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.cpu_multicycle
+Compiling module xil_defaultlib.edge_taker
+Compiling module xil_defaultlib.edge_taker_0
+Compiling module xil_defaultlib.edge_taker_1
+Compiling module xil_defaultlib.dbu
+Compiling module xil_defaultlib.dbu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dbu_tb_time_synth
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:01:08 . Memory (MB): peak = 1979.180 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '68' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:01:08 . Memory (MB): peak = 1979.180 ; gain = 0.000
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Stopped at time : 20 ns : File "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sim_1/new/dbu_tb.v" Line 55
+relaunch_sim: Time (s): cpu = 00:00:07 ; elapsed = 00:01:28 . Memory (MB): peak = 1979.180 ; gain = 16.430
+close_design
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu May 28 13:50:20 2020] Launched synth_1...
+Run output will be captured here: D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.runs/synth_1/runme.log
+[Thu May 28 13:50:20 2020] Launched impl_1...
+Run output will be captured here: D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.runs/impl_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'dbu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dbu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/ip/dist_mem_512x32/sim/dist_mem_512x32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_512x32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/alu_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/cpu_multicycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_multicycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/dbu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dbu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/edge_taker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_taker
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/nixietube.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nixietube
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sim_1/new/dbu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dbu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/behav/xsim'
+"xelab -wto b7b14fa1586744dfaf920d00be07371d --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot dbu_tb_behav xil_defaultlib.dbu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto b7b14fa1586744dfaf920d00be07371d --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot dbu_tb_behav xil_defaultlib.dbu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'a' [D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/cpu_multicycle.v:100]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'dpra' [D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/cpu_multicycle.v:101]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'dbu_ra' [D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/cpu_multicycle.v:111]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'wa' [D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/cpu_multicycle.v:112]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.edge_taker
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.dist_mem_512x32
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.alu_control
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.cpu_multicycle
+Compiling module xil_defaultlib.nixietube
+Compiling module xil_defaultlib.dbu
+Compiling module xil_defaultlib.dbu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dbu_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dbu_tb_behav -key {Behavioral:sim_1:Functional:dbu_tb} -tclbatch {dbu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source dbu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dbu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 2287.602 ; gain = 5.855
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sim_1/new/cpu_tb.v w ]
+add_files -fileset sim_1 D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sim_1/new/cpu_tb.v
+update_compile_order -fileset sim_1
+run all
+$finish called at time : 1580 ns : File "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sim_1/new/dbu_tb.v" Line 106
+save_wave_config {D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/dbu_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/dbu_tb_behav.wcfg
+set_property xsim.view D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/dbu_tb_behav.wcfg [get_filesets sim_1]
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'dbu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dbu_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/behav/xsim'
+"xelab -wto b7b14fa1586744dfaf920d00be07371d --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot dbu_tb_behav xil_defaultlib.dbu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto b7b14fa1586744dfaf920d00be07371d --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot dbu_tb_behav xil_defaultlib.dbu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'a' [D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/cpu_multicycle.v:100]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'dpra' [D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/cpu_multicycle.v:101]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'dbu_ra' [D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/cpu_multicycle.v:111]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'wa' [D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/cpu_multicycle.v:112]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 2287.602 ; gain = 0.000
+run all
+$finish called at time : 1580 ns : File "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sim_1/new/dbu_tb.v" Line 106
+save_wave_config {D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/dbu_tb_behav.wcfg}
+current_sim simulation_2
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property -dict [list CONFIG.coefficient_file {D:/VivadoProject/COD/Lab4/lab4_test/test.coe}] [get_ips dist_mem_512x32]
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/VivadoProject/COD/Lab4/lab4_test/test.coe' provided. It will be converted relative to IP Instance files '../../../../../lab4_test/test.coe'
+generate_target all [get_files  D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/ip/dist_mem_512x32/dist_mem_512x32.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dist_mem_512x32'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dist_mem_512x32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dist_mem_512x32'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dist_mem_512x32'...
+catch { config_ip_cache -export [get_ips -all dist_mem_512x32] }
+export_ip_user_files -of_objects [get_files D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/ip/dist_mem_512x32/dist_mem_512x32.xci] -no_script -sync -force -quiet
+reset_run dist_mem_512x32_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.runs/dist_mem_512x32_synth_1
+
+launch_runs -jobs 8 dist_mem_512x32_synth_1
+[Thu May 28 14:12:34 2020] Launched dist_mem_512x32_synth_1...
+Run output will be captured here: D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.runs/dist_mem_512x32_synth_1/runme.log
+export_simulation -of_objects [get_files D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/ip/dist_mem_512x32/dist_mem_512x32.xci] -directory D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.ip_user_files/sim_scripts -ip_user_files_dir D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.ip_user_files -ipstatic_source_dir D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.cache/compile_simlib/modelsim} {questa=D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.cache/compile_simlib/questa} {riviera=D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.cache/compile_simlib/riviera} {activehdl=D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_target all [get_files  D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/ip/dist_mem_512x32/dist_mem_512x32.xci]
+export_ip_user_files -of_objects  [get_files  D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/ip/dist_mem_512x32/dist_mem_512x32.xci] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset dist_mem_512x32] D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/ip/dist_mem_512x32/dist_mem_512x32.xci]
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.runs/dist_mem_512x32_synth_1
+
+INFO: [Project 1-386] Moving file 'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/ip/dist_mem_512x32/dist_mem_512x32.xci' from fileset 'dist_mem_512x32' to fileset 'sources_1'.
+update_compile_order -fileset sources_1
+generate_target all [get_files  D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/ip/dist_mem_512x32/dist_mem_512x32.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dist_mem_512x32'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dist_mem_512x32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dist_mem_512x32'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dist_mem_512x32'...
+catch { config_ip_cache -export [get_ips -all dist_mem_512x32] }
+export_ip_user_files -of_objects [get_files D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/ip/dist_mem_512x32/dist_mem_512x32.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/ip/dist_mem_512x32/dist_mem_512x32.xci]
+launch_runs -jobs 8 dist_mem_512x32_synth_1
+[Thu May 28 14:12:50 2020] Launched dist_mem_512x32_synth_1...
+Run output will be captured here: D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.runs/dist_mem_512x32_synth_1/runme.log
+export_simulation -of_objects [get_files D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/ip/dist_mem_512x32/dist_mem_512x32.xci] -directory D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.ip_user_files/sim_scripts -ip_user_files_dir D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.ip_user_files -ipstatic_source_dir D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.cache/compile_simlib/modelsim} {questa=D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.cache/compile_simlib/questa} {riviera=D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.cache/compile_simlib/riviera} {activehdl=D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/behav/xsim/simulate.log"
+INFO: [Common 17-17] undo 'relaunch_sim'
+INFO: [Common 17-17] undo 'relaunch_sim'
+ERROR: [Common 17-69] Command failed: boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/behav/xsim/simulate.log"
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/behav/xsim/simulate.log"
+INFO: [Common 17-17] undo 'relaunch_sim'
+INFO: [Common 17-17] undo 'relaunch_sim'
+ERROR: [Common 17-69] Command failed: boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/behav/xsim/simulate.log"
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/behav/xsim/simulate.log"
+INFO: [Common 17-17] undo 'relaunch_sim'
+INFO: [Common 17-17] undo 'relaunch_sim'
+ERROR: [Common 17-69] Command failed: boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/behav/xsim/simulate.log"
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'dbu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/behav/xsim/test.coe'
+INFO: [SIM-utils-43] Exported 'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/behav/xsim/dist_mem_512x32.mif'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dbu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/ip/dist_mem_512x32/sim/dist_mem_512x32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_512x32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/alu_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/control_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/cpu_multicycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_multicycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/dbu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dbu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/edge_taker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_taker
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/nixietube.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nixietube
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sim_1/new/dbu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dbu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.sim/sim_1/behav/xsim'
+"xelab -wto b7b14fa1586744dfaf920d00be07371d --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot dbu_tb_behav xil_defaultlib.dbu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto b7b14fa1586744dfaf920d00be07371d --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot dbu_tb_behav xil_defaultlib.dbu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'a' [D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/cpu_multicycle.v:100]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'dpra' [D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/cpu_multicycle.v:101]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'dbu_ra' [D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/cpu_multicycle.v:111]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'wa' [D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sources_1/new/cpu_multicycle.v:112]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.edge_taker
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.dist_mem_512x32
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.alu_control
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.cpu_multicycle
+Compiling module xil_defaultlib.nixietube
+Compiling module xil_defaultlib.dbu
+Compiling module xil_defaultlib.dbu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dbu_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2287.602 ; gain = 0.000
+run all
+$finish called at time : 1580 ns : File "D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/Multicycle_CPU_new.srcs/sim_1/new/dbu_tb.v" Line 106
+save_wave_config {D:/VivadoProject/COD/Lab4/Multicycle_CPU_new/dbu_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 28 14:42:14 2020...

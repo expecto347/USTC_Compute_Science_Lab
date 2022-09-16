@@ -1,0 +1,14 @@
+{
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.associations": {
+        "stdarg.h": "c",
+        "string.h": "c",
+        "stdio.h": "c",
+        "vsprintf.h": "c",
+        "types.h": "c",
+        "userinterface.h": "c",
+        "myprintk.h": "c",
+        "vga.h": "c",
+        "ctype.h": "c"
+    }
+}

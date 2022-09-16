@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"sort_sim_func_synth.v" \
+"../../../../../ALU_sort.srcs/sim_1/new/sort_sim.v" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,744 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Apr 21 20:22:54 2022
+# Process ID: 18896
+# Current directory: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17632 C:\Users\expecto\Desktop\Lab\COD_Lab\Lab4\one_circle_CPU\one_circle_CPU.xpr
+# Log file: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/vivado.log
+# Journal file: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU\vivado.jou
+#-----------------------------------------------------------
+start_guopopen_project C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'upupdate_compile_order -fileset sources_WARNING: [Common 17-9] Error reading message records.
+WARNING: [Common 17-9] Error reading message records.
+WARNING: [Common 17-9] Error reading message records.
+WARNING: [Common 17-9] Error reading message records.
+WARNING: [Common 17-9] Error reading message records.
+launch_simulation
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim/simulate.log"
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 21 21:00:03 2022...
+iles  C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ROM_Instruction'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ROM_Instruction'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ROM_Instruction'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ROM_Instruction'...
+catch { config_ip_cache -export [get_ips -all ROM_Instruction] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP ROM_Instruction, cache-ID = 3ee19ce3a5ca6cba; cache size = 0.632 MB.
+export_ip_user_files -of_objects [get_files C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci'
+export_simulation -of_objects [get_files C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci] -directory C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.ip_user_files -ipstatic_source_dir C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.cache/compile_simlib/modelsim} {questa=C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.cache/compile_simlib/questa} {riviera=C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.cache/compile_simlib/riviera} {activehdl=C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci' is already up-to-date
+[Thu Apr 21 20:25:33 2022] Launched synth_1...
+Run output will be captured here: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.runs/synth_1/runme.log
+[Thu Apr 21 20:25:33 2022] Launched impl_1...
+Run output will be captured here: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci' is already up-to-date
+[Thu Apr 21 20:32:23 2022] Launched synth_1...
+Run output will be captured here: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.runs/synth_1/runme.log
+[Thu Apr 21 20:32:23 2022] Launched impl_1...
+Run output will be captured here: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.runs/impl_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim/ROM_Instruction.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim/fib_test.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim/all10_test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TOP_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/sim/ROM_Instruction.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_Instruction
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/ALU.v:17]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/DataMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/InsMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/MUX_register_input.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_reg_input
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/PDU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pdu_1cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/Regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/one_circle_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sim_1/new/TOP_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim'
+"xelab -wto b808fbe2baae409297c73edaf1cc35ff --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TOP_sim_behav xil_defaultlib.TOP_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto b808fbe2baae409297c73edaf1cc35ff --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TOP_sim_behav xil_defaultlib.TOP_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pdu_1cycle
+Compiling module xil_defaultlib.PC
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.ROM_Instruction
+Compiling module xil_defaultlib.InsMEM
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.Extend
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMEM
+Compiling module xil_defaultlib.MUX_reg_input
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.TOP_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TOP_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TOP_sim_behav -key {Behavioral:sim_1:Functional:TOP_sim} -tclbatch {TOP_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source TOP_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TOP_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 805.285 ; gain = 5.336
+current_wave_config {Untitled 1}
+Untitled 1
+log_wave {/TOP_sim/top/cpu/curPC} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/TOP_sim/top/cpu/curPC}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/TOP_sim/top/cpu/datamem/ram}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/TOP_sim/top/cpu/register_file/registers}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim/ROM_Instruction.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim/fib_test.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim/all10_test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TOP_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/sim/ROM_Instruction.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_Instruction
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/ALU.v:17]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/DataMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/InsMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/MUX_register_input.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_reg_input
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/PDU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pdu_1cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/Regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/one_circle_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sim_1/new/TOP_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim'
+"xelab -wto b808fbe2baae409297c73edaf1cc35ff --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TOP_sim_behav xil_defaultlib.TOP_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto b808fbe2baae409297c73edaf1cc35ff --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TOP_sim_behav xil_defaultlib.TOP_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pdu_1cycle
+Compiling module xil_defaultlib.PC
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.ROM_Instruction
+Compiling module xil_defaultlib.InsMEM
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.Extend
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMEM
+Compiling module xil_defaultlib.MUX_reg_input
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.TOP_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TOP_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 843.047 ; gain = 0.000
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: top
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1271.887 ; gain = 174.277
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'pdu_1cycle' [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/PDU.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/PDU.v:152]
+INFO: [Synth 8-6155] done synthesizing module 'pdu_1cycle' (1#1) [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/PDU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'cpu' [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/one_circle_cpu.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/PC.v:3]
+WARNING: [Synth 8-3936] Found unconnected internal register 'PC_sub_reg' and it is trimmed from '32' to '10' bits. [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/PC.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (2#1) [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/PC.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ROM_Instruction' [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/.Xil/Vivado-18896-expecto/realtime/ROM_Instruction_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_Instruction' (3#1) [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/.Xil/Vivado-18896-expecto/realtime/ROM_Instruction_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'InsMEM' [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/InsMem.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'InsMEM' (4#1) [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/InsMem.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/Control_Unit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (5#1) [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/Control_Unit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'register_file' [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/Regfile.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'register_file' (6#1) [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/Regfile.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Extend' [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/Immgen.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/Immgen.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'Extend' (7#1) [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/Immgen.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (8#1) [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'DataMEM' [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/DataMEM.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'DataMEM' (9#1) [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/DataMEM.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MUX_reg_input' [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/MUX_register_input.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/MUX_register_input.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'MUX_reg_input' (10#1) [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/MUX_register_input.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'cpu' (11#1) [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/one_circle_cpu.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'top' (12#1) [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/top.v:3]
+WARNING: [Synth 8-3331] design DataMEM has unconnected port Mem_DataAddr1[31]
+WARNING: [Synth 8-3331] design DataMEM has unconnected port Mem_DataAddr1[30]
+WARNING: [Synth 8-3331] design DataMEM has unconnected port Mem_DataAddr1[29]
+WARNING: [Synth 8-3331] design DataMEM has unconnected port Mem_DataAddr1[28]
+WARNING: [Synth 8-3331] design DataMEM has unconnected port Mem_DataAddr1[27]
+WARNING: [Synth 8-3331] design DataMEM has unconnected port Mem_DataAddr1[26]
+WARNING: [Synth 8-3331] design DataMEM has unconnected port Mem_DataAddr1[25]
+WARNING: [Synth 8-3331] design DataMEM has unconnected port Mem_DataAddr1[24]
+WARNING: [Synth 8-3331] design DataMEM has unconnected port Mem_DataAddr1[23]
+WARNING: [Synth 8-3331] design DataMEM has unconnected port Mem_DataAddr1[22]
+WARNING: [Synth 8-3331] design DataMEM has unconnected port Mem_DataAddr1[21]
+WARNING: [Synth 8-3331] design DataMEM has unconnected port Mem_DataAddr1[20]
+WARNING: [Synth 8-3331] design DataMEM has unconnected port Mem_DataAddr1[19]
+WARNING: [Synth 8-3331] design DataMEM has unconnected port Mem_DataAddr1[18]
+WARNING: [Synth 8-3331] design DataMEM has unconnected port Mem_DataAddr1[17]
+WARNING: [Synth 8-3331] design DataMEM has unconnected port Mem_DataAddr1[16]
+WARNING: [Synth 8-3331] design DataMEM has unconnected port Mem_DataAddr1[15]
+WARNING: [Synth 8-3331] design DataMEM has unconnected port Mem_DataAddr1[14]
+WARNING: [Synth 8-3331] design DataMEM has unconnected port Mem_DataAddr1[13]
+WARNING: [Synth 8-3331] design DataMEM has unconnected port Mem_DataAddr1[12]
+WARNING: [Synth 8-3331] design DataMEM has unconnected port Mem_DataAddr1[11]
+WARNING: [Synth 8-3331] design DataMEM has unconnected port Mem_DataAddr1[10]
+WARNING: [Synth 8-3331] design DataMEM has unconnected port Mem_DataAddr1[1]
+WARNING: [Synth 8-3331] design DataMEM has unconnected port Mem_DataAddr1[0]
+WARNING: [Synth 8-3331] design Extend has unconnected port imm[6]
+WARNING: [Synth 8-3331] design Extend has unconnected port imm[5]
+WARNING: [Synth 8-3331] design Extend has unconnected port imm[4]
+WARNING: [Synth 8-3331] design Extend has unconnected port imm[3]
+WARNING: [Synth 8-3331] design Extend has unconnected port imm[2]
+WARNING: [Synth 8-3331] design Extend has unconnected port imm[1]
+WARNING: [Synth 8-3331] design Extend has unconnected port imm[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1307.625 ; gain = 210.016
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1307.625 ; gain = 210.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1307.625 ; gain = 210.016
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.dcp' for cell 'cpu/ins'
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/constrs_1/new/cos.xdc]
+Finished Parsing XDC File [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/constrs_1/new/cos.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1447.801 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1453.852 ; gain = 356.242
+33 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1453.852 ; gain = 600.445
+close_design
+set_property -dict [list CONFIG.coefficient_file {C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/all10_test.coe}] [get_ips ROM_Instruction]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/all10_test.coe' provided. It will be converted relative to IP Instance files '../../../../../all10_test.coe'
+generate_target all [get_files  C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ROM_Instruction'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ROM_Instruction'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ROM_Instruction'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ROM_Instruction'...
+catch { config_ip_cache -export [get_ips -all ROM_Instruction] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP ROM_Instruction, cache-ID = f6c73e12ed7fc46f; cache size = 0.632 MB.
+export_ip_user_files -of_objects [get_files C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci'
+export_simulation -of_objects [get_files C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci] -directory C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.ip_user_files -ipstatic_source_dir C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.cache/compile_simlib/modelsim} {questa=C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.cache/compile_simlib/questa} {riviera=C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.cache/compile_simlib/riviera} {activehdl=C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci' is already up-to-date
+[Thu Apr 21 20:47:08 2022] Launched synth_1...
+Run output will be captured here: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.runs/synth_1/runme.log
+[Thu Apr 21 20:47:08 2022] Launched impl_1...
+Run output will be captured here: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci' is already up-to-date
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Thu Apr 21 20:50:51 2022] Launched impl_1...
+Run output will be captured here: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.runs/impl_1/runme.log
+set_property -dict [list CONFIG.coefficient_file {C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/fib_test.coe}] [get_ips ROM_Instruction]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/fib_test.coe' provided. It will be converted relative to IP Instance files '../../../../../fib_test.coe'
+generate_target all [get_files  C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ROM_Instruction'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ROM_Instruction'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ROM_Instruction'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ROM_Instruction'...
+catch { config_ip_cache -export [get_ips -all ROM_Instruction] }
+export_ip_user_files -of_objects [get_files C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci]
+launch_runs -jobs 6 ROM_Instruction_synth_1
+[Thu Apr 21 20:52:12 2022] Launched ROM_Instruction_synth_1...
+Run output will be captured here: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.runs/ROM_Instruction_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci] -directory C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.ip_user_files -ipstatic_source_dir C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.cache/compile_simlib/modelsim} {questa=C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.cache/compile_simlib/questa} {riviera=C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.cache/compile_simlib/riviera} {activehdl=C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Apr 21 20:52:20 2022] Launched ROM_Instruction_synth_1, synth_1...
+Run output will be captured here:
+ROM_Instruction_synth_1: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.runs/ROM_Instruction_synth_1/runme.log
+synth_1: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.runs/synth_1/runme.log
+[Thu Apr 21 20:52:20 2022] Launched impl_1...
+Run output will be captured here: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Apr 21 20:55:45 2022] Launched synth_1...
+Run output will be captured here: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.runs/synth_1/runme.log
+[Thu Apr 21 20:55:45 2022] Launched impl_1...
+Run output will be captured here: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim/ROM_Instruction.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim/fib_test.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim/all10_test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TOP_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/sim/ROM_Instruction.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_Instruction
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/ALU.v:20]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/DataMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/InsMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/MUX_register_input.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_reg_input
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/PDU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pdu_1cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/Regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/one_circle_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sim_1/new/TOP_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim'
+"xelab -wto b808fbe2baae409297c73edaf1cc35ff --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TOP_sim_behav xil_defaultlib.TOP_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto b808fbe2baae409297c73edaf1cc35ff --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TOP_sim_behav xil_defaultlib.TOP_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pdu_1cycle
+Compiling module xil_defaultlib.PC
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.ROM_Instruction
+Compiling module xil_defaultlib.InsMEM
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.Extend
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMEM
+Compiling module xil_defaultlib.MUX_reg_input
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.TOP_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TOP_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TOP_sim_behav -key {Behavioral:sim_1:Functional:TOP_sim} -tclbatch {TOP_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source TOP_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TOP_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1616.797 ; gain = 131.289
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/TOP_sim/top/cpu/curPC}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/TOP_sim/top/cpu/datamem/ram}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/TOP_sim/top/cpu/register_file/registers}} 
+run 10 us
+run 10 us
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim/ROM_Instruction.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim/fib_test.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim/all10_test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TOP_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/sim/ROM_Instruction.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_Instruction
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/ALU.v:20]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/DataMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/InsMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/MUX_register_input.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_reg_input
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/PDU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pdu_1cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/Regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/one_circle_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sim_1/new/TOP_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim'
+"xelab -wto b808fbe2baae409297c73edaf1cc35ff --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TOP_sim_behav xil_defaultlib.TOP_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto b808fbe2baae409297c73edaf1cc35ff --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TOP_sim_behav xil_defaultlib.TOP_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pdu_1cycle
+Compiling module xil_defaultlib.PC
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.ROM_Instruction
+Compiling module xil_defaultlib.InsMEM
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.Extend
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMEM
+Compiling module xil_defaultlib.MUX_reg_input
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.TOP_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TOP_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1667.316 ; gain = 0.000
+run 10 us
+run 10 us
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/TOP_sim/top/out0}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim/ROM_Instruction.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim/fib_test.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim/all10_test.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TOP_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/sim/ROM_Instruction.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_Instruction
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/ALU.v:20]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/Control_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/DataMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/InsMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/MUX_register_input.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_reg_input
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/PDU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pdu_1cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/Regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/one_circle_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sim_1/new/TOP_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim'
+"xelab -wto b808fbe2baae409297c73edaf1cc35ff --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TOP_sim_behav xil_defaultlib.TOP_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto b808fbe2baae409297c73edaf1cc35ff --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TOP_sim_behav xil_defaultlib.TOP_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pdu_1cycle
+Compiling module xil_defaultlib.PC
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.ROM_Instruction
+Compiling module xil_defaultlib.InsMEM
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.Extend
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMEM
+Compiling module xil_defaultlib.MUX_reg_input
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.TOP_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TOP_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1667.316 ; gain = 0.000
+run 10 us
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Apr 21 21:17:23 2022] Launched synth_1...
+Run output will be captured here: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.runs/synth_1/runme.log
+[Thu Apr 21 21:17:23 2022] Launched impl_1...
+Run output will be captured here: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.runs/impl_1/runme.log
+set_property -dict [list CONFIG.coefficient_file {C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/all10_test.coe}] [get_ips ROM_Instruction]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/all10_test.coe' provided. It will be converted relative to IP Instance files '../../../../../all10_test.coe'
+generate_target all [get_files  C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ROM_Instruction'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ROM_Instruction'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ROM_Instruction'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ROM_Instruction'...
+catch { config_ip_cache -export [get_ips -all ROM_Instruction] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP ROM_Instruction, cache-ID = f6c73e12ed7fc46f; cache size = 0.707 MB.
+catch { [ delete_ip_run [get_ips -all ROM_Instruction] ] }
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.runs/ROM_Instruction_synth_1
+
+INFO: [Project 1-386] Moving file 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci' from fileset 'ROM_Instruction' to fileset 'sources_1'.
+export_ip_user_files -of_objects [get_files C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci'
+export_simulation -of_objects [get_files C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci] -directory C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.ip_user_files -ipstatic_source_dir C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.cache/compile_simlib/modelsim} {questa=C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.cache/compile_simlib/questa} {riviera=C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.cache/compile_simlib/riviera} {activehdl=C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci' is already up-to-date
+[Thu Apr 21 21:27:40 2022] Launched synth_1...
+Run output will be captured here: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.runs/synth_1/runme.log
+[Thu Apr 21 21:27:40 2022] Launched impl_1...
+Run output will be captured here: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sources_1/ip/ROM_Instruction/ROM_Instruction.xci' is already up-to-date
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Thu Apr 21 21:31:38 2022] Launched impl_1...
+Run output will be captured here: C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.runs/impl_1/runme.log
+set_property is_enabled true [get_files  C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sim_1/new/CPU_sim.v]
+set_property is_enabled false [get_files  C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.srcs/sim_1/new/TOP_sim.v]
+update_compile_order -fileset sim_1
+launch_simulation
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "C:/Users/expecto/Desktop/Lab/COD_Lab/Lab4/one_circle_CPU/one_circle_CPU.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 21 21:41:55 2022...

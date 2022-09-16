@@ -1,0 +1,9 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab1/ALU_sort/ALU_sort.sim/sim_1/synth/timing/xsim/sort_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-311] analyzing module register_0
+INFO: [VRFC 10-311] analyzing module register_1
+INFO: [VRFC 10-311] analyzing module register_2
+INFO: [VRFC 10-311] analyzing module sort
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VivadoProject/COD/Lab1/ALU_sort/ALU_sort.srcs/sim_1/imports/new/lab1_sort_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sort_tb
