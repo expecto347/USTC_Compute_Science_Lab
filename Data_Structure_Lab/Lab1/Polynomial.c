@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 typedef struct Node{
     int exp; //多项式的指数
@@ -16,9 +17,12 @@ Poly *CreatePoly();
 void PrintPoly(Poly *poly); //函数声明
 Poly* AddPoly(Poly *poly1,Poly *poly2);
 Poly* SubPoly(Poly *poly1,Poly *poly2);
+Poly* DiffPoly(Poly *poly); //求导
+double ValuePoly(Poly *poly,double x); //求值
 
 
 int main(){
+    double x;
     Poly *poly1,*poly2;
     printf("请输入多项式a\n");
     if((poly1 = CreatePoly())) ;
@@ -38,10 +42,21 @@ int main(){
     printf("您输入的多项式是：\n");
     PrintPoly(poly2);
 
-    Poly *poly3;
-    poly3 = SubPoly(poly1,poly2);
-    printf("您输入的多项式a-b是：\n");
-    PrintPoly(poly3);
+    printf("\na是：");
+    PrintPoly(poly1);
+    printf("b是：");
+    PrintPoly(poly2);
+    printf("a-b是：");
+    PrintPoly(SubPoly(poly1,poly2));
+    printf("a+b是：");
+    PrintPoly(AddPoly(poly1,poly2));
+
+    printf("a的导数是：");
+    PrintPoly(DiffPoly(poly1));
+
+    printf("计算多项式在x处的值：\n请输入x：");
+    scanf("%lf",&x);
+    printf("a在x=%0.2lf处的值是：%0.2lf\n",x,ValuePoly(poly1,x));
 }
 
 Poly *CreatePoly(){//该函数用于建立多项，并将多项式按照降幂的方式排列，并且会自动合并同类项
@@ -124,9 +139,44 @@ void PrintPoly(Poly *poly){//打印多项式,并且会自动去除系数为0的�
             if(node->co <= 0.00001 && node->co >= -0.00001){
                 node = node->NextNode;
             }
-            else{
+            else if(node->co < 0){
+                printf(" - ");
+                printf("%0.1lf",-node->co);
+                node = node->NextNode;
+                i = 1;
+            }
+            else if(node->co > 0){
                 if(i) printf(" + ");
                 printf("%0.1lf",node->co);
+                node = node->NextNode;
+                i = 1;
+            }
+        }
+        else if(node->exp == 1){
+            if(node->co <= 0.00001 && node->co >= -0.00001){
+                node = node->NextNode;
+            }
+            else if(node->co <= (1+0.00001) && node->co >= (1-0.00001)){
+                if(i) printf(" + ");
+                printf("x");
+                node = node->NextNode;
+                i = 1;
+            }
+            else if(node->co <= (-1+0.00001) && node->co >= (-1-0.00001)){
+                if(i) printf(" - ");
+                printf("x");
+                node = node->NextNode;
+                i = 1;
+            }
+            else if(node->co < 0){
+                printf(" - ");
+                printf("%0.1lfx",-node->co);
+                node = node->NextNode;
+                i = 1;
+            }
+            else{
+                if(i) printf(" + ");
+                printf("%0.1lfx",node->co);
                 node = node->NextNode;
                 i = 1;
             }
@@ -164,21 +214,124 @@ void PrintPoly(Poly *poly){//打印多项式,并且会自动去除系数为0的�
 
 Poly* AddPoly(Poly *poly1,Poly *poly2){//多项式相加
     Node *node1,*node2;
+    Poly *poly;
+    if((poly = (Poly *)malloc(sizeof(Poly)))) ;
+    else {
+        printf("内存分配失败！\n");
+        return NULL;//尝试分配地址，如果地址分配失败则返回NULL
+    }
+    poly->n = 0;
+    poly->header = NULL;
+
+    Node *node, *tail; //建立一个新的多项式
+    if((node = (Node *)malloc(sizeof(Node)))) ;
+    else {
+        printf("内存分配失败！\n");
+        return NULL;//尝试分配地址，如果地址分配失败则返回NULL
+    }
+
     node1 = poly1->header;
     node2 = poly2->header;
     while(node1 && node2){
         if(node1->exp == node2->exp){
-            node1->co += node2->co;
-            node1 = node1->NextNode;
-            node2 = node2->NextNode;
+            if(node1->co + node2->co <= 0.00001 && node1->co + node2->co >= -0.00001){
+                node1 = node1->NextNode;
+                node2 = node2->NextNode;
+            }
+            else{
+                node->co = node1->co + node2->co;
+                node->exp = node1->exp;
+                node->NextNode = NULL;
+                if(poly->n == 0){
+                    poly->header = node;
+                    tail = node;
+                }
+                else{
+                    tail->NextNode = node;
+                    tail = node;
+                }
+                poly->n++;
+                node1 = node1->NextNode;
+                node2 = node2->NextNode;
+            }
         }
         else if(node1->exp > node2->exp){
+            node->co = node1->co;
+            node->exp = node1->exp;
+            node->NextNode = NULL;
+            if(poly->n == 0){
+                poly->header = node;
+                tail = node;
+            }
+            else{
+                tail->NextNode = node;
+                tail = node;
+            }
+            poly->n++;
             node1 = node1->NextNode;
         }
         else{
+            node->co = node2->co;
+            node->exp = node2->exp;
+            node->NextNode = NULL;
+            if(poly->n == 0){
+                poly->header = node;
+                tail = node;
+            }
+            else{
+                tail->NextNode = node;
+                tail = node;
+            }
+            poly->n++;
             node2 = node2->NextNode;
         }
+        if((node = (Node *)malloc(sizeof(Node)))) ;
+        else {
+            printf("内存分配失败！\n");
+            return NULL;//尝试分配地址，如果地址分配失败则返回NULL
+        }
     }
+    while(node1){
+        node->co = node1->co;
+        node->exp = node1->exp;
+        node->NextNode = NULL;
+        if(poly->n == 0){
+            poly->header = node;
+            tail = node;
+        }
+        else{
+            tail->NextNode = node;
+            tail = node;
+        }
+        poly->n++;
+        node1 = node1->NextNode;
+        if((node = (Node *)malloc(sizeof(Node)))) ;
+        else {
+            printf("内存分配失败！\n");
+            return NULL;//尝试分配地址，如果地址分配失败则返回NULL
+        }
+    }
+    while(node2){
+        node->co = node2->co;
+        node->exp = node2->exp;
+        node->NextNode = NULL;
+        if(poly->n == 0){
+            poly->header = node;
+            tail = node;
+        }
+        else{
+            tail->NextNode = node;
+            tail = node;
+        }
+        poly->n++;
+        node2 = node2->NextNode;
+        if((node = (Node *)malloc(sizeof(Node)))) ;
+        else {
+            printf("内存分配失败！\n");
+            return NULL;//尝试分配地址，如果地址分配失败则返回NULL
+        }
+    }
+    return poly;
 }
 
 Poly* SubPoly(Poly *poly1,Poly *poly2){//多项式相减
@@ -224,6 +377,7 @@ Poly* SubPoly(Poly *poly1,Poly *poly2){//多项式相减
                 node->NextNode = NULL;
                 poly->n++;
                 tail->NextNode = node;
+                tail = node;
                 node1 = node1->NextNode;
                 node2 = node2->NextNode;
             }
@@ -244,6 +398,7 @@ Poly* SubPoly(Poly *poly1,Poly *poly2){//多项式相减
                 node->NextNode = NULL;
                 poly->n++;
                 tail->NextNode = node;
+                tail = node;
                 node1 = node1->NextNode;
             }
         }
@@ -263,6 +418,7 @@ Poly* SubPoly(Poly *poly1,Poly *poly2){//多项式相减
                 node->NextNode = NULL;
                 poly->n++;
                 tail->NextNode = node;
+                tail = node;
                 node2 = node2->NextNode;
             }
         }
@@ -295,6 +451,7 @@ Poly* SubPoly(Poly *poly1,Poly *poly2){//多项式相减
                 node->NextNode = NULL;
                 poly->n++;
                 tail->NextNode = node;
+                tail = node;
                 node2 = node2->NextNode;
             }
             if((node = (Node *)malloc(sizeof(Node)))) ;
@@ -326,6 +483,7 @@ Poly* SubPoly(Poly *poly1,Poly *poly2){//多项式相减
                 node->NextNode = NULL;
                 poly->n++;
                 tail->NextNode = node;
+                tail = node;
                 node1 = node1->NextNode;
             }
             if((node = (Node *)malloc(sizeof(Node)))) ;
@@ -336,4 +494,56 @@ Poly* SubPoly(Poly *poly1,Poly *poly2){//多项式相减
         }
     }
     return poly;
+}
+
+Poly *DiffPoly(Poly *poly){
+    Poly *poly1;
+    Node *node1, *node2, *tail;
+    if((poly1 = (Poly *)malloc(sizeof(Poly)))) ;
+    else {
+        printf("内存分配失败！\n");
+        return NULL;//尝试分配地址，如果地址分配失败则返回空值
+    }
+    poly1->header = NULL;
+    poly1->n = 0;
+    node1 = poly->header;
+    while(node1){
+        if(node1->exp == 0){
+            node1 = node1->NextNode;
+            continue;
+        }
+        else{
+            if((node2 = (Node *)malloc(sizeof(Node)))) ;
+            else {
+                printf("内存分配失败！\n");
+                return NULL;//尝试分配地址，如果地址分配失败则返回空值
+            }
+            node2->co = node1->co * node1->exp;
+            node2->exp = node1->exp - 1;
+            node2->NextNode = NULL;
+            if(!poly1->header){
+                poly1->header = node2;
+                poly1->n++;
+                tail = node2;
+            }
+            else{
+                poly1->n++;
+                tail->NextNode = node2;
+                tail = node2;
+            }
+            node1 = node1->NextNode;
+        }
+    }
+    return poly1;
+}
+
+double ValuePoly(Poly *poly, double x){
+    double sum = 0;
+    Node *node;
+    node = poly->header;
+    while(node){
+        sum += node->co * pow(x, node->exp);
+        node = node->NextNode;
+    }
+    return sum;
 }
