@@ -191,7 +191,7 @@ void PrintPoly(Poly *poly){//打印多项式,并且会自动去除系数为0的�
             i = 1;
         }
         else if(node->co <= (-1+0.00001) && node->co >= (-1-0.00001)){
-            if(i) printf(" - ");
+            printf(" - ");
             printf("x^%d",node->exp);
             node = node->NextNode;
             i = 1;
