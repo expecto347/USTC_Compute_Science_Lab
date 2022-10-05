@@ -1,5 +1,1 @@
-# 这是一个记录USTC历次计科实验的仓库
-
-本人尝试使用git来管理实验的工作流
-
-这是一个简单的实验性项目
+# This is a repo which records every lab when I study in the University of Science and Technology of China.
