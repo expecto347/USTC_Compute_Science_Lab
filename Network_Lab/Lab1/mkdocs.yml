@@ -1,0 +1,55 @@
+site_name: Haozhe Sun's Homepage
+theme:
+  name: material
+  palette:
+
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+
+
+extra:
+  alternate:
+    - name: English
+      link: /
+      lang: en
+    - name: Chinese (Simplified)
+      link: /index_zh
+      lang: zh
+
+  generator: false
+
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/expecto347
+    - icon: fontawesome/brands/zhihu
+      link: https://www.zhihu.com/people/ha-ha-97-23-93
+    - icon: fontawesome/brands/weibo
+      link: https://weibo.com/u/7413008957
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      
+repo_url: https://github.com/expecto347
+
+copyright: Copyright @Haozhe Sun(孙昊哲);| Thank you for visiting!
