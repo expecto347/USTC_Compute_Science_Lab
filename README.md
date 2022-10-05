@@ -1,1 +1,1 @@
-# This is a repo which records every lab when I study in the University of Science and Technology of China.
+The repository includes every lab I wrote during my study at the University of Science and Technology of China.
