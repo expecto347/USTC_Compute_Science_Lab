@@ -39,6 +39,7 @@ Undergraduate student in the University of Science and Technology of China
 ## Awards
 
 2020.9: Scholarship
+2019.10: China Olympic Physics Competition, 2nd Prize
 
 ## Publication
 
