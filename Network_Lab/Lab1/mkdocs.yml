@@ -28,10 +28,10 @@ theme:
 extra:
   alternate:
     - name: English
-      link: /
+      link: ../
       lang: en
     - name: Chinese (Simplified)
-      link: /index_zh
+      link: ../index_zh
       lang: zh
 
   generator: false

@@ -5,11 +5,11 @@ hide:
 
 # 孙昊哲
 
-[English version](/)
+[English version](../)
 
-<img src="/img/portrait.jpeg" align="left" alt="portrait" width="150"/>
+<img src="../img/portrait.jpeg" align="left" alt="portrait" width="150"/>
 
-<img src="/img/USTC_logo_2008.svg" alt="USTC_logo" width="30"/>
+<img src="../img/USTC_logo_2008.svg" alt="USTC_logo" width="30"/>
 当前就读于中国科学技术大学，攻读学士学位
 
 **邮箱**: expecto@mail.ustc.edu.cn
@@ -34,7 +34,7 @@ hide:
 ## 研究工作
 
 <figure markdown>
-  <img src="/img/research.png" alt="portrait" width="250"/>
+  <img src="../img/research.png" alt="portrait" width="250"/>
   <figcaption>Hign-precision location with RFID</figcaption>
 </figure>
 

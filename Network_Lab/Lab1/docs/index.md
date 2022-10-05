@@ -5,11 +5,11 @@ hide:
 
 # Haozhe Sun(孙昊哲)
 
-[中文版](/index_zh)
+[中文版](index_zh)
 
-<img src="/img/portrait.jpeg" align="left" alt="portrait" width="150"/>
+<img src="../img/portrait.jpeg" align="left" alt="portrait" width="150"/>
 
-<img src="/img/USTC_logo_2008.svg" alt="USTC_logo" width="30"/>
+<img src="../img/USTC_logo_2008.svg" alt="USTC_logo" width="30"/>
 Undergraduate student in the University of Science and Technology of China
 
 **Email**: expecto@mail.ustc.edu.cn
@@ -32,7 +32,7 @@ Undergraduate student in the University of Science and Technology of China
 ## Research Works
 
 <figure markdown>
-  <img src="/img/research.png" alt="portrait" width="250"/>
+  <img src="../img/research.png" alt="portrait" width="250"/>
   <figcaption>Hign-precision location with RFID</figcaption>
 </figure>
 
