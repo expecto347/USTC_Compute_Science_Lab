@@ -5,5 +5,9 @@
         "wallclock.h": "c",
         "vsprintf.h": "c",
         "stdarg.h": "c"
+    },
+    "yaml.schemas": {
+        "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
     }
+      
 }
