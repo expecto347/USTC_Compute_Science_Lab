@@ -34,6 +34,10 @@ extra:
       link: ../index_zh
       lang: zh
 
+  analytics:
+    provider: google
+    property: G-KDNRGG3LR8
+
   generator: false
 
   social:
