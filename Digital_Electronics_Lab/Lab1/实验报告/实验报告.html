@@ -139,6 +139,47 @@ aside > *:last-child {
 <p>Logism 2.7.1</p>
 <p>openjdk 18.0.2.1</p>
 <h2 id="实验过程">实验过程</h2>
+<ol>
+<li>
+<p>获取 Logisim 实验环境</p>
+<p>我使用的操作系统是macOS Monterey，所以找到对应的版本下载解压，需要注意的是提前安装好java环境</p>
+</li>
+<li>
+<p>熟悉 Logisim 界面</p>
+<p>观察logism的各个功能面板，具体的功能将在第三个步骤描述</p>
+</li>
+<li>
+<p>熟悉 Logisim 基本操作</p>
+<ul>
+<li>常见器件及使用方式：
+<ol>
+<li>wire: 按钮，使用时将其在画布上连接即可，一根导线最多可以手 动控制拐一个弯，使用时软件会自动控制其走向。</li>
+<li>pin: 分为输入和输出接口，对应属性选项卡中的output。可以设 置Data Bits来改变端口的位宽，同时应改变facing使其朝向自然。</li>
+<li>probe: 探针，可以自动检测线上的数据，并以设置好的方法表示出 来。</li>
+<li>splitter: 分线器，Fan Out表示分成几部分，Bit Width表示输入位 宽，后面的每个Bit可取0到Fan Out-1个值，表示相应的位被分到那 一部分。</li>
+<li>Gates: 常见逻辑门。</li>
+<li>Button: 按钮。</li>
+<li>LED/LED Matrix: LED灯或点阵。</li>
+<li>Constant: 用于给输入端口赋常量值，程序重新打开时不会变。</li>
+<li>Power/Ground: 高电平或接地。</li>
+<li>Poke Tool: 给端口赋值。</li>
+</ol>
+</li>
+<li>搭建相应的组件
+<img src="file:////Users/expecto/Documents/Lab/Digital_Electronics_Lab/Lab1/实验报告/10.png" alt=""></li>
+</ul>
+</li>
+<li>
+<p>模块封装</p>
+</li>
+</ol>
+<ul>
+<li>搭建好半加器</li>
+<li>点击相应的按钮，编辑好文字注释即可
+<img src="file:////Users/expecto/Documents/Lab/Digital_Electronics_Lab/Lab1/实验报告/12.png" alt=""></li>
+</ul>
+<p><img src="file:////Users/expecto/Documents/Lab/Digital_Electronics_Lab/Lab1/实验报告/11.png" alt=""></p>
+<h2 id="实验练习">实验练习</h2>
 <ul>
 <li>
 <h3 id="t1">T1</h3>
