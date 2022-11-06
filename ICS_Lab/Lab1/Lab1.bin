@@ -1,0 +1,31 @@
+0011 0000 0000 0000 ; start the program at location x3000
+0101 000 000 1 00000 ; clear R0, to be used for load A
+0101 001 001 1 00000 ; clear R1, to be used for load B
+0010 000 011111101 ; load A(x3100)
+0010 001 011111101 ; load B(x3101)
+0101 111 111 1 00000 ; clear R7, to be calculate if B > 15
+0001 111 001 1 10001 ; R7 = R1 - 15
+0000 010 000010110 ; if B == 0, jump to the end
+0101 010 010 1 00000 ; clear R2, to be used for the mod
+0001 010 010 1 00001 ; initialize R2, store 1 in R2
+0101 011 011 1 00000 ; clear R3, to be used to store the result
+0101 100 100 1 00000 ; clear R4, to be used for the temp
+0101 101 101 1 00000 ; clear R5, to be used for calculate subtraction
+0101 110 110 1 00000 ; clear R6, to be used for the temp3
+0001 110 000 1 00000 ; copy A to R6
+0001 010 010 0 00 010 ; R2 = R2 + R2, the begining of the loop
+1001 101 010 111111 ; R5 = ~R2. for the use of R4 - R2
+0001 101 101 1 00001 ; R5 = R5 + 1 
+0001 100 110 1 00000 ; copy R6 to  R4
+0001 100 100 0 00 101 ; R4 = R4 - R2
+0000 011 111111110 ; BRzp -1, judge if R4 < 0
+0001 100 100 0 00 010 ; R4 = R6 mod 2^n
+0000 010 000000100 ; judge if the result equals 0
+0001 011 011 1 00001 ; R3 = R3 + 1
+1001 101 100 111111 ; R5 = ~ R4
+0001 101 101 1 00001 ; R5 = R5 + 1 
+0001 110 110 0 00 101 ; R6 = R6 - R4
+0001 001 001 1 11111 ; B = B - 1
+0000 001 111110010 ; if B > 0, jump to the begining of the loop
+0011 011 011100111 ; store the result in the x3102
+1111 0000 00100101 ; halt
