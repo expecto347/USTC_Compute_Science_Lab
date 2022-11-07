@@ -3,9 +3,15 @@
 0101 001 001 1 00000 ; clear R1, to be used for load B
 0010 000 011111101 ; load A(x3100)
 0010 001 011111101 ; load B(x3101)
+0000 001 000000011 ; if B == 0, jump the next three instructions
+0101 011 011 1 00000 ; clear R3, to be used to store the result
+0011 011 011111011 ; store the result in the x3102
+1111 0000 00100101 ; halt
 0101 111 111 1 00000 ; clear R7, to be calculate if B > 15
 0001 111 001 1 10001 ; R7 = R1 - 15
-0000 010 000010110 ; if B == 0, jump to the end
+0000 110 000000010 ; if R7 <= 0, jump the next two instructions
+0101 111 111 1 00000 ; clear R7
+0001 001 111 1 01111 ; B = 15
 0101 010 010 1 00000 ; clear R2, to be used for the mod
 0001 010 010 1 00001 ; initialize R2, store 1 in R2
 0101 011 011 1 00000 ; clear R3, to be used to store the result
@@ -18,7 +24,7 @@
 0001 101 101 1 00001 ; R5 = R5 + 1 
 0001 100 110 1 00000 ; copy R6 to  R4
 0001 100 100 0 00 101 ; R4 = R4 - R2
-0000 011 111111110 ; BRzp -1, judge if R4 < 0
+0000 011 111111110 ; BRzp -2, judge if R4 < 0
 0001 100 100 0 00 010 ; R4 = R6 mod 2^n
 0000 010 000000100 ; judge if the result equals 0
 0001 011 011 1 00001 ; R3 = R3 + 1
@@ -27,5 +33,5 @@
 0001 110 110 0 00 101 ; R6 = R6 - R4
 0001 001 001 1 11111 ; B = B - 1
 0000 001 111110010 ; if B > 0, jump to the begining of the loop
-0011 011 011100111 ; store the result in the x3102
+0011 011 011011111 ; store the result in the x3102
 1111 0000 00100101 ; halt
