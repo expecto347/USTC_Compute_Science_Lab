@@ -1,5 +1,9 @@
 # Lab2实验报告
 
+[toc]
+
+
+
 ## 姓名 学号
 
 孙昊哲 PB20000277
@@ -32,9 +36,9 @@ Openjdk 18.0.2.1
 
    <img src="https://raw.githubusercontent.com/expecto347/Img/main/202210272256553.png" alt="image-20221027225622514" style="zoom:50%;" />
 
-   2. 我们点击`Build Circuit`即可自动构建好电路图
+2. 我们点击`Build Circuit`即可自动构建好电路图
 
-## <img src="https://raw.githubusercontent.com/expecto347/Img/main/202210272257844.png" alt="截屏2022-10-27 下午10.57.31" style="zoom: 33%;" />
+<img src="https://raw.githubusercontent.com/expecto347/Img/main/202210272257844.png" alt="截屏2022-10-27 下午10.57.31" style="zoom: 33%;" />
 
 ### T2
 
@@ -50,16 +54,19 @@ Openjdk 18.0.2.1
    Y_7 = \bar{G_1} + \bar{A_2} + \bar{A_1} + \bar{A_0}
    $$
 
-2. 我们依次将他们填入Logism当中<img src="https://raw.githubusercontent.com/expecto347/Img/main/202210272306522.png" alt="截屏2022-10-27 下午11.06.26" style="zoom:50%;" />
+2. 我们依次将他们填入Logism当中
+
+	 <img src="https://raw.githubusercontent.com/expecto347/Img/main/202210272306522.png" alt="截屏2022-10-27 下午11.06.26" style="zoom:50%;" />
 
 3. 点击`Build Circuit`按钮即可构建出对应的电路图
-   <img src="https://raw.githubusercontent.com/expecto347/Img/main/202210272309523.png" alt="截屏2022-10-27 下午11.09.36" style="zoom: 25%;" />
+
+<img src="https://raw.githubusercontent.com/expecto347/Img/main/202210272309523.png" alt="截屏2022-10-27 下午11.09.36" style="zoom: 25%;" />
 
 ### T3
 
 1. 绘制出电路图
 
-​	<img src="https://raw.githubusercontent.com/expecto347/Img/main/202210272314422.png" alt="截屏2022-10-27 下午11.14.16" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/expecto347/Img/main/202210272314422.png" alt="截屏2022-10-27 下午11.14.16" style="zoom:50%;" />
 
 2. 并且编写好verilog代码
    ```verilog
@@ -143,6 +150,7 @@ Openjdk 18.0.2.1
       ### T6
       
       1. 查看真值表，发现电路的功能是判断输出信号中1的个数，`S1`指示1的个数是否为奇数，`s2`指示1的个数是否为偶数
+
          <img src="https://raw.githubusercontent.com/expecto347/Img/main/202210272328541.png" alt="截屏2022-10-27 下午11.28.06" style="zoom: 50%;" />
       
       

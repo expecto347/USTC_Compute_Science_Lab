@@ -1,0 +1,266 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Nov 10 18:35:08 2022
+# Process ID: 17656
+# Current directory: C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7504 C:\Users\expecto\Desktop\Program\Lab\Digital_Electronics_Lab\Lab5\Lab5\Lab5.xpr
+# Log file: C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/vivado.log
+# Journal file: C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'T2' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj T2_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.sim/sim_1/behav/xsim'
+"xelab -wto 5617fdec3dc545debc9560c347272a52 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot T2_behav xil_defaultlib.T2 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 5617fdec3dc545debc9560c347272a52 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot T2_behav xil_defaultlib.T2 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.T2
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot T2_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.sim/sim_1/behav/xsim/xsim.dir/T2_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.sim/sim_1/behav/xsim/xsim.dir/T2_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Nov 10 18:35:30 2022. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Nov 10 18:35:30 2022...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "T2_behav -key {Behavioral:sim_1:Functional:T2} -tclbatch {T2.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source T2.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'T2_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 805.836 ; gain = 26.230
+file mkdir C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.srcs/sources_1/new
+close [ open C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.srcs/sources_1/new/d_ff_r.v w ]
+add_files C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.srcs/sources_1/new/d_ff_r.v
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 838.098 ; gain = 8.746
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'T2' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj T2_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.sim/sim_1/behav/xsim'
+"xelab -wto 5617fdec3dc545debc9560c347272a52 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot T2_behav xil_defaultlib.T2 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 5617fdec3dc545debc9560c347272a52 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot T2_behav xil_defaultlib.T2 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "T2_behav -key {Behavioral:sim_1:Functional:T2} -tclbatch {T2.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source T2.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'T2_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_runs synth_1 -jobs 6
+[Thu Nov 10 18:40:50 2022] Launched synth_1...
+Run output will be captured here: C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1160.203 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1301.445 ; gain = 450.883
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'T2' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj T2_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.srcs/sources_1/new/d_ff_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module d_ff_r
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.srcs/sim_1/new/T2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module T2
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.sim/sim_1/behav/xsim'
+"xelab -wto 5617fdec3dc545debc9560c347272a52 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot T2_behav xil_defaultlib.T2 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 5617fdec3dc545debc9560c347272a52 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot T2_behav xil_defaultlib.T2 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.d_ff_r
+Compiling module xil_defaultlib.T2
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot T2_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "T2_behav -key {Behavioral:sim_1:Functional:T2} -tclbatch {T2.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source T2.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'T2_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+export_ip_user_files -of_objects  [get_files C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.srcs/sim_1/new/T5.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.srcs/sim_1/new/T5.v
+file delete -force C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.srcs/sim_1/new/T5.v
+export_ip_user_files -of_objects  [get_files C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.srcs/sim_1/new/T3.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.srcs/sim_1/new/T3.v
+file delete -force C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.srcs/sim_1/new/T3.v
+close [ open C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.srcs/sources_1/new/T4.v w ]
+add_files C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.srcs/sources_1/new/T4.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.srcs/sources_1/new/T4.v] -no_script -reset -force -quiet
+remove_files  C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.srcs/sources_1/new/T4.v
+file delete -force C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.srcs/sources_1/new/T4.v
+close [ open C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.srcs/sources_1/new/3-8_Decoder.v w ]
+add_files C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.srcs/sources_1/new/3-8_Decoder.v
+update_compile_order -fileset sources_1
+set_property is_enabled false [get_files  C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.srcs/sim_1/new/T2.v]
+update_compile_order -fileset sim_1
+save_wave_config {C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/T2_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/T2_behav.wcfg
+set_property xsim.view C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/T2_behav.wcfg [get_filesets sim_1]
+launch_simulation
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.sim/sim_1/behav/xsim/simulate.log"
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'T4' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj T4_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.srcs/sources_1/new/3-8_Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.srcs/sim_1/new/T4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module T4
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.sim/sim_1/behav/xsim'
+"xelab -wto 5617fdec3dc545debc9560c347272a52 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot T4_behav xil_defaultlib.T4 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 5617fdec3dc545debc9560c347272a52 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot T4_behav xil_defaultlib.T4 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Decoder
+Compiling module xil_defaultlib.T4
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot T4_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.sim/sim_1/behav/xsim/xsim.dir/T4_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.sim/sim_1/behav/xsim/xsim.dir/T4_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Nov 10 18:57:36 2022. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Nov 10 18:57:36 2022...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1789.551 ; gain = 0.000
+launch_simulation
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "C:/Users/expecto/Desktop/Program/Lab/Digital_Electronics_Lab/Lab5/Lab5/Lab5.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 10 18:59:45 2022...
