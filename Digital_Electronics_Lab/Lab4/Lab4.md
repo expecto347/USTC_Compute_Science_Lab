@@ -1,20 +1,41 @@
 # Lab4
 
-## T1
+## 姓名 学号
+
+孙昊哲 PB20000277
+
+## 实验题目
+
+Verilog 硬件描述语言
+
+## 实验目的
+
+* 掌握 Verilog HDL 常用语法
+* 能够熟练阅读并理解 Verilog 代码
+* 能够设计较复杂的数字功能电路
+* 能够将 Verilog 代码与实际硬件相对应
+
+## 实验环境
+
+macOS Monterey
+
+## 实验练习
+
+### T1
 
 ```verilog
 module test(
 input a,
-output reg b);
-  always@(*)
+  output reg b); //将b设为reg
+  always@(*) //if语句应该在always内使用
   begin
     if(a) b <= 1'b0;
-    else b <= 1'b1;
+    else b <= 1'b1; 
   end
 endmodule
 ```
 
-## T2
+### T2
 
 ```verilog
 module test(
@@ -25,7 +46,7 @@ output reg [4:0]b);
 endmodule
 ```
 
-## T3
+### T3
 
 ```verilog
 c=8'b0011_0000
@@ -39,7 +60,7 @@ j=8'b1111_0000
 k=8'b0100_0011
 ```
 
-## T4
+### T4
 
 ```verilog
 module sub_test(
@@ -57,7 +78,7 @@ output o);
 endmodule
 ```
 
-## T5
+### T5
 
 ```verilog
 module sub_test(
@@ -73,3 +94,7 @@ output c);
 endmodule
 ```
 
+# 总结与思考
+
+1. 本次实验学会了verilog的基本语法，并且学会了debug
+2. 本次实验难度较低，很容易完成
