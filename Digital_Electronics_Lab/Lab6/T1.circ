@@ -172,31 +172,41 @@
     <wire from="(1100,80)" to="(1120,80)"/>
     <wire from="(750,180)" to="(760,180)"/>
     <wire from="(780,90)" to="(790,90)"/>
-    <comp lib="4" loc="(390,250)" name="RAM">
-      <a name="addrWidth" val="2"/>
-      <a name="dataWidth" val="1"/>
+    <comp lib="0" loc="(630,150)" name="Pin">
+      <a name="tristate" val="false"/>
     </comp>
-    <comp lib="0" loc="(250,250)" name="Splitter">
-      <a name="facing" val="north"/>
+    <comp lib="0" loc="(630,70)" name="Pin">
+      <a name="tristate" val="false"/>
     </comp>
-    <comp lib="1" loc="(1120,80)" name="Buffer">
+    <comp lib="1" loc="(1130,230)" name="Buffer">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="2" loc="(560,240)" name="Multiplexer"/>
-    <comp lib="0" loc="(1210,150)" name="Pin">
+    <comp lib="0" loc="(870,20)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(50,170)" name="Clock">
+      <a name="label" val="clk"/>
+    </comp>
+    <comp lib="0" loc="(1140,190)" name="Constant">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(1150,340)" name="Constant">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="1" loc="(1160,300)" name="Controlled Buffer"/>
+    <comp lib="0" loc="(1220,300)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(120,320)" name="Constant">
+    <comp lib="0" loc="(650,430)" name="Constant">
       <a name="facing" val="north"/>
-      <a name="value" val="0x0"/>
+      <a name="width" val="2"/>
+      <a name="value" val="0x3"/>
     </comp>
-    <comp lib="2" loc="(930,350)" name="Decoder">
-      <a name="facing" val="north"/>
-      <a name="select" val="2"/>
-    </comp>
-    <comp lib="1" loc="(1130,230)" name="Buffer">
+    <comp lib="1" loc="(1120,80)" name="Buffer">
       <a name="facing" val="west"/>
     </comp>
     <comp lib="0" loc="(880,430)" name="Constant">
@@ -204,79 +214,75 @@
       <a name="width" val="2"/>
       <a name="value" val="0x3"/>
     </comp>
-    <comp lib="1" loc="(760,260)" name="Controlled Buffer"/>
-    <comp lib="1" loc="(750,180)" name="Controlled Buffer"/>
-    <comp lib="2" loc="(140,240)" name="Multiplexer"/>
-    <comp lib="0" loc="(630,150)" name="Pin">
+    <comp lib="1" loc="(930,90)" name="Controlled Buffer"/>
+    <comp lib="1" loc="(870,260)" name="Controlled Buffer"/>
+    <comp lib="2" loc="(560,240)" name="Multiplexer"/>
+    <comp lib="0" loc="(50,250)" name="Pin">
       <a name="tristate" val="false"/>
+      <a name="label" val="a"/>
     </comp>
-    <comp lib="0" loc="(540,350)" name="Constant">
+    <comp lib="1" loc="(1150,150)" name="Controlled Buffer"/>
+    <comp lib="2" loc="(930,350)" name="Decoder">
+      <a name="facing" val="north"/>
+      <a name="select" val="2"/>
+    </comp>
+    <comp lib="0" loc="(250,250)" name="Splitter">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(1210,150)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="2" loc="(140,240)" name="Multiplexer"/>
+    <comp lib="1" loc="(960,170)" name="Controlled Buffer"/>
+    <comp lib="0" loc="(760,20)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(120,320)" name="Constant">
       <a name="facing" val="north"/>
       <a name="value" val="0x0"/>
     </comp>
-    <comp lib="0" loc="(630,70)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(650,430)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="2"/>
-      <a name="value" val="0x3"/>
-    </comp>
-    <comp lib="0" loc="(230,230)" name="Constant">
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="2" loc="(700,350)" name="Decoder">
-      <a name="facing" val="north"/>
-      <a name="select" val="2"/>
+    <comp lib="4" loc="(390,250)" name="RAM">
+      <a name="addrWidth" val="2"/>
+      <a name="dataWidth" val="1"/>
     </comp>
     <comp lib="0" loc="(770,430)" name="Constant">
       <a name="facing" val="north"/>
       <a name="width" val="2"/>
       <a name="value" val="0x3"/>
     </comp>
-    <comp lib="1" loc="(960,170)" name="Controlled Buffer"/>
-    <comp lib="0" loc="(1140,190)" name="Constant">
+    <comp lib="1" loc="(740,90)" name="Controlled Buffer"/>
+    <comp lib="0" loc="(540,350)" name="Constant">
       <a name="facing" val="north"/>
+      <a name="value" val="0x0"/>
     </comp>
-    <comp lib="0" loc="(50,170)" name="Clock"/>
-    <comp lib="2" loc="(820,350)" name="Decoder">
+    <comp lib="0" loc="(230,230)" name="Constant">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="4" loc="(480,230)" name="D Flip-Flop"/>
+    <comp lib="2" loc="(700,350)" name="Decoder">
       <a name="facing" val="north"/>
       <a name="select" val="2"/>
     </comp>
-    <comp lib="1" loc="(810,90)" name="Controlled Buffer"/>
-    <comp lib="0" loc="(50,250)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="1" loc="(990,260)" name="Controlled Buffer"/>
-    <comp lib="1" loc="(1160,300)" name="Controlled Buffer"/>
-    <comp lib="0" loc="(760,20)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="1" loc="(870,260)" name="Controlled Buffer"/>
-    <comp lib="1" loc="(1150,150)" name="Controlled Buffer"/>
-    <comp lib="4" loc="(480,230)" name="D Flip-Flop"/>
     <comp lib="0" loc="(990,20)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(870,20)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(1220,300)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(1150,340)" name="Constant">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="1" loc="(740,90)" name="Controlled Buffer"/>
     <comp lib="1" loc="(840,180)" name="Controlled Buffer"/>
-    <comp lib="1" loc="(930,90)" name="Controlled Buffer"/>
+    <comp lib="2" loc="(820,350)" name="Decoder">
+      <a name="facing" val="north"/>
+      <a name="select" val="2"/>
+    </comp>
+    <comp lib="6" loc="(256,400)" name="Text">
+      <a name="text" val="Haozhe Sun PB20000277"/>
+    </comp>
+    <comp lib="1" loc="(760,260)" name="Controlled Buffer"/>
+    <comp lib="1" loc="(810,90)" name="Controlled Buffer"/>
+    <comp lib="1" loc="(990,260)" name="Controlled Buffer"/>
+    <comp lib="1" loc="(750,180)" name="Controlled Buffer"/>
   </circuit>
 </project>
