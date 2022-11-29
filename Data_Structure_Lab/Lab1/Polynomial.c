@@ -134,7 +134,7 @@ void PrintPoly(Poly *poly){//打印多项式,并且会自动去除系数为0的�
     int i = 0; //用于判断是否是第一项，如果是第一项则不需要输出“+”
     Node *node;
     node = poly->header;
-    while(node){
+    while(node){ // 用于遍历多项式
         if(node->exp == 0){
             if(node->co <= 0.00001 && node->co >= -0.00001){
                 node = node->NextNode;
