@@ -96,12 +96,12 @@ bin/clean: bin/CMakeFiles/Dijkstra.dir/clean
 bin/CMakeFiles/Dijkstra.dir/all:
 	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/Dijkstra.dir/build.make bin/CMakeFiles/Dijkstra.dir/depend
 	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/Dijkstra.dir/build.make bin/CMakeFiles/Dijkstra.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/CMakeFiles --progress-num=1,2,3,4 "Built target Dijkstra"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target Dijkstra"
 .PHONY : bin/CMakeFiles/Dijkstra.dir/all
 
 # Build rule for subdir invocation for target.
 bin/CMakeFiles/Dijkstra.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/CMakeFiles/Dijkstra.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/CMakeFiles 0
 .PHONY : bin/CMakeFiles/Dijkstra.dir/rule

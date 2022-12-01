@@ -1,10 +1,7 @@
-bin/CMakeFiles/Dijkstra.dir/Dijkstra.c.o: \
- /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/src/Dijkstra.c \
+bin/CMakeFiles/Dijkstra.dir/Compress.c.o: \
+ /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/src/Compress.c \
  /usr/include/stdc-predef.h \
- /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/src/../include/Dijkstra.h \
- /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/src/../include/Graph.h \
- /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/src/../include/Classic.h \
- /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/src/../include/Compress.h \
+ /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/include/Compress.h \
  /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -51,14 +48,4 @@ bin/CMakeFiles/Dijkstra.dir/Dijkstra.c.o: \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/src/../include/Fibheap.h \
- /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
- /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
- /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
- /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
- /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /usr/lib/gcc/x86_64-linux-gnu/9/include/stdbool.h \
- /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/src/../include/Fibheap_Dijkstra.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h

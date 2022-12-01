@@ -111,11 +111,56 @@ bin/CMakeFiles/Dijkstra.dir/Classic.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Dijkstra.dir/Classic.c.s"
 	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/bin && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/src/Classic.c -o CMakeFiles/Dijkstra.dir/Classic.c.s
 
+bin/CMakeFiles/Dijkstra.dir/Compress.c.o: bin/CMakeFiles/Dijkstra.dir/flags.make
+bin/CMakeFiles/Dijkstra.dir/Compress.c.o: /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/src/Compress.c
+bin/CMakeFiles/Dijkstra.dir/Compress.c.o: bin/CMakeFiles/Dijkstra.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object bin/CMakeFiles/Dijkstra.dir/Compress.c.o"
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/bin && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT bin/CMakeFiles/Dijkstra.dir/Compress.c.o -MF CMakeFiles/Dijkstra.dir/Compress.c.o.d -o CMakeFiles/Dijkstra.dir/Compress.c.o -c /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/src/Compress.c
+
+bin/CMakeFiles/Dijkstra.dir/Compress.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Dijkstra.dir/Compress.c.i"
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/bin && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/src/Compress.c > CMakeFiles/Dijkstra.dir/Compress.c.i
+
+bin/CMakeFiles/Dijkstra.dir/Compress.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Dijkstra.dir/Compress.c.s"
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/bin && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/src/Compress.c -o CMakeFiles/Dijkstra.dir/Compress.c.s
+
+bin/CMakeFiles/Dijkstra.dir/Fibheap_Dijkstra.c.o: bin/CMakeFiles/Dijkstra.dir/flags.make
+bin/CMakeFiles/Dijkstra.dir/Fibheap_Dijkstra.c.o: /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/src/Fibheap_Dijkstra.c
+bin/CMakeFiles/Dijkstra.dir/Fibheap_Dijkstra.c.o: bin/CMakeFiles/Dijkstra.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object bin/CMakeFiles/Dijkstra.dir/Fibheap_Dijkstra.c.o"
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/bin && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT bin/CMakeFiles/Dijkstra.dir/Fibheap_Dijkstra.c.o -MF CMakeFiles/Dijkstra.dir/Fibheap_Dijkstra.c.o.d -o CMakeFiles/Dijkstra.dir/Fibheap_Dijkstra.c.o -c /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/src/Fibheap_Dijkstra.c
+
+bin/CMakeFiles/Dijkstra.dir/Fibheap_Dijkstra.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Dijkstra.dir/Fibheap_Dijkstra.c.i"
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/bin && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/src/Fibheap_Dijkstra.c > CMakeFiles/Dijkstra.dir/Fibheap_Dijkstra.c.i
+
+bin/CMakeFiles/Dijkstra.dir/Fibheap_Dijkstra.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Dijkstra.dir/Fibheap_Dijkstra.c.s"
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/bin && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/src/Fibheap_Dijkstra.c -o CMakeFiles/Dijkstra.dir/Fibheap_Dijkstra.c.s
+
+bin/CMakeFiles/Dijkstra.dir/Fibheap.c.o: bin/CMakeFiles/Dijkstra.dir/flags.make
+bin/CMakeFiles/Dijkstra.dir/Fibheap.c.o: /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/src/Fibheap.c
+bin/CMakeFiles/Dijkstra.dir/Fibheap.c.o: bin/CMakeFiles/Dijkstra.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object bin/CMakeFiles/Dijkstra.dir/Fibheap.c.o"
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/bin && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT bin/CMakeFiles/Dijkstra.dir/Fibheap.c.o -MF CMakeFiles/Dijkstra.dir/Fibheap.c.o.d -o CMakeFiles/Dijkstra.dir/Fibheap.c.o -c /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/src/Fibheap.c
+
+bin/CMakeFiles/Dijkstra.dir/Fibheap.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Dijkstra.dir/Fibheap.c.i"
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/bin && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/src/Fibheap.c > CMakeFiles/Dijkstra.dir/Fibheap.c.i
+
+bin/CMakeFiles/Dijkstra.dir/Fibheap.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Dijkstra.dir/Fibheap.c.s"
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/bin && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/src/Fibheap.c -o CMakeFiles/Dijkstra.dir/Fibheap.c.s
+
 # Object files for target Dijkstra
 Dijkstra_OBJECTS = \
 "CMakeFiles/Dijkstra.dir/Dijkstra.c.o" \
 "CMakeFiles/Dijkstra.dir/Graph.c.o" \
-"CMakeFiles/Dijkstra.dir/Classic.c.o"
+"CMakeFiles/Dijkstra.dir/Classic.c.o" \
+"CMakeFiles/Dijkstra.dir/Compress.c.o" \
+"CMakeFiles/Dijkstra.dir/Fibheap_Dijkstra.c.o" \
+"CMakeFiles/Dijkstra.dir/Fibheap.c.o"
 
 # External object files for target Dijkstra
 Dijkstra_EXTERNAL_OBJECTS =
@@ -123,9 +168,12 @@ Dijkstra_EXTERNAL_OBJECTS =
 bin/Dijkstra: bin/CMakeFiles/Dijkstra.dir/Dijkstra.c.o
 bin/Dijkstra: bin/CMakeFiles/Dijkstra.dir/Graph.c.o
 bin/Dijkstra: bin/CMakeFiles/Dijkstra.dir/Classic.c.o
+bin/Dijkstra: bin/CMakeFiles/Dijkstra.dir/Compress.c.o
+bin/Dijkstra: bin/CMakeFiles/Dijkstra.dir/Fibheap_Dijkstra.c.o
+bin/Dijkstra: bin/CMakeFiles/Dijkstra.dir/Fibheap.c.o
 bin/Dijkstra: bin/CMakeFiles/Dijkstra.dir/build.make
 bin/Dijkstra: bin/CMakeFiles/Dijkstra.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable Dijkstra"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable Dijkstra"
 	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/bin && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Dijkstra.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

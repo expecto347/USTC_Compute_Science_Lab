@@ -9,7 +9,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/src/Classic.c" "bin/CMakeFiles/Dijkstra.dir/Classic.c.o" "gcc" "bin/CMakeFiles/Dijkstra.dir/Classic.c.o.d"
+  "/root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/src/Compress.c" "bin/CMakeFiles/Dijkstra.dir/Compress.c.o" "gcc" "bin/CMakeFiles/Dijkstra.dir/Compress.c.o.d"
   "/root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/src/Dijkstra.c" "bin/CMakeFiles/Dijkstra.dir/Dijkstra.c.o" "gcc" "bin/CMakeFiles/Dijkstra.dir/Dijkstra.c.o.d"
+  "/root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/src/Fibheap.c" "bin/CMakeFiles/Dijkstra.dir/Fibheap.c.o" "gcc" "bin/CMakeFiles/Dijkstra.dir/Fibheap.c.o.d"
+  "/root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/src/Fibheap_Dijkstra.c" "bin/CMakeFiles/Dijkstra.dir/Fibheap_Dijkstra.c.o" "gcc" "bin/CMakeFiles/Dijkstra.dir/Fibheap_Dijkstra.c.o.d"
   "/root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/src/Graph.c" "bin/CMakeFiles/Dijkstra.dir/Graph.c.o" "gcc" "bin/CMakeFiles/Dijkstra.dir/Graph.c.o.d"
   )
 

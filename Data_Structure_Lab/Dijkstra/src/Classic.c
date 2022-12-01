@@ -8,7 +8,7 @@ void Classic_Dijkstra(int **Graph, int n, int start, int end) {
     for (i = 0; i < n; i++)
         for (j = 0; j < n; j++)
         if (Graph[i][j] == 0)
-            cost[i][j] = INFINITY;
+            cost[i][j] = INFINITY_INT;
         else
             cost[i][j] = Graph[i][j];
 
@@ -23,7 +23,7 @@ void Classic_Dijkstra(int **Graph, int n, int start, int end) {
     count = 1;
 
     while (count < n - 1) { // Finding the shortest path for each node
-        mindistance = INFINITY;
+        mindistance = INFINITY_INT;
         for (i = 0; i < n; i++) // Nextnode gives the node at minimum distance
             if (distance[i] < mindistance && !visited[i]) {
                 mindistance = distance[i];
@@ -42,4 +42,15 @@ void Classic_Dijkstra(int **Graph, int n, int start, int end) {
 
     // Printing the distance
     printf("Distance from %d to %d: %d\n", start, end, distance[end]);
+
+    // Printing the path
+    printf("Path: %d", end);
+    j = end;
+    do {
+        j = pred[j];
+        printf(" <- %d", j);
+    } while (j != start);
+    printf("\n");
+
+    return;
 }

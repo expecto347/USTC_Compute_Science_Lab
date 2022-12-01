@@ -154,6 +154,30 @@ Classic.c.s:
 	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/Dijkstra.dir/build.make bin/CMakeFiles/Dijkstra.dir/Classic.c.s
 .PHONY : Classic.c.s
 
+Compress.o: Compress.c.o
+.PHONY : Compress.o
+
+# target to build an object file
+Compress.c.o:
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/Dijkstra.dir/build.make bin/CMakeFiles/Dijkstra.dir/Compress.c.o
+.PHONY : Compress.c.o
+
+Compress.i: Compress.c.i
+.PHONY : Compress.i
+
+# target to preprocess a source file
+Compress.c.i:
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/Dijkstra.dir/build.make bin/CMakeFiles/Dijkstra.dir/Compress.c.i
+.PHONY : Compress.c.i
+
+Compress.s: Compress.c.s
+.PHONY : Compress.s
+
+# target to generate assembly for a file
+Compress.c.s:
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/Dijkstra.dir/build.make bin/CMakeFiles/Dijkstra.dir/Compress.c.s
+.PHONY : Compress.c.s
+
 Dijkstra.o: Dijkstra.c.o
 .PHONY : Dijkstra.o
 
@@ -177,6 +201,54 @@ Dijkstra.s: Dijkstra.c.s
 Dijkstra.c.s:
 	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/Dijkstra.dir/build.make bin/CMakeFiles/Dijkstra.dir/Dijkstra.c.s
 .PHONY : Dijkstra.c.s
+
+Fibheap.o: Fibheap.c.o
+.PHONY : Fibheap.o
+
+# target to build an object file
+Fibheap.c.o:
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/Dijkstra.dir/build.make bin/CMakeFiles/Dijkstra.dir/Fibheap.c.o
+.PHONY : Fibheap.c.o
+
+Fibheap.i: Fibheap.c.i
+.PHONY : Fibheap.i
+
+# target to preprocess a source file
+Fibheap.c.i:
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/Dijkstra.dir/build.make bin/CMakeFiles/Dijkstra.dir/Fibheap.c.i
+.PHONY : Fibheap.c.i
+
+Fibheap.s: Fibheap.c.s
+.PHONY : Fibheap.s
+
+# target to generate assembly for a file
+Fibheap.c.s:
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/Dijkstra.dir/build.make bin/CMakeFiles/Dijkstra.dir/Fibheap.c.s
+.PHONY : Fibheap.c.s
+
+Fibheap_Dijkstra.o: Fibheap_Dijkstra.c.o
+.PHONY : Fibheap_Dijkstra.o
+
+# target to build an object file
+Fibheap_Dijkstra.c.o:
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/Dijkstra.dir/build.make bin/CMakeFiles/Dijkstra.dir/Fibheap_Dijkstra.c.o
+.PHONY : Fibheap_Dijkstra.c.o
+
+Fibheap_Dijkstra.i: Fibheap_Dijkstra.c.i
+.PHONY : Fibheap_Dijkstra.i
+
+# target to preprocess a source file
+Fibheap_Dijkstra.c.i:
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/Dijkstra.dir/build.make bin/CMakeFiles/Dijkstra.dir/Fibheap_Dijkstra.c.i
+.PHONY : Fibheap_Dijkstra.c.i
+
+Fibheap_Dijkstra.s: Fibheap_Dijkstra.c.s
+.PHONY : Fibheap_Dijkstra.s
+
+# target to generate assembly for a file
+Fibheap_Dijkstra.c.s:
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/Dijkstra.dir/build.make bin/CMakeFiles/Dijkstra.dir/Fibheap_Dijkstra.c.s
+.PHONY : Fibheap_Dijkstra.c.s
 
 Graph.o: Graph.c.o
 .PHONY : Graph.o
@@ -214,9 +286,18 @@ help:
 	@echo "... Classic.o"
 	@echo "... Classic.i"
 	@echo "... Classic.s"
+	@echo "... Compress.o"
+	@echo "... Compress.i"
+	@echo "... Compress.s"
 	@echo "... Dijkstra.o"
 	@echo "... Dijkstra.i"
 	@echo "... Dijkstra.s"
+	@echo "... Fibheap.o"
+	@echo "... Fibheap.i"
+	@echo "... Fibheap.s"
+	@echo "... Fibheap_Dijkstra.o"
+	@echo "... Fibheap_Dijkstra.i"
+	@echo "... Fibheap_Dijkstra.s"
 	@echo "... Graph.o"
 	@echo "... Graph.i"
 	@echo "... Graph.s"

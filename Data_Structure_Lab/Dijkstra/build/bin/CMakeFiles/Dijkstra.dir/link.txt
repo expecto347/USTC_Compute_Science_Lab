@@ -1,1 +1,1 @@
-/usr/bin/cc -g CMakeFiles/Dijkstra.dir/Dijkstra.c.o CMakeFiles/Dijkstra.dir/Graph.c.o CMakeFiles/Dijkstra.dir/Classic.c.o -o Dijkstra 
+/usr/bin/cc -g CMakeFiles/Dijkstra.dir/Dijkstra.c.o CMakeFiles/Dijkstra.dir/Graph.c.o CMakeFiles/Dijkstra.dir/Classic.c.o CMakeFiles/Dijkstra.dir/Compress.c.o CMakeFiles/Dijkstra.dir/Fibheap_Dijkstra.c.o CMakeFiles/Dijkstra.dir/Fibheap.c.o -o Dijkstra 
