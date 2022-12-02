@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblib.a CMakeFiles/lib.dir/Fibheap.c.o
+/usr/bin/ranlib liblib.a

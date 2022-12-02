@@ -20,6 +20,7 @@ void Classic_Dijkstra(int **Graph, int n, int start, int end) {
 
     distance[start] = 0;
     visited[start] = 1;
+    pred[start] = -1;
     count = 1;
 
     while (count < n - 1) { // Finding the shortest path for each node
@@ -44,13 +45,17 @@ void Classic_Dijkstra(int **Graph, int n, int start, int end) {
     printf("Distance from %d to %d: %d\n", start, end, distance[end]);
 
     // Printing the path
-    printf("Path: %d", end);
-    j = end;
-    do {
-        j = pred[j];
-        printf(" <- %d", j);
-    } while (j != start);
+    printf("Path: ");
+    int *stack = (int *)malloc(sizeof(int) * n);
+    int top = -1;
+    i = end;
+    while (i != -1) {
+        stack[++top] = i;
+        i = pred[i];
+    }
+    while (top != 0) {
+        printf("%d --> ", stack[top--]);
+    }
+    printf("%d", stack[top]);
     printf("\n");
-
-    return;
 }

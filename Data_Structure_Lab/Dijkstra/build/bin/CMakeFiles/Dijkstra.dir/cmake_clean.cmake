@@ -5,8 +5,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Dijkstra.dir/Compress.c.o.d"
   "CMakeFiles/Dijkstra.dir/Dijkstra.c.o"
   "CMakeFiles/Dijkstra.dir/Dijkstra.c.o.d"
-  "CMakeFiles/Dijkstra.dir/Fibheap.c.o"
-  "CMakeFiles/Dijkstra.dir/Fibheap.c.o.d"
   "CMakeFiles/Dijkstra.dir/Fibheap_Dijkstra.c.o"
   "CMakeFiles/Dijkstra.dir/Fibheap_Dijkstra.c.o.d"
   "CMakeFiles/Dijkstra.dir/Graph.c.o"

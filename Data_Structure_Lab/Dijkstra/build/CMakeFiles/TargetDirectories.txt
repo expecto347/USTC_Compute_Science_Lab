@@ -3,3 +3,6 @@
 /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/bin/CMakeFiles/Dijkstra.dir
 /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/bin/CMakeFiles/edit_cache.dir
 /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/bin/CMakeFiles/rebuild_cache.dir
+/root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/bin/bin/CMakeFiles/lib.dir
+/root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/bin/bin/CMakeFiles/edit_cache.dir
+/root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/bin/bin/CMakeFiles/rebuild_cache.dir

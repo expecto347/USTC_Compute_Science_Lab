@@ -1,4 +1,4 @@
-# Install script for directory: /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/src
+# Install script for directory: /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/src/lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,11 +40,5 @@ endif()
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/bin/bin/cmake_install.cmake")
-
 endif()
 

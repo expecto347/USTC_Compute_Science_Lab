@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/CMakeFiles /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/CMakeFiles /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/bin/bin//CMakeFiles/progress.marks
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/bin/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/bin/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,44 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/bin/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/bin/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named Dijkstra
+# Convenience name for target.
+bin/bin/CMakeFiles/lib.dir/rule:
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bin/bin/CMakeFiles/lib.dir/rule
+.PHONY : bin/bin/CMakeFiles/lib.dir/rule
 
-# Build rule for target.
-Dijkstra: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Dijkstra
-.PHONY : Dijkstra
-
-# fast build rule for target.
-Dijkstra/fast:
-	$(MAKE) $(MAKESILENT) -f bin/CMakeFiles/Dijkstra.dir/build.make bin/CMakeFiles/Dijkstra.dir/build
-.PHONY : Dijkstra/fast
-
-#=============================================================================
-# Target rules for targets named lib
-
-# Build rule for target.
-lib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib
+# Convenience name for target.
+lib: bin/bin/CMakeFiles/lib.dir/rule
 .PHONY : lib
 
 # fast build rule for target.
 lib/fast:
-	$(MAKE) $(MAKESILENT) -f bin/bin/CMakeFiles/lib.dir/build.make bin/bin/CMakeFiles/lib.dir/build
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build && $(MAKE) $(MAKESILENT) -f bin/bin/CMakeFiles/lib.dir/build.make bin/bin/CMakeFiles/lib.dir/build
 .PHONY : lib/fast
+
+Fibheap.o: Fibheap.c.o
+.PHONY : Fibheap.o
+
+# target to build an object file
+Fibheap.c.o:
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build && $(MAKE) $(MAKESILENT) -f bin/bin/CMakeFiles/lib.dir/build.make bin/bin/CMakeFiles/lib.dir/Fibheap.c.o
+.PHONY : Fibheap.c.o
+
+Fibheap.i: Fibheap.c.i
+.PHONY : Fibheap.i
+
+# target to preprocess a source file
+Fibheap.c.i:
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build && $(MAKE) $(MAKESILENT) -f bin/bin/CMakeFiles/lib.dir/build.make bin/bin/CMakeFiles/lib.dir/Fibheap.c.i
+.PHONY : Fibheap.c.i
+
+Fibheap.s: Fibheap.c.s
+.PHONY : Fibheap.s
+
+# target to generate assembly for a file
+Fibheap.c.s:
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build && $(MAKE) $(MAKESILENT) -f bin/bin/CMakeFiles/lib.dir/build.make bin/bin/CMakeFiles/lib.dir/Fibheap.c.s
+.PHONY : Fibheap.c.s
 
 # Help Target
 help:
@@ -150,8 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Dijkstra"
 	@echo "... lib"
+	@echo "... Fibheap.o"
+	@echo "... Fibheap.i"
+	@echo "... Fibheap.s"
 .PHONY : help
 
 
@@ -163,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Dijkstra/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
