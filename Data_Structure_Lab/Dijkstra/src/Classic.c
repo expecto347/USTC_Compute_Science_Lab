@@ -1,8 +1,15 @@
 #include "Classic.h"
 
 void Classic_Dijkstra(int **Graph, int n, int start, int end) {
-    int cost[n][n], distance[n], pred[n];
+    int distance[n], pred[n];
+    int **cost;
     int visited[n], count, mindistance, nextnode, i, j;
+
+    //Initialize cost
+    cost = (int **) malloc(n * sizeof(int *));
+    for (i = 0; i < n; i++) {
+        cost[i] = (int *) malloc(n * sizeof(int));
+    }
 
     // Creating cost matrix
     for (i = 0; i < n; i++)
