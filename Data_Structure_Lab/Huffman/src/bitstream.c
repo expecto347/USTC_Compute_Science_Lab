@@ -1,71 +1,60 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<math.h>
+#include<string.h>
 #include "bitstream.h"
+#include "Huffman.h"
 
-Bitstream *read(char *filename) {
+// read the binary file to char format
+unsigned char *read(char *filename, int *len){
     FILE *fp = fopen(filename, "rb");
-    if (fp == NULL) {
-        printf("Error opening file!\n");
-        return NULL;
-    }
     fseek(fp, 0, SEEK_END);
-    long fsize = ftell(fp);
+    int size = ftell(fp);
     fseek(fp, 0, SEEK_SET);
-    Byte *buffer = malloc(fsize);
-    fread(buffer, fsize, 1, fp);
+    unsigned char *buffer = malloc(sizeof(char) * size);
+    fread(buffer, 1, size, fp);
     fclose(fp);
-    Bitstream *bitstream = malloc(sizeof(Bitstream));
-    bitstream->bytes = buffer;
-    bitstream->size = fsize;
-    return bitstream;
+    *len = size;
+    return buffer;
 }
 
-void write(char *filename, Bitstream *bitstream) {
+// write the char format to binary file
+void write(char *filename, char *huffman, char *bin, HEAD *h){
     FILE *fp = fopen(filename, "wb");
-    if (fp == NULL) {
-        printf("Error opening file!\n");
-        return;
-    }
-    fwrite(bitstream->bytes, bitstream->size, 1, fp);
+    fwrite(h, sizeof(HEAD), 1, fp);
+    fwrite(huffman, 1, h->huffman_size, fp); // write the head and huffman code
+    fwrite(bin, 1, h->compress_size/8, fp); // write the body
     fclose(fp);
 }
 
-// convert bitstream to int* according to the size of the unit
-int *bitstream_to_int(Bitstream *bitstream, int unit, int *size) {
-    int i;
-    char *tmp = malloc(sizeof(char) * (bitstream->size * 2 + unit));
-    for(i = 0; i < bitstream->size; i++) {
-        Byte b = bitstream->bytes[i];
-        tmp[2 * i] = b.value1;
-        tmp[2 * i + 1] = b.value2;
-    }
-    int j;
-    if(2*i  % unit) {
-        for(j = 0; j < unit - 2*i % unit; j++) {
-            tmp[2 * i + j] = 0x0;
-        }
-        //printf("2*i/unit = %d\n", (2 * i + j)%unit); //TODO:Debug!
-        i = 2*i/unit + 1;
-    }
-    else i = 2*i/unit;
-    int *result = malloc(sizeof(int) * (i+1));
-    int k;
-    for(k = 0; k < i; k++) {
-        //printf("k: %d\n", k);//TODO
-        int tmp_int = 0;
-        for(int j = 0; j < unit; j++) {
-            tmp_int += tmp[k * unit + j]*(int)pow(2,4*j); //shift left
-            // printf("tmp_int = %x ,index = %d, tmp[index] = %x\n",tmp_int, k * unit + j, tmp[k * unit + j]); //TODO:Debug!
-        }
-        result[k] = tmp_int;
-        // ("result = %x\n", result[k]); //TODO:Debug!
-    }
-    // printf("I'm here!\n"); //TODO:Debug!
-    *size = k;
-    return result;
+// convert the HEAD struct to char format
+char *convertHead(HEAD *head){
+    char *output = malloc(sizeof(char) * (sizeof(HEAD) + 1));
+    output[0] = 0;
+    memcpy(output, head, sizeof(HEAD));
+    return output;
 }
 
-// convert int* to bitstream according to the size of the unit
-Bitstream *int_to_bitstream(int *int_array, int size, int unit) {
+// convert the char type to binary type
+unsigned char *convertBinary(char *buffer, int len){
+    unsigned char *output = malloc(sizeof(unsigned char) * len / 8);
+    for(int i = 0; i < len; i++){
+        output[i/8] = output[i/8] << 1;
+        output[i/8] = output[i/8] | (buffer[i] - '0');
+    }
+    return output;
+}
+
+// convert the binary type to char type
+char *convertChar(unsigned char *buffer, int len){
+    char *output = malloc(sizeof(char) * len * 8);
+    output = "";
+    for(int i = 0; i < len; i++){
+        for(int j = 0; j < 8; j++){
+            char tmp[2];
+            tmp[0] = (buffer[i] >> (7 - j)) & 1;
+            tmp[1] = 0;
+            output = strcat(output, tmp);
+        }
+    }
+    return output;
 }

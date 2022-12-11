@@ -1,31 +1,33 @@
 #ifndef HUFFMAN_H
 #define HUFFMAN_H
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include "bitstream.h"
-typedef struct node{
-    int code;
-	int symbol;
-	int freq;
-    struct node *left;
-    struct node *right;
-}node;
 
-typedef struct huffman_tree{
-    node *root;
-    int size;
-}HuffmanTree;
+typedef struct HTNode{
+	unsigned char data;
+    char *code;
+	unsigned int freq;
+	int parent,lchild,rchild;
+}HTNode;
 
-typedef struct frequency_table{
-    int frequency;
-    int symbol;
-}FrequencyTable;
+typedef struct HufffmanTree{
+    HTNode *node;
+    int n;
+}HTREE;
 
-void print_frequency_table(node *frequency_table, int size);
-node *sort_frequency_table(node *frequency_table, int size);
-node *frequency_table(int *input, int size, int unit);
-void print_huffman_tree(node *node);
-HuffmanTree *build_huffman_tree(node *frequency_table, int size);
-Bitstream *char_to_bitstream(char *input, int *len);
-char *encode(int *input, int size, char **huffman_code);
-void get_huffman_code(node *node, char *code, char **huffman_code);
+void PrintHuffmanCode(HTREE *tree);
+int find_root(HTREE *tree);
+void HuffmanCode(HTREE *tree, int n, char *str);
+void GetHuffmanCode(HTREE *tree);
+void PrintHuffmanTree(HTREE *tree);
+void CreateHuffmanTree(HTREE *tree);
+void Select(HTREE *tree, int *s1, int *s2);
+HTREE *GetFrequency(unsigned char *str, int len);
+char *encode(unsigned char *buffer, int len, HTREE *tree, HEAD *head);
+unsigned char *decode(unsigned char *buffer, HEAD *head, unsigned char **HuffmanCode);
+unsigned char *catHuffmanCode(HTREE *T, HEAD *head);
+unsigned char **splitHuffmanCode(unsigned char *buffer);
 #endif

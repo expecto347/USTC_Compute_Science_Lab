@@ -1,161 +1,201 @@
-#include<stdio.h>
-#include<malloc.h>
-#include<string.h>
-#include <math.h>
 #include "Huffman.h"
 #include "bitstream.h"
 
-// get the frequency of each character
-node *frequency_table(int *input, int size, int unit) {
-    int i;
-    int size_u = pow(2, 4*unit);
-    node *frequency_table = malloc(sizeof(node) * size_u);
-    for(i = 0; i < size_u; i++) {
-        frequency_table[i].symbol = i;
-        frequency_table[i].freq = 0;
-        frequency_table[i].left = NULL;
-        frequency_table[i].right = NULL;
+HTREE *GetFrequency(unsigned char *str, int len){ //统计字符出现频率
+    int *freq = (int *)malloc(sizeof(int) * 256);
+    
+    //Initialize the frequency array
+    for(int i = 0; i < 256; i++){
+        freq[i] = 0;
     }
-    for(i = 0; i < size; i++) {
-        frequency_table[input[i]].freq++;
+
+    //Count the frequency of each character
+    for(int i = 0; i < len; i++){
+        freq[str[i]]++;
     }
-    return frequency_table;
+
+    HTNode *T = (HTNode *)malloc(sizeof(HTNode) * 512);
+    for(int i = 0; i < 256; i++){
+        T[i].data = i;
+        T[i].freq = freq[i];
+        T[i].parent = T[i].lchild = T[i].rchild = -1;
+        T[i].code = NULL;
+    }
+
+    for(int i = 256; i < 512; i++){
+        T[i].data = 0;
+        T[i].freq = 0xffffffff;
+        T[i].parent = T[i].lchild = T[i].rchild = -1;
+        T[i].code = NULL;
+    }
+
+    HTREE *tree = (HTREE *)malloc(sizeof(HTREE));
+    tree->node = T;
+    tree->n = 256;
+
+    return tree;                               
 }
-// sort the frequency table
-node *sort_frequency_table(node *frequency_table, int size) {
-    int i, j;
-    node *sort_frequency_table = malloc(sizeof(node) * size);
-    for(i = 0; i < size; i++) {
-        sort_frequency_table[i].symbol = frequency_table[i].symbol;
-        sort_frequency_table[i].freq = frequency_table[i].freq;
-        sort_frequency_table[i].left = NULL;
-        sort_frequency_table[i].right = NULL;
-    }
-    for(i = 0; i < size; i++) {
-        for(j = i + 1; j < size; j++) {
-            if(sort_frequency_table[i].freq > sort_frequency_table[j].freq) {
-                node tmp = sort_frequency_table[i];
-                sort_frequency_table[i] = sort_frequency_table[j];
-                sort_frequency_table[j] = tmp;
+
+// Select two nodes with the smallest frequency
+void Select(HTREE *tree, int *s1, int *s2){
+    unsigned int min1 = 0xffffffff, min2 = 0xffffffff;
+    for(int i = 0; i < 2*tree->n - 1; i++){
+        if(tree->node[i].parent == -1){
+            if(tree->node[i].freq < min1){
+                min2 = min1;
+                *s2 = *s1;
+                min1 = tree->node[i].freq;
+                *s1 = i;
+            }else if(tree->node[i].freq < min2){
+                min2 = tree->node[i].freq;
+                *s2 = i;
             }
         }
     }
-    return sort_frequency_table;
 }
 
-// print the frequency table
-void print_frequency_table(node *frequency_table, int size) {
-    int i;
-    for(i = 0; i < size; i++) {
-        if(frequency_table[i].freq != 0) {
-            printf("%d:%d\n", frequency_table[i].symbol, frequency_table[i].freq);
-        }
+// Create Huffman Tree
+void CreateHuffmanTree(HTREE *tree){
+    int s1, s2;
+    for(int i = tree->n; i < 2 * tree->n - 1; i++){
+        Select(tree, &s1, &s2);
+        tree->node[s1].parent = i;
+        tree->node[s2].parent = i;
+        tree->node[i].lchild = s1;
+        tree->node[i].rchild = s2;
+        tree->node[i].freq = tree->node[s1].freq + tree->node[s2].freq;
+        tree->node[i].parent = -1;
     }
 }
 
-// Build the Huffman tree
-HuffmanTree *build_huffman_tree(node *frequency_table, int size) {
-    int i;
-    HuffmanTree *huffman_tree = malloc(sizeof(HuffmanTree));
-    huffman_tree->size = size;
-    huffman_tree->root = malloc(sizeof(node));
-    huffman_tree->root->left = NULL;
-    huffman_tree->root->right = NULL;
-    huffman_tree->root->freq = 0;
-    huffman_tree->root->symbol = -1;
-    for(i = 0; i < size; i++) {
-        if(frequency_table[i].freq != 0) {
-            node *new_node = malloc(sizeof(node));
-            new_node->left = NULL;
-            new_node->right = NULL;
-            new_node->freq = frequency_table[i].freq;
-            new_node->symbol = frequency_table[i].symbol;
-            if(huffman_tree->root->left == NULL) {
-                huffman_tree->root->left = new_node;
-            } else if(huffman_tree->root->right == NULL) {
-                huffman_tree->root->right = new_node;
-            } else {
-                node *tmp = huffman_tree->root->left;
-                huffman_tree->root->left = new_node;
-                new_node->left = tmp;
-            }
-        }
+// Print the Huffman Tree
+void PrintHuffmanTree(HTREE *tree){
+    for(int i = 0; i < 2 * tree->n - 1; i++){
+        printf("data: %x, freq: %d, parent: %d, lchild: %d, rchild: %d\n", tree->node[i].data, tree->node[i].freq, tree->node[i].parent, tree->node[i].lchild, tree->node[i].rchild);
     }
-    return huffman_tree;
 }
 
-// print the Huffman tree
-void print_huffman_tree(node *node) {
-    if(node != NULL) {
-        printf("%d:%d\n", node->symbol, node->freq);
-        print_huffman_tree(node->left);
-        print_huffman_tree(node->right);
+// Get the Huffman Code
+void GetHuffmanCode(HTREE *tree){
+    int root = find_root(tree);
+    tree->node[root].code = "";
+    HuffmanCode(tree, root, "");
+}
+
+int find_root(HTREE *tree){
+    for(int i = 0; i < 2 * tree->n - 1; i++){
+        if(tree->node[i].parent == -1){
+            return i;
+        }
+    }
+    return -1;
+}
+
+// Huffman Code
+void HuffmanCode(HTREE *tree, int n, char *str){
+    if(tree->node[n].lchild == -1 && tree->node[n].rchild == -1){
+        tree->node[n].code = str;
+        return;
+    }
+    else{
+        char *str1 = (char *)malloc(sizeof(char) * strlen(str) + 1);
+        strcpy(str1, str);
+        strcat(str1, "0");
+        HuffmanCode(tree, tree->node[n].lchild, str1);
+
+        char *str2 = (char *)malloc(sizeof(char) * strlen(str) + 1);
+        strcpy(str2, str);
+        strcat(str2, "1");
+        HuffmanCode(tree, tree->node[n].rchild, str2);
     }
     return;
 }
 
-// get the Huffman code
-void get_huffman_code(node *node, char *code, char **huffman_code) {
-    if(node->left == NULL && node->right == NULL) {
-        huffman_code[node->symbol] = code;
-        return;
-    }
-    else if(node->left == NULL || node->right == NULL)  
-        printf("Wrong!\n");
-    else {
-        char *left_code = malloc(sizeof(char) * (strlen(code) + 2));
-        char *right_code = malloc(sizeof(char) * (strlen(code) + 2));
-        strcpy(left_code, code);
-        strcpy(right_code, code);
-        strcat(left_code, "0");
-        strcat(right_code, "1");
-        get_huffman_code(node->left, left_code, huffman_code);
-        get_huffman_code(node->right, right_code, huffman_code);
+// Print the Huffman Code
+void PrintHuffmanCode(HTREE *tree){
+    for(int i = 0; i < tree->n; i++){
+        printf("data: %x, code: %s\n", tree->node[i].data, tree->node[i].code);
     }
 }
 
-//encode the input
-char *encode(int *input, int size, char **huffman_code) {
-    int i;
-    char *output = malloc(sizeof(char) * size * 4);
-    for(i = 0; i < size; i++) {
-        strcat(output, huffman_code[input[i]]);
+// encode the file
+char *encode(unsigned char *buffer, int len, HTREE *tree, HEAD *head){
+    char *output = malloc(sizeof(char) * len * 8 + 1);
+    head->origin_size = 8 * len;
+    output[0] = 0;
+    for(int i = 0; i < len; i++){
+        strcat(output, tree->node[buffer[i]].code);
+    }
+
+    // 8bit alignment
+    int n = strlen(output);
+    int m = n % 8;
+    if(m != 0){
+        for(int i = 0; i < 8 - m; i++){
+            strcat(output, "0");
+        }
+    }
+    head->compress_size = strlen(output); //bit
+    return output;
+}
+
+// decode the file
+// the len is the length of the buffer
+unsigned char *decode(unsigned char *buffer, HEAD *head, unsigned char **HuffmanCode){
+    unsigned char *output = malloc(sizeof(unsigned char) * head->origin_size/8);
+    unsigned char *tmp = malloc(sizeof(unsigned char) * head->origin_size/8);
+    tmp[0] = 0;
+    int k = 0;
+    for(int i = 0; i < strlen(buffer); i++){
+        tmp = strncat(tmp, buffer + i,1); // add a bit to the tmp
+
+        // find the character
+        for(unsigned char j = 0; j < 256; j++){
+            if(strcmp(HuffmanCode[j], tmp) == 0){
+                output[k] = j;
+                tmp = "";
+                break;
+            }
+        }
     }
     return output;
 }
 
-//convert char to bitstream
-Bitstream *char_to_bitstream(char *input, int *len) {
-    *len = strlen(input);
-    if(*len % 8){
-        *len = *len + 8 - *len % 8; 
+// cat all the huffman code from 0 - 255
+unsigned char *catHuffmanCode(HTREE *T, HEAD *head){
+    int len = 256; // "\0"
+    // string length
+    for(int i = 0; i < 256; i++){
+        len += strlen(T->node[i].code);
     }
-    Bitstream *output = malloc(sizeof(Bitstream));
-    output->size = *len / 8;
     
-    char *bytes = malloc(sizeof(Byte) * output->size);
-    output->bytes = (Byte *)bytes;
-    //initialize the bytes
-    for(int i = 0; i < output->size; i++) {
-        bytes[i] = 0;
-    }
+    head->huffman_size = len;
+    unsigned char *output = malloc(sizeof(unsigned char) * len);
 
-    for(int i = 0; i < *len; i++) {
-        if(input[i] == '1') {
-            bytes[i / 8] = bytes[i / 8] | (1 << (7 - i % 8));
-        }
-        else {
-            bytes[i / 8] = bytes[i / 8] & ~(1 << (7 - i % 8));
+    int n = 0;
+    for(int i = 0; i < 256; i++){
+        for(int j = 0; j < strlen(T->node[i].code) + 1; j++){
+            output[n] = T->node[i].code[j];
+            n++;
         }
     }
-
-    for(int i = 0; i < 8; i++) {
-        printf("%d ", input[i]);
-    }
-    printf("\n");
-    printf("%x\n", bytes[0]);
-    printf("%x\n", bytes[1]);
-    printf("%x\n", bytes[2]);
-    printf("%x\n", bytes[3]);
+    return output;
 }
 
+// split the huffman code
+unsigned char **splitHuffmanCode(unsigned char *buffer){
+    unsigned char **output = malloc(sizeof(unsigned char *) * 256);
+    int n = 0;
+    for(int i = 0; i < 256; i++){
+        output[i] = malloc(sizeof(unsigned char) * strlen(buffer + n) + 1);
+        int j = 0;
+        while(buffer[n] != 0){
+            output[i][j] = buffer[n];
+            n++;
+            j++;
+        }
+        output[i][j] = 0;
+        n++;
+    }
+    return output;
+}

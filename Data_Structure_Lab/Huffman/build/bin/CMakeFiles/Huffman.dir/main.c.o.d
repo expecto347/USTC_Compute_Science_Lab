@@ -53,7 +53,10 @@ bin/CMakeFiles/Huffman.dir/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/string.h \
+ /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+ /usr/include/strings.h \
  /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Huffman/include/bitstream.h \
  /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Huffman/include/Huffman.h \
  /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Huffman/include/bitstream.h
