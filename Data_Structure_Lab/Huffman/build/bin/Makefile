@@ -202,6 +202,30 @@ main.c.s:
 	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Huffman/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/Huffman.dir/build.make bin/CMakeFiles/Huffman.dir/main.c.s
 .PHONY : main.c.s
 
+unhuffman.o: unhuffman.c.o
+.PHONY : unhuffman.o
+
+# target to build an object file
+unhuffman.c.o:
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Huffman/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/Huffman.dir/build.make bin/CMakeFiles/Huffman.dir/unhuffman.c.o
+.PHONY : unhuffman.c.o
+
+unhuffman.i: unhuffman.c.i
+.PHONY : unhuffman.i
+
+# target to preprocess a source file
+unhuffman.c.i:
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Huffman/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/Huffman.dir/build.make bin/CMakeFiles/Huffman.dir/unhuffman.c.i
+.PHONY : unhuffman.c.i
+
+unhuffman.s: unhuffman.c.s
+.PHONY : unhuffman.s
+
+# target to generate assembly for a file
+unhuffman.c.s:
+	cd /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Huffman/build && $(MAKE) $(MAKESILENT) -f bin/CMakeFiles/Huffman.dir/build.make bin/CMakeFiles/Huffman.dir/unhuffman.c.s
+.PHONY : unhuffman.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -220,6 +244,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... unhuffman.o"
+	@echo "... unhuffman.i"
+	@echo "... unhuffman.s"
 .PHONY : help
 
 

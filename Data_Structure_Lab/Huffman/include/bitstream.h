@@ -12,4 +12,6 @@ unsigned char *read(char *filenam, int *len);
 char *convertHead(HEAD *head);
 unsigned char *convertBinary(char *buffer, int len);
 char *convertChar(unsigned char *buffer, int len);
+void unhuffman_read(char *filename, HEAD *h, char *huffmancode, char *bin);
+void write_file(char *filename, char *buffer, int len);
 #endif

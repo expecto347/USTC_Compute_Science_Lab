@@ -1,1 +1,1 @@
-gdb --args ./build/bin/Huffman /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Huffman/test/test.txt /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Huffman/test/test_1.txt
+gdb --args ./build/bin/Huffman /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Huffman/test/source/测试1.txt /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Huffman/test/result/测试1.txt /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Huffman/test/decode/测试1.txt

@@ -3,4 +3,4 @@ mkdir build
 cd build
 cmake ..
 make
-./bin/Huffman /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Huffman/test/HW.pdf /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Huffman/test/HW—1.pdf
+./bin/Huffman /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Huffman/test/source/测试3.wav /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Huffman/test/result/测试3.wav /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Huffman/test/decode/测试3.wav

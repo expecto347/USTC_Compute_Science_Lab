@@ -120,21 +120,28 @@ void PrintHuffmanCode(HTREE *tree){
 
 // encode the file
 char *encode(unsigned char *buffer, int len, HTREE *tree, HEAD *head){
-    char *output = malloc(sizeof(char) * len * 8 + 1);
+    char *output = malloc(sizeof(char) * len * 8 + 8);
+    int ptr = 0; // the pointer of the output
     head->origin_size = 8 * len;
-    output[0] = 0;
     for(int i = 0; i < len; i++){
-        strcat(output, tree->node[buffer[i]].code);
+        for(int j = 0; j < strlen(tree->node[buffer[i]].code); j++){
+            output[ptr] = tree->node[buffer[i]].code[j];
+            ptr++;
+        }
     }
+
+    output[ptr] = '\0';
 
     // 8bit alignment
     int n = strlen(output);
     int m = n % 8;
     if(m != 0){
         for(int i = 0; i < 8 - m; i++){
-            strcat(output, "0");
+            output[ptr] = '0';
+            ptr++;
         }
     }
+    output[ptr] = '\0';
     head->compress_size = strlen(output); //bit
     return output;
 }

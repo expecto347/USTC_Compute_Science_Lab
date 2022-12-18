@@ -47,14 +47,30 @@ unsigned char *convertBinary(char *buffer, int len){
 // convert the binary type to char type
 char *convertChar(unsigned char *buffer, int len){
     char *output = malloc(sizeof(char) * len * 8);
-    output = "";
+    int ptr = 0;
     for(int i = 0; i < len; i++){
         for(int j = 0; j < 8; j++){
-            char tmp[2];
-            tmp[0] = (buffer[i] >> (7 - j)) & 1;
-            tmp[1] = 0;
-            output = strcat(output, tmp);
+            output[ptr] = (buffer[i] >> (7 - j)) & 1;
+            output[ptr] += '0';
+            ptr++;
         }
     }
+    output[ptr] = 0;
     return output;
+}
+
+// read the binary file to char format
+void unhuffman_read(char *filename, HEAD *h, char *huffmancode, char *bin){
+    FILE *fp = fopen(filename, "rb");
+    fread(h, sizeof(HEAD), 1, fp);
+    fread(huffmancode, 1, h->huffman_size, fp); // read the head and huffman code
+    fread(bin, 1, h->compress_size/8, fp); // read the body
+    fclose(fp);
+}
+
+// write the file
+void write_file(char *filename, char *buffer, int len){
+    FILE *fp = fopen(filename, "wb");
+    fwrite(buffer, 1, len, fp);
+    fclose(fp);
 }

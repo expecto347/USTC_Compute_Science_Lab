@@ -1,1 +1,1 @@
-/usr/bin/cc -g CMakeFiles/Huffman.dir/main.c.o CMakeFiles/Huffman.dir/bitstream.c.o CMakeFiles/Huffman.dir/Huffman.c.o -o Huffman  -lm 
+/usr/bin/cc -g CMakeFiles/Huffman.dir/main.c.o CMakeFiles/Huffman.dir/bitstream.c.o CMakeFiles/Huffman.dir/Huffman.c.o CMakeFiles/Huffman.dir/unhuffman.c.o -o Huffman  -lm 

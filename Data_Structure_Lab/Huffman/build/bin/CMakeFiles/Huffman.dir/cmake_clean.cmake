@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Huffman.dir/bitstream.c.o.d"
   "CMakeFiles/Huffman.dir/main.c.o"
   "CMakeFiles/Huffman.dir/main.c.o.d"
+  "CMakeFiles/Huffman.dir/unhuffman.c.o"
+  "CMakeFiles/Huffman.dir/unhuffman.c.o.d"
   "Huffman"
   "Huffman.pdb"
 )

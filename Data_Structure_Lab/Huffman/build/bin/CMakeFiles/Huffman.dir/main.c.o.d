@@ -59,4 +59,5 @@ bin/CMakeFiles/Huffman.dir/main.c.o: \
  /usr/include/strings.h \
  /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Huffman/include/bitstream.h \
  /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Huffman/include/Huffman.h \
- /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Huffman/include/bitstream.h
+ /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Huffman/include/bitstream.h \
+ /root/USTC_Compute_Science_Lab/Data_Structure_Lab/Huffman/include/unhuffman.h
