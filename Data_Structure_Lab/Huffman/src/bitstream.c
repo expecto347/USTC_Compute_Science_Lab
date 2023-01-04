@@ -60,9 +60,17 @@ char *convertChar(unsigned char *buffer, int len){
 }
 
 // read the binary file to char format
-void unhuffman_read(char *filename, HEAD *h, char *huffmancode, char *bin){
+void unhuffman_read_head(char *filename, HEAD *h){
     FILE *fp = fopen(filename, "rb");
     fread(h, sizeof(HEAD), 1, fp);
+    //fread(huffmancode, 1, h->huffman_size, fp); // read the head and huffman code
+    //fread(bin, 1, h->compress_size/8, fp); // read the body
+    fclose(fp);
+}
+
+void unhuffman_read_body(char *filename, HEAD *h, char *huffmancode, char *bin){
+    FILE *fp = fopen(filename, "rb");
+    fseek(fp, sizeof(HEAD), SEEK_SET);
     fread(huffmancode, 1, h->huffman_size, fp); // read the head and huffman code
     fread(bin, 1, h->compress_size/8, fp); // read the body
     fclose(fp);
