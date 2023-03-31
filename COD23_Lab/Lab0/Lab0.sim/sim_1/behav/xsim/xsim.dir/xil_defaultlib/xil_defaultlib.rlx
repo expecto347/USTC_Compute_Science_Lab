@@ -1,0 +1,10 @@
+0.6
+2019.1
+May 24 2019
+14:51:52
+/root/USTC_Compute_Science_Lab/COD23_Lab/Lab0/Lab0.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+/root/USTC_Compute_Science_Lab/COD23_Lab/Lab0/Lab0.srcs/sim_1/new/testbench.v,1679834411,verilog,,,,tb_Clock,,,,,,,,
+/root/USTC_Compute_Science_Lab/COD23_Lab/Lab0/Lab0.srcs/sources_1/new/Clock.v,1679834225,verilog,,/root/USTC_Compute_Science_Lab/COD23_Lab/Lab0/Lab0.srcs/sources_1/new/Hour.v,,Clock,,,,,,,,
+/root/USTC_Compute_Science_Lab/COD23_Lab/Lab0/Lab0.srcs/sources_1/new/Hour.v,1679834292,verilog,,/root/USTC_Compute_Science_Lab/COD23_Lab/Lab0/Lab0.srcs/sources_1/new/Min.v,,Hour,,,,,,,,
+/root/USTC_Compute_Science_Lab/COD23_Lab/Lab0/Lab0.srcs/sources_1/new/Min.v,1679834386,verilog,,/root/USTC_Compute_Science_Lab/COD23_Lab/Lab0/Lab0.srcs/sources_1/new/Sec.v,,Min,,,,,,,,
+/root/USTC_Compute_Science_Lab/COD23_Lab/Lab0/Lab0.srcs/sources_1/new/Sec.v,1679834370,verilog,,/root/USTC_Compute_Science_Lab/COD23_Lab/Lab0/Lab0.srcs/sim_1/new/testbench.v,,Sec,,,,,,,,
