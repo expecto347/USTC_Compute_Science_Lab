@@ -1,0 +1,4 @@
+/root/.cache/JetBrains/RemoteDev/dist/19f2f435ff214_CLion-2023.1.1/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/root/.cache/JetBrains/RemoteDev/dist/19f2f435ff214_CLion-2023.1.1/bin/ninja/linux/x64/ninja -G Ninja -S /root/USTC_Compute_Science_Lab/Algorithm_Lab/Lab2 -B /root/USTC_Compute_Science_Lab/Algorithm_Lab/Lab2/cmake-build-debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/USTC_Compute_Science_Lab/Algorithm_Lab/Lab2/cmake-build-debug

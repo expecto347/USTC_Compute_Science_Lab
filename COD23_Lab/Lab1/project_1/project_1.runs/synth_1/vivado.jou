@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Apr  3 14:42:49 2023
+# Process ID: 4782
+# Current directory: /root/USTC_Compute_Science_Lab/COD23_Lab/Lab1/project_1/project_1.runs/synth_1
+# Command line: vivado -log alu_test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source alu_test.tcl
+# Log file: /root/USTC_Compute_Science_Lab/COD23_Lab/Lab1/project_1/project_1.runs/synth_1/alu_test.vds
+# Journal file: /root/USTC_Compute_Science_Lab/COD23_Lab/Lab1/project_1/project_1.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source alu_test.tcl -notrace
